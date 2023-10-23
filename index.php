@@ -6,7 +6,7 @@ spl_autoload_register(function ($class) {
     if (file_exists($class. '.php')) {
         require_once $class . '.php';
     }
-
+    
     // Cargar la clase desde el directorio `app/Controller/`
     if (file_exists('app/Controller/' . $class. '.php')) {
         require_once 'app/Controller/' . $class . '.php';
@@ -28,9 +28,9 @@ $route = new Route();
 $app = new App();
 // $utils = new Utils();
 // $contro = new MainControllers();
-require_once('routes/dashboard.php');
-require_once('routes/web.php');
 // $mainController= new MainController();
+include_once('routes/web.php');
+include_once('routes/dashboard.php');
 
 // MainController::show(1);
 // Código de la aplicación
@@ -40,8 +40,8 @@ $routes = Route::getRoutes();
 // echo "<pre>";
 // var_dump($routes);
 // echo "</pre>";
- $url = $request->getUrl();
+$url = $request->getUrl();
 //  echo $url;
- $request ->validate($routes, $url);
+$request ->validate($routes, $url);
 
 

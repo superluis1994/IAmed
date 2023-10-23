@@ -5,7 +5,8 @@ use core\Utils;
 class DashboardControllers{
    public function index(){
       
-      return Utils::view('dashboard.usuario');
+      return Utils::viewDasboard('dashboard.index');
+      return Utils::viewDasboard('productos.index');
    }
 
    public function show($id){

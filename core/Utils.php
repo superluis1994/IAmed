@@ -35,9 +35,44 @@ static function view($path = "",$data=[]){
     $content .= require_once  $url."partials/header.php";
     $content .= require_once $url.$path.".php";;
     $content .= require_once  $url."partials/footer.php";
-
+    
     return $content;
 }
+// static function viewDasboard($path = "",$data=[]){
+//     $url = "./resources/views/";
+//     $path = explode('.',$path);
+//     // $path = str_replace(".","/",$path);
+//     foreach ($data as $key => $value) {
+//         $$key = $value;
+//     }
+//     $content = "";
+//     $content .= require_once  $url."partials/header.php";
+//     $content .= require_once  $url."".$path[0]."/partes/menu.php";
+//     $content .= require_once  $url."".$path[0]."/".$path[1].".php";
+//     $content .= require_once  $url."".$path[0]."/partes/menuF.php";
+//     $content .= require_once  $url."partials/footer.php";
+
+//     return $content;
+// }
+
+static function viewDasboard($path = "",$data=[]){
+    $url = "./resources/views/";
+    $path = explode('.',$path);
+    // $path = str_replace(".","/",$path);
+    foreach ($data as $key => $value) {
+        $$key = $value;
+    }
+    $content = "";
+    $content .= require_once  $url."partials/header.php";
+    $content .= require_once  $url."".$path[0]."/partes/menu.php";
+    $codigo_insertado = require_once  $url."".$path[0]."/".$path[1].".php";
+    $content = str_replace("<section class='row'>", $codigo_insertado, $content);
+    $content .= require_once  $url."partials/footer.php"; 
+    // $content .= require_once  $url."".$path[0]."/partes/menuF.php";
+    
+    return $content;
+}
+
 
 
 

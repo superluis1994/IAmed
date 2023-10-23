@@ -5,7 +5,9 @@ namespace routes;
 use core\Route;
 use core\Utils;
 
+
 Route::get('/', "MainControllers@index");
+// Route::get('/dashboard', "DashboardControllers@index");
 // Route::post('/api/{id}',"ProductoController@show");
 Route::post('/api/{id}', function ($route) {
     echo $route['id'];

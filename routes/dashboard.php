@@ -4,19 +4,17 @@ namespace routes;
 
 use core\Route;
 use core\Utils;
+// Route::get('/', "MainControllers@index");
+Route::group('/entrar',function(){
+    Route::get('', "LoginControllers@index");
+    Route::get('/', "LoginControllers@index");
+    Route::get('/registrar', "LoginControllers@registrar");
+    Route::get('/registrar/', "LoginControllers@registrar");
 
-Route::get('/dashboard', "DashboardControllers@index");
-Route::get('/login', "LoginControllers@index");
-Route::get('/registrar', "LoginControllers@registrar");
-// Route::post('/api/{id}',"ProductoController@show");
-// Route::post('/api/{id}', function ($route) {
-//     echo $route['id'];
-//     return $route['id'];
-// });
-// Route::post('/api/{id}-{nombre}', "Ruta inicial GET");
-// Route::post('/personas/{id}', "PersonaControllers@show");
-// Route::post('/persona/{id}', "MainControllers@index");
+});
+
 Route::group('/dashboard', function () {
+    Route::get('', "DashboardControllers@index");
     Route::get('/chatbot', function () {
         return Utils::view("login.login");
     });
@@ -25,10 +23,4 @@ Route::group('/dashboard', function () {
         return Utils::view("producto.index", ["name" => $route["name"]]);
     });
 });
-    // Route::get('/',function(){
-    //     return [
-    //         "id" => 1
-    //     ];
-    // });
-    // print_r(Route::getRoutes());
- 
+    
