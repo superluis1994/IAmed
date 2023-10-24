@@ -31,6 +31,7 @@ $app = new App();
 // $mainController= new MainController();
 include_once('routes/web.php');
 include_once('routes/dashboard.php');
+// include_once('core/Resources.php');
 
 // MainController::show(1);
 // Código de la aplicación

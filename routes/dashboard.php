@@ -4,7 +4,7 @@ namespace routes;
 
 use core\Route;
 use core\Utils;
-// Route::get('/', "MainControllers@index");
+Route::get('/', "MainControllers@index");
 Route::group('/entrar',function(){
     Route::get('', "LoginControllers@index");
     Route::get('/', "LoginControllers@index");

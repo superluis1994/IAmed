@@ -129,7 +129,7 @@ use core\Utils;
 
                 <ul class="submenu">
                   <li class="submenu-item">
-                    <a href="extra-component-avatar.html" class="submenu-link"
+                    <a href="<?=$utils->url('/dashboard/chatbot')?>" class="submenu-link"
                       >IA</a
                     >
                   </li>

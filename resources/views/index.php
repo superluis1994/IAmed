@@ -1,13 +1,10 @@
-<?php
 
-use core\Utils;
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard - Mazer Admin Dashboard</title>
+    <title>Dashboard</title>
 
     <link
       rel="shortcut icon"
@@ -20,13 +17,13 @@ use core\Utils;
       type="image/png"
     />
 
-    <link rel="stylesheet" href="<?=Utils::assets('assets/compiled/css/app.css')?>" />
-    <link rel="stylesheet" href="<?=Utils::assets('assets/compiled/css/app-dark.css')?>" />
-    <link rel="stylesheet" href="<?=Utils::assets('assets/compiled/css/iconly.css')?>" />
+    <link rel="stylesheet" href="<?=$utils->assets('assets/compiled/css/app.css')?>" />
+    <link rel="stylesheet" href="<?=$utils->assets('assets/compiled/css/app-dark.css')?>" />
+    <link rel="stylesheet" href="<?=$utils->assets('assets/compiled/css/iconly.css')?>" />
   </head>
 
   <body>
-    <script src="<?=Utils::assets('assets/static/js/initTheme.js')?>"></script>
+    <script src="<?=$utils->assets('assets/static/js/initTheme.js')?>"></script>
     <div id="app">
       <div id="sidebar">
         <div class="sidebar-wrapper active">
@@ -1011,20 +1008,20 @@ use core\Utils;
                 <span class="text-danger"
                   ><i class="bi bi-heart-fill icon-mid"></i
                 ></span>
-                by <a href="https://saugi.me">Saugi</a>
+                by <a href="https://saugi.me">Sorto</a>
               </p>
             </div>
           </div>
         </footer>
       </div>
     </div>
-    <script src="<?=Utils::assets('assets/static/js/components/dark.js')?>"></script>
-    <script src="<?=Utils::assets('assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js')?>"></script>
+    <script src="<?=$utils->assets('assets/static/js/components/dark.js')?>"></script>
+    <script src="<?=$utils->assets('assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js')?>"></script>
 
-    <script src="<?=Utils::assets('assets/compiled/js/app.js')?>"></script>
+    <script src="<?=$utils->assets('assets/compiled/js/app.js')?>"></script>
 
     <!-- Need: Apexcharts -->
-    <script src="<?=Utils::assets('assets/extensions/apexcharts/apexcharts.min.js')?>"></script>
-    <script src="<?=Utils::assets('assets/static/js/pages/dashboard.js')?>"></script>
+    <script src="<?=$utils->assets('assets/extensions/apexcharts/apexcharts.min.js')?>"></script>
+    <script src="<?=$utils->assets('assets/static/js/pages/dashboard.js')?>"></script>
   </body>
 </html>
