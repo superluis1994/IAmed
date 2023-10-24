@@ -88,223 +88,102 @@ use core\Utils;
               <li class="sidebar-item active">
                 <a href="index.html" class="sidebar-link">
                   <i class="bi bi-grid-fill"></i>
-                  <span>Dashboard</span>
+                  <span>PANEL IAMED</span>
                 </a>
               </li>
 
               <li class="sidebar-item has-sub">
                 <a href="#" class="sidebar-link">
                   <i class="bi bi-stack"></i>
-                  <span>Components</span>
+                  <span>Comunidad Medica</span>
                 </a>
 
                 <ul class="submenu">
                   <li class="submenu-item">
                     <a href="component-accordion.html" class="submenu-link"
-                      >Accordion</a
+                      >Sector Privado</a
                     >
                   </li>
 
                   <li class="submenu-item">
                     <a href="component-alert.html" class="submenu-link"
-                      >Alert</a
+                      >Sector Publico</a
                     >
                   </li>
 
                   <li class="submenu-item">
                     <a href="component-badge.html" class="submenu-link"
-                      >Badge</a
+                      >Centro de Asistencia Medica</a
                     >
                   </li>
 
-                  <li class="submenu-item">
-                    <a href="component-breadcrumb.html" class="submenu-link"
-                      >Breadcrumb</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-button.html" class="submenu-link"
-                      >Button</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-card.html" class="submenu-link">Card</a>
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-carousel.html" class="submenu-link"
-                      >Carousel</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-collapse.html" class="submenu-link"
-                      >Collapse</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-dropdown.html" class="submenu-link"
-                      >Dropdown</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-list-group.html" class="submenu-link"
-                      >List Group</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-modal.html" class="submenu-link"
-                      >Modal</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-navs.html" class="submenu-link">Navs</a>
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-pagination.html" class="submenu-link"
-                      >Pagination</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-progress.html" class="submenu-link"
-                      >Progress</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-spinner.html" class="submenu-link"
-                      >Spinner</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-toasts.html" class="submenu-link"
-                      >Toasts</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-tooltip.html" class="submenu-link"
-                      >Tooltip</a
-                    >
-                  </li>
+                
                 </ul>
               </li>
 
               <li class="sidebar-item has-sub">
                 <a href="#" class="sidebar-link">
                   <i class="bi bi-collection-fill"></i>
-                  <span>Extra Components</span>
+                  <span>Chat</span>
                 </a>
 
                 <ul class="submenu">
                   <li class="submenu-item">
                     <a href="extra-component-avatar.html" class="submenu-link"
-                      >Avatar</a
+                      >IA</a
                     >
                   </li>
 
                   <li class="submenu-item">
                     <a href="extra-component-divider.html" class="submenu-link"
-                      >Divider</a
+                      >Doctor</a
                     >
                   </li>
 
-                  <li class="submenu-item">
-                    <a
-                      href="extra-component-date-picker.html"
-                      class="submenu-link"
-                      >Date Picker</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a
-                      href="extra-component-sweetalert.html"
-                      class="submenu-link"
-                      >Sweet Alert</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="extra-component-toastify.html" class="submenu-link"
-                      >Toastify</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="extra-component-rating.html" class="submenu-link"
-                      >Rating</a
-                    >
-                  </li>
                 </ul>
               </li>
 
               <li class="sidebar-item has-sub">
                 <a href="#" class="sidebar-link">
                   <i class="bi bi-grid-1x2-fill"></i>
-                  <span>Layouts</span>
+                  <span>Recordatorios</span>
                 </a>
 
                 <ul class="submenu">
                   <li class="submenu-item">
                     <a href="layout-default.html" class="submenu-link"
-                      >Default Layout</a
+                      >Agregar</a
                     >
                   </li>
 
                   <li class="submenu-item">
                     <a href="layout-vertical-1-column.html" class="submenu-link"
-                      >1 Column</a
+                      >Historial</a
                     >
                   </li>
 
-                  <li class="submenu-item">
-                    <a href="layout-vertical-navbar.html" class="submenu-link"
-                      >Vertical Navbar</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="layout-rtl.html" class="submenu-link"
-                      >RTL Layout</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="layout-horizontal.html" class="submenu-link"
-                      >Horizontal Menu</a
-                    >
-                  </li>
+                  
                 </ul>
               </li>
 
-              <li class="sidebar-title">Forms &amp; Tables</li>
+              <li class="sidebar-title">Configuracion </li>
 
               <li class="sidebar-item has-sub">
                 <a href="#" class="sidebar-link">
                   <i class="bi bi-hexagon-fill"></i>
-                  <span>Form Elements</span>
+                  <span>Perfil De Usuario</span>
                 </a>
 
                 <ul class="submenu">
                   <li class="submenu-item">
                     <a href="form-element-input.html" class="submenu-link"
-                      >Input</a
+                      >Cambiar foto</a
                     >
                   </li>
 
                   <li class="submenu-item">
                     <a href="form-element-input-group.html" class="submenu-link"
-                      >Input Group</a
+                      >Datos Personales</a
                     >
                   </li>
 
@@ -334,23 +213,18 @@ use core\Utils;
                 </ul>
               </li>
 
-              <li class="sidebar-item">
-                <a href="form-layout.html" class="sidebar-link">
-                  <i class="bi bi-file-earmark-medical-fill"></i>
-                  <span>Form Layout</span>
-                </a>
-              </li>
+          
 
               <li class="sidebar-item has-sub">
                 <a href="#" class="sidebar-link">
                   <i class="bi bi-journal-check"></i>
-                  <span>Form Validation</span>
+                  <span>Privacidad</span>
                 </a>
 
                 <ul class="submenu">
                   <li class="submenu-item">
                     <a href="form-validation-parsley.html" class="submenu-link"
-                      >Parsley</a
+                      >Cambio de Contraseña</a
                     >
                   </li>
                 </ul>
@@ -428,19 +302,19 @@ use core\Utils;
                 <ul class="submenu">
                   <li class="submenu-item">
                     <a href="ui-widgets-chatbox.html" class="submenu-link"
-                      >Chatbox</a
+                      >Chat</a
                     >
                   </li>
 
                   <li class="submenu-item">
                     <a href="ui-widgets-pricing.html" class="submenu-link"
-                      >Pricing</a
+                      >Chatbox</a
                     >
                   </li>
 
                   <li class="submenu-item">
                     <a href="ui-widgets-todolist.html" class="submenu-link"
-                      >To-do List</a
+                      >ChatDoctor</a
                     >
                   </li>
                 </ul>
@@ -682,7 +556,6 @@ use core\Utils;
           <section class="row">
 
 
-          </section>
-        </div>
+         
 
         
