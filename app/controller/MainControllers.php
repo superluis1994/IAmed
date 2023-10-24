@@ -6,6 +6,7 @@ class MainControllers{
    public function index(){
       
       return Utils::view('index');
+  
    }
 
    public function show($id){
