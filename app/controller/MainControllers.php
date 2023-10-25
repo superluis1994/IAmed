@@ -3,9 +3,24 @@ namespace app\controller;
 use core\Utils;
 
 class MainControllers{
-   public function index(){
+   public function home(){
       
-      return Utils::view('index');
+      return Utils::viewStatic('web.home');
+  
+   }
+   public function about(){
+      
+      return Utils::viewStatic('web.about');
+  
+   }
+   public function servicios(){
+      
+      return Utils::viewStatic('web.servicios');
+  
+   }
+   public function contacto(){
+      
+      return Utils::viewStatic('web.contacto');
   
    }
 

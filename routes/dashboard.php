@@ -4,15 +4,18 @@ namespace routes;
 
 use core\Route;
 use core\Utils;
-// parametro 1 : emmanuel 
-// parametro 2 :  controlador
-// Route::get('/emmanuel', "MainControllers@index");
+// parametro 1 : Controlador
+// parametro 2 :  vista
 // Route::get('/', "MainControllers@index");
 Route::group('/entrar',function(){
     Route::get('', "LoginControllers@index");
     Route::get('/', "LoginControllers@index");
     Route::get('/registrar', "LoginControllers@registrar");
     // Route::get('/registrar/', "LoginControllers@registrar");
+});
+Route::group('/registrar',function(){
+    Route::get('', "LoginControllers@registrar");
+    Route::get('/', "LoginControllers@registrar");
 });
 
 Route::group('/dashboard', function () {

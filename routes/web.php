@@ -6,7 +6,20 @@ use core\Route;
 use core\Utils;
 
 
-Route::get('/', "MainControllers@index");
+Route::get('/', "MainControllers@home");
+Route::get('/about', "MainControllers@about");
+Route::get('/servicios', "MainControllers@servicios");
+Route::get('/contacto', "MainControllers@contacto");
+
+// Route::group('/web', function () {
+//     Route::get('/id', function () {
+//         return Utils::view("index");
+//     });
+//     // Route::post('',"Ruta inicial POST");
+//     Route::get('/nombre/{name}', function ($route) {
+//         return Utils::view("producto.index", ["name" => $route["name"]]);
+//     });
+// });
 // Route::get('/dashboard', "DashboardControllers@index");
 // Route::post('/api/{id}',"ProductoController@show");
 Route::post('/api/{id}', function ($route) {
