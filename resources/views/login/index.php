@@ -8,9 +8,9 @@
                 ><img src="<?=$utils->assets('assets/compiled/svg/logo.svg')?>" alt="Logo"
               /></a>
             </div>
-            <h1 class="auth-title">Log in.</h1>
+            <h1 class="auth-title">Ingresar</h1>
             <p class="auth-subtitle mb-5">
-              Log in with your data that you entered during registration.
+            Inicie sesión con los datos que ingresó durante el registro.
             </p>
 
             <form action="index.html">
@@ -18,7 +18,7 @@
                 <input
                   type="text"
                   class="form-control form-control-xl"
-                  placeholder="Username"
+                  placeholder="Usuario"
                 />
                 <div class="form-control-icon">
                   <i class="bi bi-person"></i>
@@ -28,7 +28,7 @@
                 <input
                   type="password"
                   class="form-control form-control-xl"
-                  placeholder="Password"
+                  placeholder="Contraseña"
                 />
                 <div class="form-control-icon">
                   <i class="bi bi-shield-lock"></i>
@@ -45,21 +45,21 @@
                   class="form-check-label text-gray-600"
                   for="flexCheckDefault"
                 >
-                  Keep me logged in
+                  Recordar cuenta
                 </label>
               </div>
               <button class="btn btn-primary btn-block btn-lg shadow-lg mt-5">
-                Log in
+                Ingresar
               </button>
             </form>
             <div class="text-center mt-5 text-lg fs-4">
               <p class="text-gray-600">
-                Don't have an account?
-                <a href="auth-register.html" class="font-bold">Sign up</a>.
+              ¿No tienes una cuenta?
+                <a href="auth-register.html" class="font-bold">Registrarse</a>.
               </p>
               <p>
                 <a class="font-bold" href="auth-forgot-password.html"
-                  >Forgot password?</a
+                  >¿Has olvidado tu contraseña?</a
                 >.
               </p>
             </div>
