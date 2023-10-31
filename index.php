@@ -1,5 +1,4 @@
 <?php
-
 spl_autoload_register(function ($class) {
     // Cargar la clase desde el directorio `core/`
     // echo $class."<br>";
@@ -15,6 +14,9 @@ spl_autoload_register(function ($class) {
 });
 
 
+require_once('vendor/autoload.php');
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 // Importación de clases
 use core\Request;
 use core\Route;

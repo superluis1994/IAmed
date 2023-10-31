@@ -2,13 +2,13 @@
 
 use core\Utils;
 ?>
-<script src="<?=Utils::assets('assets/static/js/components/dark.js')?>"></script>
-    <script src="<?=Utils::assets('assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js')?>"></script>
+<script src="<?=$utils->assets('assets/static/js/components/dark.js')?>"></script>
+    <script src="<?=$utils->assets('assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js')?>"></script>
 
-    <script src="<?=Utils::assets('assets/compiled/js/app.js')?>"></script>
+    <script src="<?=$utils->assets('assets/compiled/js/app.js')?>"></script>
 
     <!-- Need: Apexcharts -->
-    <script src="<?=Utils::assets('assets/extensions/apexcharts/apexcharts.min.js')?>"></script>
-    <script src="<?=Utils::assets('assets/static/js/pages/dashboard.js')?>"></script>
+    <script src="<?=$utils->assets('assets/extensions/apexcharts/apexcharts.min.js')?>"></script>
+    <script src="<?=$utils->assets('assets/static/js/pages/dashboard.js')?>"></script>
   </body>
 </html>
