@@ -21,12 +21,12 @@ Route::get('/contacto', "MainControllers@contacto");
 //     });
 // });
 // Route::get('/dashboard', "DashboardControllers@index");
-// Route::post('/api/{id}',"ProductoController@show");
-Route::post('/api/{id}', function ($route) {
-    echo $route['id'];
-    return $route['id'];
-});
-Route::post('/api/{id}-{nombre}', "Ruta inicial GET");
+// Route::post('/api/{id}',"MainController@show");
+// Route::post('/api/{id}', function ($route) {
+//     // echo $route['id'];
+//     return $route['id'];
+// });
+// Route::post('/api/{id}-{nombre}', "Ruta inicial GET");
 Route::post('/personas/{id}', "PersonaControllers@show");
 Route::post('/persona/{id}', "MainControllers@index");
 Route::group('/producto', function () {
