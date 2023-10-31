@@ -57,15 +57,11 @@ class Request{
                             if(is_string($route['class'])){
                                    // echo "vas a trabajar con un controlador";
                                     $route_class = $route['class'];
-                                   // echo  var_dump( $route_class);
-                                   // echo"<br>";
+                              
                                    $array_class = explode('@',$route_class);
-                                   // $rutaController= "'app\Controller\MainController'";
-                                   // $controller = new $array_class[0]();
+
                                    $array_class[0] = 'app\controller\\' . $array_class[0];
-
                                    $controller = new  $array_class[0]();
-
                                    $method = $array_class[1];
                                    // print_r($array_class);
                                    $response = $controller->$method(... array_values($params));

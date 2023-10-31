@@ -7,7 +7,8 @@ use core\Utils;
 // parametro 1 : Controlador
 // parametro 2 :  vista
 // Route::get('/', "MainControllers@index");
-Route::group('/entrar',function(){
+Route::group('/login',function(){
+    Route::get('/entrar', "LoginControllers@authenticate");
     Route::get('', "LoginControllers@index");
     Route::get('/', "LoginControllers@index");
     Route::get('/registrar', "LoginControllers@registrar");

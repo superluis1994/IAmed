@@ -1,6 +1,8 @@
 <?php
 namespace app\controller;
 use core\Utils;
+use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
 
 class MainControllers{
    public function home(){
@@ -24,10 +26,19 @@ class MainControllers{
   
    }
 
-   public function show($id){
-      echo $id;
-      return $id;
-   }
+//    public function show($id){
+//       $now = strtotime("now");
+//       $key = 'example_key';
+//      $payload = [
+//     'exp' => $now,
+//     'data'=>'1'
+// ];
+// $jwt = JWT::encode($payload, $key, 'HS256');
+// print_r($jwt);
+//       // echo $id;
+//       return $id;
+//    }
+
 }
 
 
