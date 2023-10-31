@@ -11,9 +11,9 @@ use core\Utils;
                 ><img src="<?=Utils::assets('assets/compiled/svg/logo.svg')?>" alt="Logo"
               /></a>
             </div>
-            <h1 class="auth-title">Sign Up</h1>
+            <h1 class="auth-title">Registrarse</h1>
             <p class="auth-subtitle mb-5">
-              Input your data to register to our website.
+              Ingresa tus datos para registrarte en nuestro sitio web.
             </p>
 
             <form action="index.html">
@@ -21,7 +21,7 @@ use core\Utils;
                 <input
                   type="text"
                   class="form-control form-control-xl"
-                  placeholder="Email"
+                  placeholder="Correo electrónico"
                 />
                 <div class="form-control-icon">
                   <i class="bi bi-envelope"></i>
@@ -31,7 +31,7 @@ use core\Utils;
                 <input
                   type="text"
                   class="form-control form-control-xl"
-                  placeholder="Username"
+                  placeholder="Nombre de usuario"
                 />
                 <div class="form-control-icon">
                   <i class="bi bi-person"></i>
@@ -41,7 +41,7 @@ use core\Utils;
                 <input
                   type="password"
                   class="form-control form-control-xl"
-                  placeholder="Password"
+                  placeholder="Contraseña"
                 />
                 <div class="form-control-icon">
                   <i class="bi bi-shield-lock"></i>
@@ -51,20 +51,20 @@ use core\Utils;
                 <input
                   type="password"
                   class="form-control form-control-xl"
-                  placeholder="Confirm Password"
+                  placeholder="Confirmar contraseña"
                 />
                 <div class="form-control-icon">
                   <i class="bi bi-shield-lock"></i>
                 </div>
               </div>
               <button class="btn btn-primary btn-block btn-lg shadow-lg mt-5">
-                Sign Up
+                Registrarse
               </button>
             </form>
             <div class="text-center mt-5 text-lg fs-4">
               <p class="text-gray-600">
-                Already have an account?
-                <a href="auth-login.html" class="font-bold">Log in</a>.
+                ¿Ya tienes una cuenta?
+                <a href="auth-login.html" class="font-bold">Inicia sesión</a>.
               </p>
             </div>
           </div>
