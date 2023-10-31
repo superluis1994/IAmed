@@ -1,0 +1,257 @@
+<?php 
+namespace app\repository;
+use app\repository\Orm;
+use app\setting\Conexion;
+
+class Model extends Conexion implements Orm
+{
+ protected $Tabla;
+
+ private $Value;
+
+ private array $ValuesWhereOr = [];
+ 
+ protected $alias; /// alias de la tabla
+
+ /// primary key pk del modelo
+
+ protected $primaryKey;
+/*==================================
+   Método all (muestra todo registro)
+  
+ ====================================*/
+
+  public function Query()
+  {
+   $Tabla = $this->Tabla." $this->alias";  /// cuando es consulta le aplicamos alias al modelo
+   self::$Query = "SELECT * FROM $Tabla";
+   return $this;
+  }
+
+ public static function all()
+ {
+   try {
+    self::$Pps = self::getConexion_()->prepare(self::$Query);
+    self::$Pps->execute();
+    return self::$Pps->fetchAll(\PDO::FETCH_OBJ);
+   } catch (\Throwable $th) {
+     echo $th->getMessage();
+   }
+ }
+
+ /*==================================
+   Método Where
+ ====================================*/
+ public function Where(string $atributo,$operador,$valor)
+ {
+    self::$Query.=" WHERE $atributo $operador ?";
+
+    $this->Value = $valor;
+
+    return $this;
+ }
+
+ /*==================================
+   Método First
+ ====================================*/
+
+ public function first()
+ {
+    try {
+        self::$Pps = self::getConexion_()->prepare(self::$Query);
+        self::$Pps->bindParam(1,$this->Value);
+        self::$Pps->execute();
+        
+        if(self::$Pps->rowCount() > 0)
+        {
+         return self::$Pps->fetchAll(\PDO::FETCH_OBJ)[0];
+        }
+        return [];
+       } catch (\Throwable $th) {
+         echo $th->getMessage();
+       }finally{self::closeConexionBD();}
+ }
+
+ public function get()
+ {
+    
+    try {
+        self::$Pps = self::getConexion_()->prepare(self::$Query);
+
+        if(!empty($this->Value))
+        {
+            self::$Pps->bindParam(1,$this->Value);
+        }
+
+        if(count($this->ValuesWhereOr) > 0)
+        {
+            for ($i=0; $i <count($this->ValuesWhereOr) ; $i++) { 
+                self::$Pps->bindParam(($i+2),$this->ValuesWhereOr[$i]);
+            }
+        }
+        self::$Pps->execute();
+        return self::$Pps->fetchAll(\PDO::FETCH_OBJ);
+       } catch (\Throwable $th) {
+         echo $th->getMessage();
+       }finally{self::closeConexionBD();}
+ }
+
+ public function Join(string $TablaFk,string $Fk,string $operador,string $PK)
+ {
+    self::$Query.= " INNER JOIN $TablaFk ON $Fk $operador $PK";
+    return $this;
+ }
+
+ public function select()
+ {
+    $columnas = func_get_args();/// select("dni","nombres","apellidos") =>["dni","nombres","apellidos"]
+
+    $columnas = implode(",",$columnas);/// "dni","nombres","apellidos"
+
+    self::$Query = str_replace("*",$columnas,self::$Query);
+
+    return $this;
+ }
+
+ public function WhereOr(string $atrubuto,$operador, $valor)
+ {
+    self::$Query.= " OR $atrubuto $operador ?";
+
+    $this->ValuesWhereOr[] = $valor;
+
+    return $this;
+ }
+
+
+ public function OrderBy(string $atributo,$secuencia)
+ {
+    self::$Query.=" ORDER BY $atributo $secuencia";
+
+    return $this;
+ }
+
+ //// INSERT INTO TABLA(atributo1,atributo2) VALUES(:atributo1,:atributo2)
+ /// bindParam | bindValue
+
+ public function Insert(array $datos)  
+ {
+    $this->Tabla = str_replace($this->alias,"",$this->Tabla);
+
+    self::$Query = "INSERT INTO $this->Tabla(";
+
+    foreach ($datos as $key => $value) {
+      self::$Query.=$key.",";
+    }
+
+    /// eliminamos la ultima coma
+
+    self::$Query = rtrim(self::$Query,",").") VALUES(";
+
+    foreach ($datos as $key => $value) {
+        self::$Query.=":$key".",";
+    }
+
+    /// eliminamos la ultima coma
+
+    self::$Query = rtrim(self::$Query,",").")";
+
+    try {
+       self::$Pps = self::getConexion_()->prepare(self::$Query); 
+
+       foreach ($datos as $key => $value) {
+        self::$Pps->bindValue(":$key",$value);
+       }
+       
+       return self::$Pps->execute(); /// 0 | 1
+    } catch (\Throwable $th) {
+       return "error";
+    }finally{self::closeConexionBD();}
+ }
+
+ /// Método Update => UPDATE estudiante set nombres=:nombres,apellidos=:apellidos where id_estudiante=:id_estudiante
+
+ public function Update(array $datos)
+ {
+   self::$Query = "UPDATE $this->Tabla SET ";
+
+   /// le especificamos que atributos vamos a modificar
+
+   foreach($datos as $atributo=>$value)
+   {
+      self::$Query.="$atributo=:$atributo,";
+   }
+   /// eliminamos la ultima coma
+
+   self::$Query = rtrim(self::$Query,",")." WHERE ".array_key_first($datos)."=:".array_key_first($datos);
+
+   /// el proceso de pdo para ejecutar dicha query
+
+   try {
+      self::$Pps = self::getConexion_()->prepare(self::$Query); 
+
+      foreach ($datos as $key => $value) {
+       self::$Pps->bindValue(":$key",$value);
+      }
+      
+      return self::$Pps->execute(); /// 0 | 1
+
+   } catch (\Throwable $th) {
+      echo $th->getMessage();
+   }finally{self::closeConexionBD();}
+ }
+
+ /// Método delete => DELETE FROM TABLA WHERE id
+
+ public function delete($id)
+ {
+   
+   self::$Query = "DELETE FROM $this->Tabla WHERE $this->primaryKey=:$this->primaryKey";
+
+    /// el proceso de pdo para ejecutar dicha query
+    
+    try {
+      self::$Pps = self::getConexion_()->prepare(self::$Query); 
+
+      self::$Pps->bindParam(":$this->primaryKey",$id);
+       
+      return self::$Pps->execute(); /// 0 | 1
+
+   } catch (\Throwable $th) {
+      echo $th->getMessage();
+   }finally{self::closeConexionBD();}
+ }
+
+
+ /// procedimiento almacenado para realizar [CRUD COMPLETO]
+ public function procedure(string $NameProcedure,$evento,array $datos=[])
+ {
+   self::$Query = "CALL $NameProcedure(";
+
+   foreach($datos as $value)
+   {
+      self::$Query.="?,";
+   }
+
+   self::$Query = rtrim(self::$Query,",").")";
+
+   try {
+      self::$Pps = self::getConexion_()->prepare(self::$Query);
+
+      for ($i=0; $i <count($datos) ; $i++) { 
+         
+         self::$Pps->bindValue(($i+1),$datos[$i]);
+      }
+      if(strtoupper($evento) ==='C')
+      {
+         self::$Pps->execute();
+ 
+         return self::$Pps->fetchAll(\PDO::FETCH_OBJ);
+      }
+
+      return self::$Pps->execute();
+
+   } catch (\Throwable $th) {
+      //throw $th;
+   }
+ }
+}

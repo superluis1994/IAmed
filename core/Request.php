@@ -4,6 +4,7 @@ namespace core;
 use core\Utils;
 use app\Controller\MainController;
 use app\Controller\DashboardControllers;
+use app\Controller\SortoContollers;
 
 class Request{
        private static $php_self="";
