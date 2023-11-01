@@ -25,6 +25,7 @@ class Conexion
         
         
         self::$Conector->exec("set names utf8");
+        self::$Conector->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
        } catch (\Throwable $th) {
         echo $th->getMessage();

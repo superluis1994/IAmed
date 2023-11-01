@@ -54,6 +54,7 @@ class Request{
                             foreach($matches as $key => $value){
                                    $params[$key] = $value;
                             }
+                          
                             unset($params[0]);
                             if(is_string($route['class'])){
                                    // echo "vas a trabajar con un controlador";

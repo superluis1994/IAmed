@@ -35,7 +35,7 @@ class LoginControllers{
          echo "Los campos usuario y contraseña son obligatorios.";
          exit();
       }
-      
+    
       // Eliminar los caracteres especiales
       $user = rtrim(preg_replace("/[^a-zA-Z0-9@#_-]/", "", trim($_POST["user"])));
       $password = rtrim(preg_replace("/[^a-zA-Z0-9@#_-]/", "", trim($_POST["password"])));
@@ -52,21 +52,33 @@ class LoginControllers{
           "operador"=>""
           ]
        ])->first();
-   
-         echo "<pre>";
-         echo var_dump($Data);
-         echo "</pre>";
 
-      // conectarme a una base de datos y validar los datos
-      // $now = strtotime("now");
-      // $key = $_ENV['JWT_SECRET_KEY'];
-      // $payload = [
-      //    'exp' => $now,
-      //    'data' => '1'
-      // ];
-      // $jwt = JWT::encode($payload, $key, 'HS256');
-      // return print_r($jwt);
-    
+
+         // echo "<pre>";
+         // echo var_dump($Data[0]);
+         // echo "</pre>";
+         if(count($Data)>0){
+            
+             // conectarme a una base de datos y validar los datos
+             $now = strtotime("now");
+             $key = $_ENV['JWT_SECRET_KEY'];
+             $payload = [
+                'exp' => $now,
+                'data' => '1'
+             ];
+             $jwt = JWT::encode($payload, $key, 'HS256');
+
+             $_SESSION['datosUser'];
+             $datos[]=$Data[0]['username'];
+             $datos[]=$Data[0]['status'];
+             $_SESSION['datosUser']=$datos;
+            //  echo $jwt;
+            //  return print_r($jwt);
+         }else{
+            echo "Datos incorrectos";
+         }
+
+    echo var_dump($_SESSION['datosUser']);
       // echo $id;
       // return $id;
    }
