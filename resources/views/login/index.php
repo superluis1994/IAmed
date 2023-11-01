@@ -36,7 +36,7 @@
         <div class="text-center mt-5 text-lg fs-4">
           <p class="text-gray-600">
             ¿No tienes una cuenta?
-            <a href="auth-register.html" class="font-bold">Registrarse</a>.
+            <a href="<?=$utils->url('/registrar')?>" class="font-bold">Registrarse</a>.
           </p>
           <p>
             <a class="font-bold" href="auth-forgot-password.html">¿Has olvidado tu contraseña?</a>.
