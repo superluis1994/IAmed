@@ -7,7 +7,7 @@ class Model extends Conexion implements Orm
 {
  protected $Tabla;
 
- private $Value;
+ private array $Value;
 
  private array $ValuesWhereOr = [];
  
@@ -42,14 +42,28 @@ class Model extends Conexion implements Orm
  /*==================================
    Método Where
  ====================================*/
- public function Where(string $atributo,$operador,$valor)
+ public function Mult_Where(array $datos)
  {
-    self::$Query.=" WHERE $atributo $operador ?";
-
-    $this->Value = $valor;
-
+    self::$Query.=" WHERE ";
+    foreach ($datos as $atributo=>$value){
+      self::$Query.=$value['atributo']." ".$value['condicion']." :".$value['atributo']." ".$value['operador']." ";
+      $this->Value[] = [
+        "campo"=>$value['atributo'],
+         "value"=>$value['value']
+      ];
+    }
+   //  echo var_dump($this->Value);
+   // echo $this->Value[0];
     return $this;
  }
+//  public function Where(string $atributo,$operador,$valor)
+//  {
+//     self::$Query.=" WHERE $atributo $operador ?";
+
+//     $this->Value = $valor;
+
+//     return $this;
+//  }
 
  /*==================================
    Método First
@@ -59,18 +73,36 @@ class Model extends Conexion implements Orm
  {
     try {
         self::$Pps = self::getConexion_()->prepare(self::$Query);
-        self::$Pps->bindParam(1,$this->Value);
+        foreach ($this->Value as $key => $value) {
+         self::$Pps->bindParam(":".$value['campo'],$value['value']);
+        }
         self::$Pps->execute();
         
         if(self::$Pps->rowCount() > 0)
         {
-         return self::$Pps->fetchAll(\PDO::FETCH_OBJ)[0];
+         return self::$Pps->fetchAll(\PDO::FETCH_OBJ);
         }
         return [];
        } catch (\Throwable $th) {
          echo $th->getMessage();
        }finally{self::closeConexionBD();}
  }
+//  public function first()
+//  {
+//     try {
+//         self::$Pps = self::getConexion_()->prepare(self::$Query);
+//         self::$Pps->bindParam(1,$this->Value);
+//         self::$Pps->execute();
+        
+//         if(self::$Pps->rowCount() > 0)
+//         {
+//          return self::$Pps->fetchAll(\PDO::FETCH_OBJ)[0];
+//         }
+//         return [];
+//        } catch (\Throwable $th) {
+//          echo $th->getMessage();
+//        }finally{self::closeConexionBD();}
+//  }
 
  public function get()
  {

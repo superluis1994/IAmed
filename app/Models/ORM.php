@@ -1,6 +1,6 @@
 <?php
 namespace app\Model;
-
+/**elimminar por que no se usa*/
 use app\setting\Conexion;
 class ORM extends Conexion {
     /**METODO PARA CREAR UN INSER A CUALQUIER TABLA  */

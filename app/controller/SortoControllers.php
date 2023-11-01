@@ -5,13 +5,11 @@ use app\repository\Model;
 
 class SortoControllers
 {
-  private Model $ModelCategoria;
+  private Model $ModelUser;
   /// inicializar el contructor
  public function __construct()
   {
-  
-
-    $this->ModelCategoria = new SortoModel;
+    $this->ModelUser = new SortoModel;
   }
 
   /// método para mostrar las categorias
@@ -21,7 +19,7 @@ class SortoControllers
  
    
         /// traer desde la base d edatos las categorias existentes
-        $Categorias = $this->ModelCategoria->Query()->all();
+        $Categorias = $this->ModelUser->Query();
 
         echo json_encode([
             "response"=>$Categorias,

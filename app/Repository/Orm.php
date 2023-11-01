@@ -25,7 +25,12 @@ interface Orm
   /*==================================
    Método Where
  ====================================*/
- public function Where(string $atrubuto,$operador,$valor);
+ public function Where(string $atributo,$operador,$valor);
+ /*==================================
+  Método Where con multiples condiciones
+====================================*/
+ public function Mult_Where(array $datos);
+ 
 
 /*==================================
    Método First
