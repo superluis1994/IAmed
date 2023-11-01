@@ -11,7 +11,7 @@ Route::group('/login',function(){
     Route::get('/entrar', "LoginControllers@authenticate");
     Route::get('', "LoginControllers@index");
     Route::get('/', "LoginControllers@index");
-    Route::get('/registrar', "LoginControllers@registrar");
+    Route::get('/resetpassword', "LoginControllers@registrar");
     // Route::get('/registrar/', "LoginControllers@registrar");
 });
 Route::group('/registrar',function(){

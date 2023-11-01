@@ -4,6 +4,7 @@ namespace core;
 use core\Utils;
 use app\Controller\MainController;
 use app\Controller\DashboardControllers;
+use app\Controller\SortoContollers;
 
 class Request{
        private static $php_self="";
@@ -53,6 +54,7 @@ class Request{
                             foreach($matches as $key => $value){
                                    $params[$key] = $value;
                             }
+                          
                             unset($params[0]);
                             if(is_string($route['class'])){
                                    // echo "vas a trabajar con un controlador";

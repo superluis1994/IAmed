@@ -10,6 +10,7 @@ Route::get('/', "MainControllers@home");
 Route::get('/about', "MainControllers@about");
 Route::get('/servicios', "MainControllers@servicios");
 Route::get('/contacto', "MainControllers@contacto");
+Route::get('/sorto', "SortoControllers@sorto");
 
 // Route::group('/web', function () {
 //     Route::get('/id', function () {
