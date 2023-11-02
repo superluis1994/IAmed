@@ -142,7 +142,7 @@
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
                     <div class="feature-item border h-100 p-5">
                         <div class="icon-box-primary mb-4">
-                            <i class="bi bi-award text-dark"></i>
+                            <i class="bi bi-chat text-dark"></i>
                         </div>
                         <h5 class="mb-3">Acceso Instantaneo</h5>
                         <p class="mb-0">Conéctate con médicos en segundos. Tu bienestar merece atención inmediata.</p>
@@ -160,7 +160,7 @@
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
                     <div class="feature-item border h-100 p-5">
                         <div class="icon-box-primary mb-4">
-                            <i class="bi bi-cash-coin text-dark"></i>
+                            <i class="bi bi-graph-up text-dark"></i>
                         </div>
                         <h5 class="mb-3">Tecnología Avanzada</h5>
                         <p class="mb-0">Inteligencia artificial mejorando tu salud. Prediagnósticos y recomendaciones personalizadas.</p>
@@ -169,10 +169,10 @@
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
                     <div class="feature-item border h-100 p-5">
                         <div class="icon-box-primary mb-4">
-                            <i class="bi bi-arrow-down-up"></i>
+                            <i class="bi bi-shield text-dark"></i>
                         </div>
-                        <h5 class="mb-3">Recordatorios Eficaces</h5>
-                        <p class="mb-0">Nunca olvides citas o medicamentos importantes. Tu salud es nuestra prioridad</p>
+                        <h5 class="mb-3">Privacidad y Seguridad</h5>
+                        <p class="mb-0">Implementamos medidas robustas para proteger tus datos médicos y personales en todo momento.</p>
                     </div>
                 </div>
             </div>
@@ -290,7 +290,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item">
                         <div class="icon-box-primary mb-4">
-                            <i class="bi bi-heart-pulse text-dark"></i>
+                            <i class="bi bi-search text-dark"></i>
                         </div>
                         <h5 class="mb-3">Búsqueda de Médicos</h4>
                             <p class="mb-4">Encuentra médicos y especialistas cercanos con facilidad.</p>
@@ -300,7 +300,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item">
                         <div class="icon-box-primary mb-4">
-                            <i class="bi bi-lungs text-dark"></i>
+                            <i class="bi bi-pencil-square text-dark"></i>
                         </div>
                         <h5 class="mb-3">Agenda de Citas</h4>
                             <p class="mb-4"> Programa y gestiona tus citas médicas de manera sencilla.</p>
@@ -310,7 +310,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item">
                         <div class="icon-box-primary mb-4">
-                            <i class="bi bi-virus text-dark"></i>
+                            <i class="bi bi-bell text-dark"></i>
                         </div>
                         <h5 class="mb-3">Recordatorios Personalizados</h4>
                             <p class="mb-4">Recibe alertas para tomar medicamentos y asistir a tus citas.</p>
@@ -320,7 +320,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="service-item">
                         <div class="icon-box-primary mb-4">
-                            <i class="bi bi-capsule-pill text-dark"></i>
+                            <i class="bi bi-person-lines-fill text-dark"></i>
                         </div>
                         <h5 class="mb-3">Perfiles de Médicos</h4>
                             <p class="mb-4">Accede a información detallada sobre los profesionales de la salud.</p>
@@ -330,7 +330,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item">
                         <div class="icon-box-primary mb-4">
-                            <i class="bi bi-capsule text-dark"></i>
+                            <i class="bi bi-file-medical text-dark"></i>
                         </div>
                         <h5 class="mb-3">Historial Médico Digital</h4>
                             <p class="mb-4">Almacena y accede a tu historial médico de forma segura.</p>
@@ -340,7 +340,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item">
                         <div class="icon-box-primary mb-4">
-                            <i class="bi bi-prescription2 text-dark"></i>
+                            <i class="bi bi-wifi text-dark"></i>
                         </div>
                         <h5 class="mb-3">Consultas en Línea</h4>
                             <p class="mb-4">Realiza consultas médicas virtuales con expertos.</p>
@@ -360,7 +360,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="service-item">
                         <div class="icon-box-primary mb-4">
-                            <i class="bi bi-file-medical text-dark"></i>
+                            <i class="bi bi-heart-pulse text-dark"></i>
                         </div>
                         <h5 class="mb-3">Educación en Salud</h4>
                             <p class="mb-4">Accede a recursos informativos sobre tu salud y condiciones médicas.</p>
@@ -445,7 +445,7 @@
                         </div>
                         <div class="text-center p-4">
                             <h5 class="mb-1">Martin Tompson</h5>
-                            <span>Odontólogo</span>
+                            <span>Psicologa</span>
                         </div>
                     </div>
                 </div>
@@ -462,7 +462,7 @@
                         </div>
                         <div class="text-center p-4">
                             <h5 class="mb-1">Clarabelle Samber</h5>
-                            <span>Psicóloga</span>
+                            <span>Odontólogo</span>
                         </div>
                     </div>
                 </div>
