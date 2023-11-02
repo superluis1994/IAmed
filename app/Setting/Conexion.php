@@ -10,9 +10,8 @@ class Conexion
     private static $Conector = null;
 
     public static $Pps = null;
-
+//prueba de pull requests
     // realiza la conexión a la base de datos
-
     public static function getConexion_()
     {
        try {
