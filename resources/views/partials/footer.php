@@ -10,5 +10,8 @@ use core\Utils;
     <!-- Need: Apexcharts -->
     <script src="<?=$utils->assets('assets/extensions/apexcharts/apexcharts.min.js')?>"></script>
     <script src="<?=$utils->assets('assets/static/js/pages/dashboard.js')?>"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.all.min.js"></script>
+   
+
   </body>
 </html>
