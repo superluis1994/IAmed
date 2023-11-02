@@ -71,7 +71,7 @@ class Utils
         $content .= require_once  $url . "" . $path[0] . "/" . $path[1] . ".php";
         $content .= require_once  $url . "" . $path[0] . "/partes/menuF.php";
         $content .= require_once  $url . "partials/footer.php";
-
+        
         return $content;
     }
 }
