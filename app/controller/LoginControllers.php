@@ -15,9 +15,11 @@ class LoginControllers
    public function __construct()
    {
       $this->AuthModel = new AuthModel;
+      
    }
    public function index()
    {
+      
       // session_destroy();
       if(isset($_SESSION['datosUser']['token'])){
          $JWTT= new Token();
@@ -94,5 +96,11 @@ class LoginControllers
          echo "Datos incorrectos";
       }
 
+   }
+   public function CerrarSession(){
+      
+      session_destroy();
+      header("Location:".Utils::url('/login'));
+      
    }
 }

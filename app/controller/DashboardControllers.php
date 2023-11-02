@@ -10,19 +10,23 @@ class DashboardControllers extends Token{
    public function __construct()
    {
       /**VALIDO QUE EL TOKEN NO EXISTA Y NO ESTE EXPIRADO */
-      if(isset($_SESSION['datosUser']['token'])){
+      if(isset($_SESSION['datosUser']['token']) ){
        self::validarToken($_SESSION['datosUser']['token']);
       } 
+      else{
+         return  header("Location:".Utils::url('/login'));
+      }
+      
       
    }
    public function index(){
       
-     
-      return Utils::viewDasboard('dashboard.home');
-      // return Utils::viewDasboard('productos.index');
+      // $alerta="<script> Swal.fire('SweetAlert2 is working!')</script>";
+      $alerta="";
+      return Utils::viewDasboard('dashboard.home',$data=[],$alerta);
    }
    public function chatbot(){
-      return Utils::viewDasboard('dashboard.chatbot');
+      return Utils::viewDasboard('dashboard.chatbot',$data=[],"");
       // return Utils::viewDasboard('productos.index');
    }
 

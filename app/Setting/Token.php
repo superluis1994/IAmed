@@ -28,14 +28,14 @@ class Token
            
            if(!isset($TokenRespon->exp)){
              /** RETORNO LA VISTA SI EL TOKEN ES INVALIDO */
-             return  header("Location:".Utils::url('/login'));;
+             return  header("Location:".Utils::url('/login'));
             }
           }catch(\Throwable $th){
             /** RETORNO LA VISTA SI HUBO ALGUN ERROR */
             return header("Location:".Utils::url('/login'));
           }
         
-        return true;
+        // return true;
         
       }
 }

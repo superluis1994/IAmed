@@ -18,7 +18,7 @@ use core\Utils;
   <link rel="stylesheet" href="<?=$utils->assets('assets/compiled/css/iconly.css') ?>" />
   <link rel="stylesheet" href="<?=$utils->assets('assets/compiled/css/app.css') ?>" />
   <link rel="stylesheet" href="<?=$utils->assets('assets/compiled/css/auth.css') ?>" />
-  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="<?=$utils->assets('assets/extensions/sweetalert2/sweetalert2V.min.css') ?>" />
 </head>
 
 <body>
