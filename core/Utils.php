@@ -55,12 +55,13 @@ class Utils
 
     
     // Este cargar la views que tiene vistas internas
-    static function viewDasboard($path = "", $data = [])
+    static function viewDasboard($path = "", $data = [],$alerta)
     {
        // instancie la clase aqui para tener acceso a sus clases assets
         $utils = new Utils();
         $url = "./resources/views/";
         $path = explode('.', $path);
+        $msg=$alerta;
         // $path = str_replace(".","/",$path);
         foreach ($data as $key => $value) {
             $$key = $value;
