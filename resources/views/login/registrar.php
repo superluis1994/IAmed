@@ -61,7 +61,7 @@
             <div class="text-center mt-5 text-lg fs-4">
               <p class="text-gray-600">
                 ¿Ya tienes una cuenta?
-                <a href="auth-login.html" class="font-bold">Inicia sesión</a>.
+                <a href="<?=$utils->url('/login')?>" class="font-bold">Inicia sesión</a>.
               </p>
             </div>
           </div>
@@ -71,3 +71,5 @@
         </div>
       </div>
     </div>
+
+
