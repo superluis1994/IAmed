@@ -2,9 +2,10 @@
 namespace core;
 // use app\Controller\MainController;
 use core\Utils;
-use app\Controller\MainController;
-use app\Controller\DashboardControllers;
-use app\Controller\SortoContollers;
+// use app\Controller\MainController;
+// use app\Controller\DashboardControllers;
+// // use app\Controller\RegistrarControllers;
+// use app\Controller\SortoContollers;
 
 class Request{
        private static $php_self="";
