@@ -11,11 +11,13 @@ namespace app\Repository;
 
 interface Orm 
 {
+
  /*==================================
    Método para insertar datos en las tablas["clave"=>valor]
  ====================================*/
  public function Insert(array $datos); /// ["name"=>"name usuario","email"=>""]
 
+ 
  /*==================================
    Método all (muestra todo registro)
  ====================================*/

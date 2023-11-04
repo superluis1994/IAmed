@@ -6,15 +6,18 @@ use core\Utils;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 use app\Models\AuthModel;
+use app\Models\RolesModel;
 use app\repository\Model;
 use app\Setting\Token;
 
 class LoginControllers
 {
    private Model $AuthModel;
+   private Model $RolesModel;
    public function __construct()
    {
       $this->AuthModel = new AuthModel;
+      $this->RolesModel = new RolesModel;
       
    }
    public function index()
@@ -42,15 +45,9 @@ class LoginControllers
    public function registrar()
    {
       
-      return Utils::view('login.registrar');
+      @$Data = $this->RolesModel->QueryEspefico(["campo1"=>"id_rol","campo2"=>"rol"])->all();
+      return Utils::view('login.registrar',$Data);
    }
-
-   public function show($id)
-   {
-      echo $id;
-      return $id;
-   }
-   
    
    public function authenticate()
    {
@@ -61,10 +58,11 @@ class LoginControllers
          echo "Los campos usuario y contraseña son obligatorios.";
          exit();
       }
-
+         $usuario=trim($_POST["user"]);
+         $passw=trim($_POST["password"]);
       // Eliminar los caracteres especiales
-      $user = rtrim(preg_replace("/[^a-zA-Z0-9@#_-]/", "", trim($_POST["user"])));
-      $password = rtrim(preg_replace("/[^a-zA-Z0-9@#_-]/", "", trim($_POST["password"])));
+      $user = rtrim(preg_replace("/[^a-zA-Z0-9@#_-]/", "", $usuario));
+      $password = rtrim(preg_replace("/[^a-zA-Z0-9@#_-]/", "",$passw ));
 
       @$Data = $this->AuthModel->Query()->Mult_Where([
          ["atributo" => "username", "condicion" => "=", "value" => $user, "operador" => "AND"],
@@ -82,13 +80,23 @@ class LoginControllers
          ];
          $jwt = JWT::encode($payload, $key, 'HS256');
 
-         $_SESSION['datosUser'];
+         @$_SESSION['datosUser'];
          $datos['user'] = $Data[0]['username'];
          $datos['status'] = $Data[0]['status'];
          $datos['token'] = $jwt;
          $_SESSION['datosUser'] = $datos;
 
-         header("Location:".Utils::url('/dashboard'));
+         // header('Content-Type: application/json');
+         // header("Location:".Utils::url('/dashboard'));
+
+         $response = [
+            'status' => 'success',
+            'data' => [
+                     'retornar'=>Utils::url('/dashboard')
+            ],
+         ];
+         // Codificamos la respuesta en JSON
+        echo json_encode($response);
          return false;
          //  echo $jwt;
          //  return print_r($jwt);
@@ -101,6 +109,23 @@ class LoginControllers
       
       session_destroy();
       header("Location:".Utils::url('/login'));
+      
+   }
+   public function prueba(){
+      
+      // header('Content-Type: application/json');
+     // Generamos la respuesta
+     $user=$_POST["user"];
+      $response = [
+         'status' => 'success',
+         'titulo' => 'Datos Correctos',
+         'msg' => 'success',
+         'data' => [
+                  'sorto'=>$user
+         ],
+      ];
+      // Codificamos la respuesta en JSON
+     echo json_encode($response);
       
    }
 }
