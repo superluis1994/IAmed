@@ -9,6 +9,7 @@ use core\Utils;
 // Route::get('/', "MainControllers@index");
 Route::group('/login',function(){
     Route::get('/entrar', "LoginControllers@authenticate");
+    // Route::get('/entrar', "LoginControllers@prueba");
     Route::get('', "LoginControllers@index");
     Route::get('/', "LoginControllers@index");
     Route::get('/resetpassword', "LoginControllers@registrar");
@@ -16,8 +17,8 @@ Route::group('/login',function(){
     // Route::get('/registrar/', "LoginControllers@registrar");
 });
 Route::group('/registrar',function(){
-    Route::get('', "LoginControllers@registrar");
-    Route::get('/', "LoginControllers@registrar");
+    Route::get('', "RegistrarControllers@index");
+    Route::get('/', "RegistrarControllers@index");
 });
 
 Route::group('/dashboard', function () {

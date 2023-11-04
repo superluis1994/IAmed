@@ -29,6 +29,16 @@ class Model extends Conexion implements Orm
       self::$Query = "SELECT * FROM $Tabla";
       return $this;
    }
+   public function QueryEspefico($campo=[])
+   {
+      self::$Query = "SELECT ";
+      foreach($campo as $key=>$value){
+       self::$Query .=$value.",";
+      }
+      self::$Query = rtrim(self::$Query, ",");
+      self::$Query.=" FROM ".$this->Tabla . " $this->alias";
+      return $this;
+   }
 
    public static function all()
    {

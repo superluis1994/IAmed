@@ -31,6 +31,7 @@ class Utils
         foreach ($data as $key => $value) {
             $$key = $value;
         }
+        
         $content = "";
         $content .= require_once  $url . "partials/header.php";
         $content .=  require_once $url . '' . $path . ".php";
