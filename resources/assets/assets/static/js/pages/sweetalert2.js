@@ -14,8 +14,8 @@ const Toast = Swal.mixin({
     toast.addEventListener('mouseenter', Swal.stopTimer)
     toast.addEventListener('mouseleave', Swal.resumeTimer)
   },
-  onClose: (toast) => {
-    window.location.href = redirectUrl
+  didClose: (toast) => {
+    window.location.href = redirectUrl;
   }
 })
 

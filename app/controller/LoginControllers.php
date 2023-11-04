@@ -91,18 +91,25 @@ class LoginControllers
 
          $response = [
             'status' => 'success',
+            'titulo' => 'Exitoso',
             'data' => [
-                     'retornar'=>Utils::url('/dashboard')
+                     'url'=>Utils::url('/dashboard')
             ],
          ];
          // Codificamos la respuesta en JSON
-        echo json_encode($response);
-         return false;
          //  echo $jwt;
          //  return print_r($jwt);
       } else {
-         echo "Datos incorrectos";
+         
+         $response = [
+            'status' => 'error',
+            'data' => [
+               'url'=>Utils::url('/login')
+            ],
+         ];
       }
+      echo json_encode($response);
+      return false;
 
    }
    public function CerrarSession(){
