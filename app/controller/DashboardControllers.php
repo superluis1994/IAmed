@@ -23,10 +23,10 @@ class DashboardControllers extends Token{
       
       // $alerta="<script> Swal.fire('SweetAlert2 is working!')</script>";
       $alerta="";
-      return Utils::viewDasboard('dashboard.home',$data=[],$alerta);
+      return Utils::viewDasboard("dashboard.".$_SESSION['datosUser']['rol'].".home",$data=[],$alerta);
    }
    public function chatbot(){
-      return Utils::viewDasboard('dashboard.chatbot',$data=[],"");
+      return Utils::view('dashboard.chatbot',$data=[],"");
       // return Utils::viewDasboard('productos.index');
    }
 

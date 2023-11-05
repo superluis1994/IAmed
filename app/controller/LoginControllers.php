@@ -63,12 +63,17 @@ class LoginControllers
       // Eliminar los caracteres especiales
       $user = rtrim(preg_replace("/[^a-zA-Z0-9@#_-]/", "", $usuario));
       $password = rtrim(preg_replace("/[^a-zA-Z0-9@#_-]/", "",$passw ));
+////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-      @$Data = $this->AuthModel->Query()->Mult_Where([
+      @$Data = $this->AuthModel->Query()->MultJoin([["pk"=>"rol","tabla"=>"roles","fk"=>"id_rol"]])->Mult_Where([
          ["atributo" => "username", "condicion" => "=", "value" => $user, "operador" => "AND"],
          ["atributo" => "password", "condicion" => "=", "value" => $password, "operador" => ""]
-      ])->first();
 
+      ])->first();
+      // echo "<pre>";
+      // echo var_dump($Data);
+      // echo "</pre>";
+////////////////////////////////////////////////////////////////////////////////////////////////////////
       if (count($Data) > 0) {
 
          // conectarme a una base de datos y validar los datos
@@ -83,6 +88,7 @@ class LoginControllers
          @$_SESSION['datosUser'];
          $datos['user'] = $Data[0]['username'];
          $datos['status'] = $Data[0]['status'];
+         $datos['rol'] = $Data[0]['nombreRol'];
          $datos['token'] = $jwt;
          $_SESSION['datosUser'] = $datos;
 
@@ -91,18 +97,26 @@ class LoginControllers
 
          $response = [
             'status' => 'success',
+            'titulo' => 'Exitoso',
+            'msg' => 'Datos Correctos',
             'data' => [
-                     'retornar'=>Utils::url('/dashboard')
+                     'url'=>Utils::url('/dashboard')
             ],
          ];
          // Codificamos la respuesta en JSON
-        echo json_encode($response);
-         return false;
          //  echo $jwt;
          //  return print_r($jwt);
       } else {
-         echo "Datos incorrectos";
+         
+         $response = [
+            'status' => 'error',
+            'data' => [
+               'url'=>Utils::url('/login')
+            ],
+         ];
       }
+      echo json_encode($response);
+      return false;
 
    }
    public function CerrarSession(){
@@ -118,8 +132,8 @@ class LoginControllers
      $user=$_POST["user"];
       $response = [
          'status' => 'success',
-         'titulo' => 'Datos Correctos',
-         'msg' => 'success',
+         'titulo' => 'Exitosa',
+         'msg' => 'Datos Correctos',
          'data' => [
                   'sorto'=>$user
          ],

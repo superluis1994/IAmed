@@ -19,6 +19,7 @@ use core\Utils;
   <link rel="stylesheet" href="<?=$utils->assets('assets/compiled/css/app.css') ?>" />
   <link rel="stylesheet" href="<?=$utils->assets('assets/compiled/css/auth.css') ?>" />
   <link rel="stylesheet" href="<?=$utils->assets('assets/extensions/sweetalert2/sweetalert2V.min.css') ?>" />
+  <link rel="stylesheet" href="<?=$utils->assets('assets/compiled/css/application-email.css') ?>" />
 </head>
 
 <body>

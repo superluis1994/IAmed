@@ -21,6 +21,7 @@
 // }
 // // formularioEnvio();
 
+const redirectUrl="";
 
 async function formularioEnvio(link,formulario) {
     
@@ -33,9 +34,6 @@ async function formularioEnvio(link,formulario) {
         const url = link;
         const method = "POST";
         const formData = new FormData(button);
-            //   formData.append("user","sorto")
-        // console.log(button)
-    
         const fetchOptions = {
             method:"POST",
             body: formData,
@@ -47,13 +45,14 @@ async function formularioEnvio(link,formulario) {
         const response = await fetch(url, fetchOptions);
         
         const Data = await response.json();
+        // console.log(Data)
         Toast.fire({
-            icon: 'error',
-            title: 'Error',
-            text: 'Usuario o contraseña incorrectos',
-            // Almacena la URL de destino en una variable
-            redirectUrl: 'wwww.youtube.com',
-          })
+            icon: await Data.status,
+            title: await Data.titulo,
+            text: Data.msg,
+            
+        })
+        redirectUrl= await Data.data.url
         // window.location.href = Data.data.retornar; 
 
     });

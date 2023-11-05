@@ -41,6 +41,8 @@ interface Orm
  public function first();
 
  public function get();
+ 
+ public function MultJoin(array $datos);
 
  public function Join(string $TablaFk,string $Fk,string $operador,string $PK);
 
