@@ -25,7 +25,7 @@ class Model extends Conexion implements Orm
 
    public function Query()
    {
-      $Tabla = $this->Tabla . " $this->alias";  /// cuando es consulta le aplicamos alias al modelo
+      $Tabla = $this->Tabla . " $this->alias";   /// cuando es consulta le aplicamos alias al modelo
       self::$Query = "SELECT * FROM $Tabla";
       return $this;
    }
@@ -78,6 +78,7 @@ class Model extends Conexion implements Orm
             "value" => $value['value']
          ];
       }
+      // echo self::$Query;
       return $this;
    }
 
@@ -147,6 +148,16 @@ class Model extends Conexion implements Orm
       }
    }
 
+
+   public function MultJoin(array $datos)
+   {
+     
+      foreach ($datos as $key=>$value){
+
+      self::$Query .= " INNER JOIN ".$value["tabla"]." ON ".$this->Tabla.".".$value["pk"]." = ".$value["tabla"].".".$value["fk"];
+      }
+      return $this;
+   }
    public function Join(string $TablaFk, string $Fk, string $operador, string $PK)
    {
       self::$Query .= " INNER JOIN $TablaFk ON $Fk $operador $PK";
