@@ -6,9 +6,9 @@ use core\Route;
 use core\Utils;
 
 
-Route::get('/', "MainControllers@home");
-Route::get('/about', "MainControllers@about");
-Route::get('/servicios', "MainControllers@servicios");
+Route::get('/', "MainControllers@inicio");
+Route::get('/about', "MainControllers@informacion");
+Route::get('/servicios', "MainControllers@funciones");
 Route::get('/contacto', "MainControllers@contacto");
 Route::get('/sorto', "SortoControllers@sorto");
 
