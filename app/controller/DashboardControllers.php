@@ -25,10 +25,7 @@ class DashboardControllers extends Token{
       $alerta="";
       return Utils::viewDasboard("dashboard.".$_SESSION['datosUser']['rol'].".home",$data=[],$alerta);
    }
-   public function chatbot(){
-      return Utils::view('dashboard.chatbot',$data=[],"");
-      // return Utils::viewDasboard('productos.index');
-   }
+  
 
    public function show($id){
       echo $id;

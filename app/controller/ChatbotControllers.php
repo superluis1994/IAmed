@@ -13,6 +13,10 @@ class ChatbotControllers extends Token{
       
       
    }
+   public function chatbot(){
+    return Utils::view('dashboard.chatbot',$data=[],"");
+    // return Utils::viewDasboard('productos.index');
+ }
    /**SE ENCARGA DE CARGAR LOS MENSAJES */
     public function loadMsg()
     {
