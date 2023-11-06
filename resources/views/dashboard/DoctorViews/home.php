@@ -4,17 +4,15 @@
                   <div class="card">
                     <div class="card-body px-4 py-4-5">
                       <div class="row">
-                        <div
-                          class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start"
-                        >
+                        <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start">
                           <div class="stats-icon purple mb-2">
                             <i class="iconly-boldShow"></i>
                           </div>
                         </div>
                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
-                          <h6 class="text-muted font-semibold">
+                          <h7 class="text-muted font-semibold">
                             CHAT
-                          </h6>
+                          </h7>
                           <h6 class="font-extrabold mb-0">Con Paciente</h6>
                         </div>
                       </div>
@@ -25,14 +23,13 @@
                   <div class="card">
                     <div class="card-body px-4 py-4-5">
                       <div class="row">
-                        <div
-                          class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start"
-                        >
+                        <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start">
                           <div class="stats-icon blue mb-2">
                             <i class="iconly-boldProfile"></i>
                           </div>
                         </div>
                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+
                           <h6 class="text-muted font-semibold">CHAT</h6>
                           <h6 class="font-extrabold mb-0">Con IA</h6>
                         </div>
@@ -44,16 +41,17 @@
                   <div class="card">
                     <div class="card-body px-4 py-4-5">
                       <div class="row">
-                        <div
-                          class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start"
-                        >
+                        <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start">
                           <div class="stats-icon green mb-2">
                             <i class="iconly-boldAdd-User"></i>
                           </div>
                         </div>
                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+
                           <h6 class="text-muted font-semibold">AGENDA</h6>
                           <h6 class="font-extrabold mb-0">Medica</h6>
+
+
                         </div>
                       </div>
                     </div>
@@ -63,16 +61,17 @@
                   <div class="card">
                     <div class="card-body px-4 py-4-5">
                       <div class="row">
-                        <div
-                          class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start"
-                        >
+                        <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start">
                           <div class="stats-icon red mb-2">
                             <i class="iconly-boldBookmark"></i>
                           </div>
                         </div>
                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+
                           <h6 class="text-muted font-semibold">COMUNIDAD</h6>
                           <h6 class="font-extrabold mb-0">De Referidos</h6>
+
+
                         </div>
                       </div>
                     </div>
@@ -89,16 +88,8 @@
                       <div class="row">
                         <div class="col-7">
                           <div class="d-flex align-items-center">
-                            <svg
-                              class="bi text-primary"
-                              width="32"
-                              height="32"
-                              fill="blue"
-                              style="width: 10px"
-                            >
-                              <use
-                                xlink:href="assets/static/images/bootstrap-icons.svg#circle-fill"
-                              />
+                            <svg class="bi text-primary" width="32" height="32" fill="blue" style="width: 10px">
+                              <use xlink:href="assets/static/images/bootstrap-icons.svg#circle-fill" />
                             </svg>
                             <h5 class="mb-0 ms-3">Semana</h5>
                           </div>
@@ -113,16 +104,8 @@
                       <div class="row">
                         <div class="col-7">
                           <div class="d-flex align-items-center">
-                            <svg
-                              class="bi text-success"
-                              width="32"
-                              height="32"
-                              fill="blue"
-                              style="width: 10px"
-                            >
-                              <use
-                                xlink:href="assets/static/images/bootstrap-icons.svg#circle-fill"
-                              />
+                            <svg class="bi text-success" width="32" height="32" fill="blue" style="width: 10px">
+                              <use xlink:href="assets/static/images/bootstrap-icons.svg#circle-fill" />
                             </svg>
                             <h5 class="mb-0 ms-3">Mes</h5>
                           </div>
@@ -137,16 +120,8 @@
                       <div class="row">
                         <div class="col-7">
                           <div class="d-flex align-items-center">
-                            <svg
-                              class="bi text-danger"
-                              width="32"
-                              height="32"
-                              fill="blue"
-                              style="width: 10px"
-                            >
-                              <use
-                                xlink:href="assets/static/images/bootstrap-icons.svg#circle-fill"
-                              />
+                            <svg class="bi text-danger" width="32" height="32" fill="blue" style="width: 10px">
+                              <use xlink:href="assets/static/images/bootstrap-icons.svg#circle-fill" />
                             </svg>
                             <h5 class="mb-0 ms-3">Año</h5>
                           </div>
@@ -279,7 +254,7 @@
                 <div class="card-body py-4 px-4">
                   <div class="d-flex align-items-center">
                     <div class="avatar avatar-xl">
-                      <img src="<?=$utils->assets('assets/compiled/jpg/1.jpg')?>" alt="Face 1" />
+                      <img src="<?= $utils->assets('assets/compiled/jpg/1.jpg') ?>" alt="Face 1" />
                     </div>
                     <div class="ms-3 name">
                       <h5 class="font-bold">John Duck</h5>
@@ -295,7 +270,7 @@
                 <div class="card-content pb-4">
                   <div class="recent-message d-flex px-4 py-3">
                     <div class="avatar avatar-lg">
-                      <img src="<?=$utils->assets('assets/compiled/jpg/4.jpg')?>" />
+                      <img src="<?= $utils->assets('assets/compiled/jpg/4.jpg') ?>" />
                     </div>
                     <div class="name ms-4">
                       <h5 class="mb-1">Hank Schrader</h5>
@@ -304,7 +279,7 @@
                   </div>
                   <div class="recent-message d-flex px-4 py-3">
                     <div class="avatar avatar-lg">
-                      <img src="<?=$utils->assets('assets/compiled/jpg/5.jpg')?>" />
+                      <img src="<?= $utils->assets('assets/compiled/jpg/5.jpg') ?>" />
                     </div>
                     <div class="name ms-4">
                       <h5 class="mb-1">Dean Winchester</h5>
@@ -313,7 +288,7 @@
                   </div>
                   <div class="recent-message d-flex px-4 py-3">
                     <div class="avatar avatar-lg">
-                      <img src="<?=$utils->assets('assets/compiled/jpg/1.jpg')?>" />
+                      <img src="<?= $utils->assets('assets/compiled/jpg/1.jpg') ?>" />
                     </div>
                     <div class="name ms-4">
                       <h5 class="mb-1">John Dodol</h5>
@@ -321,9 +296,7 @@
                     </div>
                   </div>
                   <div class="px-4">
-                    <button
-                      class="btn btn-block btn-xl btn-outline-primary font-bold mt-3"
-                    >
+                    <button class="btn btn-block btn-xl btn-outline-primary font-bold mt-3">
                       Start Conversation
                     </button>
                   </div>
@@ -338,4 +311,3 @@
                 </div>
               </div>
             </div>
- 

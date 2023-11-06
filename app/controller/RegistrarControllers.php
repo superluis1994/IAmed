@@ -7,11 +7,10 @@ use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 use app\Models\RolesModel;
 use app\repository\Model;
-use app\Setting\Token;
 
 class RegistrarControllers
 {
-   private Model $AuthModel;
+
    private Model $RolesModel;
    public function __construct()
    {
@@ -23,7 +22,7 @@ class RegistrarControllers
    public function index()
    {
       
-      @$Data = $this->RolesModel->QueryEspefico(["campo1"=>"id_rol","campo2"=>"rol"])->all();
+      @$Data = $this->RolesModel->QueryEspefico(["campo1"=>"id_rol","campo2"=>"nombreRol"])->all();
       return Utils::view('login.registrar',$Data);
    }
    

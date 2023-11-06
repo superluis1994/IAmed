@@ -42,7 +42,7 @@
             <select class="form-select form-control form-control-xl" id="basicSelect">
               <option>Tipo de Usuario</option>
               <?php foreach($data as $key => $value){
-                echo " <option value'".$value['id_rol']."'>".$value['rol']."</option>";
+                echo " <option value'".$value['id_rol']."'>".$value['nombreRol']."</option>";
               };
               ?>
               <!-- <option>Paciente</option>

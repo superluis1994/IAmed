@@ -104,6 +104,11 @@
     background: var(--bs-light);
 }
 
+/*** Logos ***/
+img .logo {
+    width:300px;
+}
+
 
 /*** Navbar ***/
 .sticky-top {

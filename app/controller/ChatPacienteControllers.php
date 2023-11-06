@@ -5,7 +5,7 @@ use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 use app\Setting\Token;
 
-class ChatbotControllers extends Token{
+class ChatPacienteControllers extends Token{
    
    public function __construct()
    {
@@ -13,8 +13,8 @@ class ChatbotControllers extends Token{
       
       
    }
-   public function chatbot(){
-    return Utils::view('dashboard.chatbot',$data=[],"");
+   public function chatPaciente(){
+    return Utils::view('dashboard.chatPaciente',$data=[],"");
     // return Utils::viewDasboard('productos.index');
  }
    /**SE ENCARGA DE CARGAR LOS MENSAJES */

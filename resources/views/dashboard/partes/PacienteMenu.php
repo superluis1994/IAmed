@@ -44,7 +44,7 @@
                   </li>
 
                   <li class="submenu-item">
-                    <a href="extra-component-divider.html" class="submenu-link">Doctor</a>
+                    <a href="<?= $utils->url('/dashboard/chatMedico') ?>" class="submenu-link">Doctor</a>
                   </li>
 
                 </ul>

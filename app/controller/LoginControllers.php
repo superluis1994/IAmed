@@ -46,6 +46,7 @@ class LoginControllers
    {
       
       @$Data = $this->RolesModel->QueryEspefico(["campo1"=>"id_rol","campo2"=>"rol"])->all();
+      echo var_dump($Data);
       return Utils::view('login.registrar',$Data);
    }
    
@@ -110,6 +111,8 @@ class LoginControllers
          
          $response = [
             'status' => 'error',
+            'titulo' => 'Error',
+            'msg' => 'Datos Incorrectos',
             'data' => [
                'url'=>Utils::url('/login')
             ],
