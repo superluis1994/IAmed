@@ -199,7 +199,7 @@
                               </td>
                               <td class="col-auto">
                                 <p class="mb-0">
-                                  05 de noviembre de 2023
+                                  05-11-2023
                                 </p>
                               </td>
                             </tr>
@@ -223,7 +223,7 @@
                                 </p>
                                 <td class="col-auto">
                                   <p class="mb-0">
-                                    01 de noviembre de 2023
+                                    01-11-2023
                                   </p>
                                 </td>
                               </td>
@@ -248,7 +248,7 @@
                                 </p>
                                 <td class="col-auto">
                                   <p class="mb-0">
-                                    03 de noviembre de 2023
+                                    03-11-2023
                                   </p>
                                 </td>
                               </td>

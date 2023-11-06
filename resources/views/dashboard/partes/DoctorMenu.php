@@ -20,7 +20,7 @@
                   </li>
 
                   <li class="submenu-item">
-                    <a href="extra-component-divider.html" class="submenu-link">Pacientes</a>
+                    <a href="extra-component-divider.html" class="submenu-link">Paciente</a>
                   </li>
 
                 </ul>
