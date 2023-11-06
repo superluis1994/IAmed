@@ -8,30 +8,6 @@
                   <span>PANEL DOCTOR</span>
                 </a>
               </li>
-
-              <li class="sidebar-item has-sub">
-                <a href="#" class="sidebar-link">
-                  <i class="bi bi-stack"></i>
-                  <span>Comunidad Medica</span>
-                </a>
-
-                <ul class="submenu">
-                  <li class="submenu-item">
-                    <a href="component-accordion.html" class="submenu-link">Sector Privado</a>
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-alert.html" class="submenu-link">Sector Publico</a>
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-badge.html" class="submenu-link">Centro de Asistencia Medica</a>
-                  </li>
-
-
-                </ul>
-              </li>
-
               <li class="sidebar-item has-sub">
                 <a href="#" class="sidebar-link">
                   <i class="bi bi-collection-fill"></i>
@@ -44,7 +20,7 @@
                   </li>
 
                   <li class="submenu-item">
-                    <a href="extra-component-divider.html" class="submenu-link">Doctor</a>
+                    <a href="extra-component-divider.html" class="submenu-link">Pacientes</a>
                   </li>
 
                 </ul>
@@ -87,11 +63,11 @@
                   </li>
 
                   <li class="submenu-item">
-                    <a href="form-element-select.html" class="submenu-link">Select</a>
+                    <a href="form-element-select.html" class="submenu-link">Suscripcion</a>
                   </li>
 
                   <li class="submenu-item">
-                    <a href="form-element-radio.html" class="submenu-link">Radio</a>
+                    <a href="form-element-radio.html" class="submenu-link">Perfil Profesional</a>
                   </li>
 
                   <li class="submenu-item">
@@ -122,7 +98,7 @@
               <li class="sidebar-item has-sub">
                 <a href="#" class="sidebar-link">
                   <i class="bi bi-pen-fill"></i>
-                  <span>Form Editor</span>
+                  <span>Reportes</span>
                 </a>
 
                 <ul class="submenu">
@@ -359,27 +335,14 @@
                 </ul>
               </li>
 
-              <li class="sidebar-title">Raise Support</li>
+              <li class="sidebar-title">Soporte Tecnico</li>
 
               <li class="sidebar-item">
                 <a href="https://zuramai.github.io/mazer/docs" class="sidebar-link">
                   <i class="bi bi-life-preserver"></i>
-                  <span>Documentation</span>
+                  <span>Soporte</span>
                 </a>
               </li>
 
-              <li class="sidebar-item">
-                <a href="https://github.com/zuramai/mazer/blob/main/CONTRIBUTING.md" class="sidebar-link">
-                  <i class="bi bi-puzzle"></i>
-                  <span>Contribute</span>
-                </a>
-              </li>
-
-              <li class="sidebar-item">
-                <a href="https://github.com/zuramai/mazer#donation" class="sidebar-link">
-                  <i class="bi bi-cash"></i>
-                  <span>Donate</span>
-                </a>
-              </li>
             </ul>
           </div>
