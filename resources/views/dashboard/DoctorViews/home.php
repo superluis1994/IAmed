@@ -29,8 +29,9 @@
                           </div>
                         </div>
                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
-                          <h6 class="text-muted font-semibold">Programacion</h6>
-                          <h6 class="font-extrabold mb-0">De Citas</h6>
+
+                          <h6 class="text-muted font-semibold">CHAT</h6>
+                          <h6 class="font-extrabold mb-0">Con IA</h6>
                         </div>
                       </div>
                     </div>
@@ -46,8 +47,11 @@
                           </div>
                         </div>
                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
-                          <h6 class="text-muted font-semibold">Recordatorios</h6>
-                          <h6 class="font-extrabold mb-0">Personales</h6>
+
+                          <h6 class="text-muted font-semibold">AGENDA</h6>
+                          <h6 class="font-extrabold mb-0">Medica</h6>
+
+
                         </div>
                       </div>
                     </div>
@@ -63,8 +67,11 @@
                           </div>
                         </div>
                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
-                          <h6 class="text-muted font-semibold">Comunidad</h6>
-                          <h6 class="font-extrabold mb-0">Medica</h6>
+
+                          <h6 class="text-muted font-semibold">COMUNIDAD</h6>
+                          <h6 class="font-extrabold mb-0">De Referidos</h6>
+
+
                         </div>
                       </div>
                     </div>
@@ -75,7 +82,7 @@
                 <div class="col-12 col-xl-4">
                   <div class="card">
                     <div class="card-header">
-                      <h4>Porcentaje de Citas Medicas</h4>
+                      <h4>Citas Medicas</h4>
                     </div>
                     <div class="card-body">
                       <div class="row">
@@ -142,6 +149,7 @@
                               <th>Nombre</th>
                               <th>Diagnostico</th>
                               <th>Status</th>
+                              <th>Fecha</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -164,6 +172,11 @@
                                   En proceso
                                 </p>
                               </td>
+                              <td class="col-auto">
+                                <p class="mb-0">
+                                  05-11-2023
+                                </p>
+                              </td>
                             </tr>
                             <tr>
                               <td class="col-3">
@@ -183,6 +196,11 @@
                                 <p class="mb-0">
                                   Finalizado
                                 </p>
+                                <td class="col-auto">
+                                  <p class="mb-0">
+                                    01-11-2023
+                                  </p>
+                                </td>
                               </td>
                             </tr>
                             <tr>
@@ -203,6 +221,11 @@
                                 <p class="mb-0">
                                   En proceso
                                 </p>
+                                <td class="col-auto">
+                                  <p class="mb-0">
+                                    03-11-2023
+                                  </p>
+                                </td>
                               </td>
                             </tr>
                           </tbody>
