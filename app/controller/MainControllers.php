@@ -5,19 +5,19 @@ use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 
 class MainControllers{
-   public function home(){
+   public function inicio(){
       
-      return Utils::viewStatic('web.home');
+      return Utils::viewStatic('web.inicio');
   
    }
-   public function about(){
+   public function informacion(){
       
-      return Utils::viewStatic('web.about');
+      return Utils::viewStatic('web.informacion');
   
    }
-   public function servicios(){
+   public function funciones(){
       
-      return Utils::viewStatic('web.servicios');
+      return Utils::viewStatic('web.funciones');
   
    }
    public function contacto(){
