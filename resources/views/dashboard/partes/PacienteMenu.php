@@ -28,6 +28,10 @@
                     <a href="component-badge.html" class="submenu-link">Centro de Asistencia Medica</a>
                   </li>
 
+                  <li class="submenu-item">
+                    <a href="component-badge.html" class="submenu-link">Farmacias</a>
+                  </li>
+
 
                 </ul>
               </li>
