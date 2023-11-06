@@ -54,7 +54,7 @@
                 <div class="d-flex">
                    
                 </div>
-                <a href="<?= $utils->url('/') ?>" class="h1 text-white mb-0">IA<span class="text-dark">med</span></a>
+                <img class="logo" src="<?=$utils->assets('img/logo1.png')?>" width="250px" alt="Image">
                 <div class="d-flex">
                    
                 </div>
@@ -79,7 +79,7 @@
                     <div class="navbar-nav">
                         <a href="<?= $utils->url('/') ?>" class="nav-item nav-link active">Inicio</a>
                         <a href="<?= $utils->url('/about') ?>" class="nav-item nav-link">Información</a>
-                        <a href="<?= $utils->url('/servicios') ?>" class="nav-item nav-link">Servicios</a>
+                        <a href="<?= $utils->url('/servicios') ?>" class="nav-item nav-link">Funciones</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Páginas</a>
                             <div class="dropdown-menu bg-light m-0">

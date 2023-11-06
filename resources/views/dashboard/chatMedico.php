@@ -230,7 +230,7 @@
                       <a href="<?=$utils->Url("/dashboard");?>">Dashboard</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      ChatIA
+                      ChatMedico
                     </li>
                   </ol>
                 </nav>

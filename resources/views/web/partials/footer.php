@@ -9,7 +9,7 @@
                     <p class="fs-5 mb-4">Nuestra misión es mejorar el acceso y la calidad de la atención médica, conectando a pacientes con médicos y especialistas en un entorno eficiente y seguro.</p>
                     <p><i class="fa fa-map-marker-alt me-2"></i>Santa Ana, El Salvador</p>
                     <p><i class="fa fa-phone-alt me-2"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope me-2"></i>iamedsuport@gmail.com</p>
+                    <p><i class="fa fa-envelope me-2"></i>iamedsv@gmail.com</p>
                     <div class="d-flex mt-4">
                         <a class="btn btn-lg-square btn-primary me-2" href="#"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-lg-square btn-primary me-2" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -35,10 +35,10 @@
                             <a class="btn btn-link" href="">Soporte</a>
                         </div>
                         <div class="col-sm-12">
-                            <h4 class="text-light mb-4">Regístrate</h4>
+                            <h4 class="text-light mb-4">Informate Más</h4>
                             <div class="w-100">
                                 <div class="input-group">
-                                    <input type="text" class="form-control border-0 py-3 px-4" style="background: rgba(255, 255, 255, .1);" placeholder="Agrega tu Email"><button class="btn btn-primary px-4">Regístrarse</button>
+                                    <input type="text" class="form-control border-0 py-3 px-4" style="background: rgba(255, 255, 255, .1);" placeholder="Agrega tu Email"><button class="btn btn-primary px-4">Enviar</button>
                                 </div>
                             </div>
                         </div>

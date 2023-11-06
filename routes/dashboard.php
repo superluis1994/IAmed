@@ -24,7 +24,7 @@ Route::group('/registrar',function(){
 Route::group('/dashboard', function () {
     Route::get('/', "DashboardControllers@index");
     Route::get('', "DashboardControllers@index");
-    Route::get('/chatbot', "DashboardControllers@chatbot");
+    Route::get('/chatbot', "ChatbotControllers@chatbot");
     Route::get('/sectorPrivado', "SectorPrivadoControllers@index");
     // Route::get('/login', function () {
     //     return Utils::view("login.login");
