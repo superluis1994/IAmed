@@ -74,7 +74,7 @@
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
                     <div class="feature-item border h-100 p-5">
                         <div class="icon-box-primary mb-4">
-                            <i class="bi bi-chat text-dark"></i>
+                        <i class="bi bi-people text-dark"></i>
                         </div>
                         <h5 class="mb-3">Acceso Instantaneo</h5>
                         <p class="mb-0">Conéctate con médicos en segundos. Tu bienestar merece atención inmediata.</p>
@@ -83,7 +83,7 @@
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
                     <div class="feature-item border h-100 p-5">
                         <div class="icon-box-primary mb-4">
-                            <i class="bi bi-people text-dark"></i>
+                            <i class="bi bi-chat text-dark"></i>
                         </div>
                         <h5 class="mb-3">Red Social Médica</h5>
                         <p class="mb-0">Profesionales y Especialistas de la salud confiables a tu alcance.</p>
@@ -215,7 +215,7 @@
     <div class="container-fluid container-service py-5">
         <div class="container pt-5">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="display-6 mb-3">Funciones Principales de IAmed en Acción</h1>
+                <h1 class="display-6 mb-3">Funciones Principales de IAmed</h1>
                 <p class="mb-5">Explora las numerosas funcionalidades de IAmed que mejoran tu experiencia médica y te ayudan a cuidar de tu salud de manera eficiente y personalizada.</p>
             </div>
             <div class="row g-4">
@@ -425,7 +425,7 @@
                                     <img class="flex-shrink-0" src="<?=$utils->assets('img/testimonial-1.jpg')?>" alt="">
                                     <div class="ps-3">
                                         <h5 class="mb-1">Client Name</h5>
-                                        <span class="text-primary">Profession</span>
+                                        <span class="text-primary">Profesional</span>
                                     </div>
                                 </div>
                             </div>
@@ -438,7 +438,7 @@
                                     <img class="flex-shrink-0" src="<?=$utils->assets('img/testimonial-2.jpg')?>" alt="">
                                     <div class="ps-3">
                                         <h5 class="mb-1">Client Name</h5>
-                                        <span class="text-primary">Profession</span>
+                                        <span class="text-primary">Profesional</span>
                                     </div>
                                 </div>
                             </div>
