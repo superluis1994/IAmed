@@ -74,7 +74,7 @@
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="<?=$utils->assets('img/carousel-1.jpg')?>" alt="Image">
+                    <img class="w-100" src="<?=$utils->assets('img/carrusel2.jpg')?>" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-start">
@@ -89,7 +89,7 @@
                 </div>
             
                 <div class="carousel-item">
-                    <img class="w-100" src="<?=$utils->assets('img/carousel-2.jpg')?>" alt="Image">
+                    <img class="w-100" src="<?=$utils->assets('img/carrusel.jpg')?>" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-end">
@@ -103,13 +103,13 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="<?=$utils->assets('img/carousel-2.jpg')?>" alt="Image">
+                    <img class="w-100" src="<?=$utils->assets('img/carrusel5.jpg')?>" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-end">
                                 <div class="col-lg-7 text-end">
                                     <h1 class="display-1 text-white animated slideInLeft mb-3">Recordatorios Médicos y Citas con Profesionales</h1>
-                                    <p class="mb-5 animated slideInLeft">Nunca más olvides una cita médica o una dosis de medicamento. [Nombre de tu Aplicación] te mantiene al tanto de tu salud.</p>
+                                    <p class="mb-5 animated slideInLeft">Nunca más olvides una cita médica o una dosis de medicamento. IAmed te mantiene al tanto de tu salud.</p>
                                     <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Explorar Más</a>
                                 </div>
                             </div>
@@ -194,14 +194,14 @@
                                 <div class="icon-box-primary mb-4">
                                     <i class="bi bi-person-plus text-dark"></i>
                                 </div>
-                                <h5 class="mb-3">Perspectiva de Profesionales</h5>
+                                <h5 class="mb-3">Aceptación de Profesionales en Salud</h5>
                                 
                             </div>
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
                                 <div class="icon-box-primary mb-4">
                                     <i class="bi bi-check-all text-dark"></i>
                                 </div>
-                                <h5 class="mb-3">Aceptación de la Comunidad Médica</h5>
+                                <h5 class="mb-3">Aceptación de los Pacientes</h5>
                                 
                             </div>
                         </div>
