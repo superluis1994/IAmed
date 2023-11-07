@@ -15,6 +15,7 @@
     <!-- Page Header End -->
 
     
+   
     <!-- Service Start -->
     <div class="container-fluid container-service py-5">
         <div class="container pt-5">
@@ -29,47 +30,7 @@
                             <i class="bi bi-search text-dark"></i>
                         </div>
                         <h5 class="mb-3">Búsqueda de Médicos</h4>
-                            <p class="mb-4">Encuentra médicos y especialistas cercanos con facilidad.</p>
-                        <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item">
-                        <div class="icon-box-primary mb-4">
-                            <i class="bi bi-pencil-square text-dark"></i>
-                        </div>
-                        <h5 class="mb-3">Agenda de Citas</h4>
-                            <p class="mb-4"> Programa y gestiona tus citas médicas de manera sencilla.</p>
-                        <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item">
-                        <div class="icon-box-primary mb-4">
-                            <i class="bi bi-bell text-dark"></i>
-                        </div>
-                        <h5 class="mb-3">Recordatorios Personalizados</h4>
-                            <p class="mb-4">Recibe alertas para tomar medicamentos y asistir a tus citas.</p>
-                        <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="service-item">
-                        <div class="icon-box-primary mb-4">
-                            <i class="bi bi-person-lines-fill text-dark"></i>
-                        </div>
-                        <h5 class="mb-3">Perfiles de Médicos</h4>
-                            <p class="mb-4">Accede a información detallada sobre los profesionales de la salud.</p>
-                        <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item">
-                        <div class="icon-box-primary mb-4">
-                            <i class="bi bi-file-medical text-dark"></i>
-                        </div>
-                        <h5 class="mb-3">Historial Médico Digital</h4>
-                            <p class="mb-4">Almacena y accede a tu historial médico de forma segura.</p>
+                            <p class="mb-4">Encuentra pérfiles de médicos y especialistas cercanos de forma rápida y fácil.</p>
                         <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
                     </div>
                 </div>
@@ -79,17 +40,38 @@
                             <i class="bi bi-wifi text-dark"></i>
                         </div>
                         <h5 class="mb-3">Consultas en Línea</h4>
-                            <p class="mb-4">Realiza consultas médicas virtuales con expertos.</p>
+                            <p class="mb-4">Realiza consultas médicas virtuales con expertos y especialistas en la salud.</p>
                         <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item">
                         <div class="icon-box-primary mb-4">
+                            <i class="bi bi-bell text-dark"></i>
+                        </div>
+                        <h5 class="mb-3">Recordatorios</h4>
+                            <p class="mb-4">Recibe alertas para tomar medicamentos y asistir a tus citas.</p>
+                        <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item">
+                        <div class="icon-box-primary mb-4">
+                            <i class="bi bi-file-medical text-dark"></i>
+                        </div>
+                        <h5 class="mb-3">Historial Médico Digital</h4>
+                            <p class="mb-4">Almacena y accede a tu historial médico de forma rápida en caso de emergencias.</p>
+                        <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
+                    </div>
+                </div>
+              
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="icon-box-primary mb-4">
                             <i class="bi bi-clipboard2-pulse text-dark"></i>
                         </div>
-                        <h5 class="mb-3">Seguimiento de Síntomas</h4>
-                            <p class="mb-4">Registra y sigue la evolución de tus síntomas.</p>
+                        <h5 class="mb-3">Control de Síntomas</h4>
+                            <p class="mb-4">Sigue y regístra la evolución de tus síntomas de manera sencilla y eficaz.</p>
                         <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
                     </div>
                 </div>
@@ -108,7 +90,7 @@
     </div>
     <!-- Service End -->
 
-
+    
     <!-- Testimonial Start -->
     <div class="container-fluid testimonial py-5">
         <div class="container pt-5">
@@ -125,11 +107,11 @@
                                 <div class="icon-box-primary mb-4">
                                     <i class="bi bi-chat-left-quote text-dark"></i>
                                 </div>
-                                <p class="fs-5 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar tortor. Quisque vel lorem porttitor, malesuada arcu quis, fringilla risus. Pellentesque eu consequat augue.</p>
+                                <p class="fs-5 mb-4">IAmed ha sido una verdadera bendición para mi salud. Como madre y profesional, la facilidad de acceder a consultas en línea ha hecho que la atención médica de mi familia sea mucho más eficiente y conveniente.</p>
                                 <div class="d-flex align-items-center">
                                     <img class="flex-shrink-0" src="<?=$utils->assets('img/testimonial-1.jpg')?>" alt="">
                                     <div class="ps-3">
-                                        <h5 class="mb-1">Client Name</h5>
+                                        <h5 class="mb-1">Ana Rodríguez</h5>
                                         <span class="text-primary">Profesional</span>
                                     </div>
                                 </div>
@@ -138,12 +120,12 @@
                                 <div class="icon-box-primary mb-4">
                                     <i class="bi bi-chat-left-quote text-dark"></i>
                                 </div>
-                                <p class="fs-5 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar tortor. Quisque vel lorem porttitor, malesuada arcu quis, fringilla risus. Pellentesque eu consequat augue.</p>
+                                <p class="fs-5 mb-4">Como paciente, ahora puedo comunicarme de manera efectiva con mis médicos y llevar un seguimiento detallado de mis síntomas. La facilidad de uso y la comodidad que ofrece esta plataforma son invaluables para mí.</p>
                                 <div class="d-flex align-items-center">
                                     <img class="flex-shrink-0" src="<?=$utils->assets('img/testimonial-2.jpg')?>" alt="">
                                     <div class="ps-3">
-                                        <h5 class="mb-1">Client Name</h5>
-                                        <span class="text-primary">Profesional</span>
+                                        <h5 class="mb-1">Juan Morales</h5>
+                                        <span class="text-primary">Paciente</span>
                                     </div>
                                 </div>
                             </div>
