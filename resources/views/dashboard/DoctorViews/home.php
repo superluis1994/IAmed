@@ -11,7 +11,7 @@
                         </div>
                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                           <h7 class="text-muted font-semibold">
-                            CHAT
+                            Chat
                           </h7>
                           <h6 class="font-extrabold mb-0">Con Paciente</h6>
                         </div>
@@ -30,7 +30,7 @@
                         </div>
                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
 
-                          <h6 class="text-muted font-semibold">CHAT</h6>
+                          <h6 class="text-muted font-semibold">Chat</h6>
                           <h6 class="font-extrabold mb-0">Con IA</h6>
                         </div>
                       </div>
@@ -48,7 +48,7 @@
                         </div>
                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
 
-                          <h6 class="text-muted font-semibold">AGENDA</h6>
+                          <h6 class="text-muted font-semibold">Agenda</h6>
                           <h6 class="font-extrabold mb-0">Medica</h6>
 
 
@@ -68,8 +68,8 @@
                         </div>
                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
 
-                          <h6 class="text-muted font-semibold">COMUNIDAD</h6>
-                          <h6 class="font-extrabold mb-0">De Referidos</h6>
+                          <h6 class="text-muted font-semibold">Historial de</h6>
+                          <h6 class="font-extrabold mb-0">Pacientes</h6>
 
 
                         </div>
