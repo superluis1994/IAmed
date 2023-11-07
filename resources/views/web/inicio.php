@@ -38,10 +38,10 @@
                     <img class="w-100" src="<?=$utils->assets('img/carrusel5.jpg')?>" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
-                            <div class="row justify-content-end">
-                                <div class="col-lg-7 text-end">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-7 text-start">
                                     <h1 class="display-1 text-white animated slideInLeft mb-3">Recordatorios Médicos y Citas con Profesionales</h1>
-                                    <p class="mb-5 animated slideInLeft">Nunca más olvides una cita médica o una dosis de medicamento. IAmed te mantiene al tanto de tu salud.</p>
+                                    <p class="mb-5 animated slideInRight">Nunca más olvides una cita médica o una dosis de medicamento. IAmed te mantiene al tanto de tu salud.</p>
                                     <a href="<?=$utils->url("/servicios");?>" class="btn btn-primary py-3 px-5 animated slideInLeft">Explorar Más</a>
                                 </div>
                             </div>
@@ -68,6 +68,7 @@
 
 
     <!-- Features Start -->
+    <br> <br>
     <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <h1 class="display-6 mb-3">IAmed te Ofrece</h1>
                 <p class="mb-5">Forma parte de nuestra comunidad y disfruta de los recursos y ventajas que IAmed tiene para ofrecerte. </p>
