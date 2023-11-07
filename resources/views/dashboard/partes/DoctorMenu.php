@@ -16,11 +16,11 @@
 
                 <ul class="submenu">
                   <li class="submenu-item">
-                    <a href="<?= $utils->url('/dashboard/chatbot') ?>" class="submenu-link">IA</a>
+                    <a href="<?= $utils->url('/dashboard/chatbot') ?>" class="submenu-link">Paciente</a>
                   </li>
 
                   <li class="submenu-item">
-                    <a href="extra-component-divider.html" class="submenu-link">Paciente</a>
+                    <a href="extra-component-divider.html" class="submenu-link">IA</a>
                   </li>
 
                 </ul>
@@ -71,7 +71,7 @@
                   </li>
 
                   <li class="submenu-item">
-                    <a href="form-element-checkbox.html" class="submenu-link">Colegas</a>
+                    <a href="form-element-checkbox.html" class="submenu-link">Comunidad de Referidos</a>
                   </li>
 
                 </ul>
@@ -94,22 +94,8 @@
 
               <li class="sidebar-item has-sub">
                 <a href="#" class="sidebar-link">
-                  <i class="bi bi-pen-fill"></i>
-                  <span>Reportes</span>
-                </a>
-
-                <ul class="submenu">
-                  <li class="submenu-item">
-                    <a href="form-editor-quill.html" class="submenu-link">Pacientes Atendidos</a>
-                  </li>
-
-                </ul>
-              </li>
-
-              <li class="sidebar-item has-sub">
-                <a href="#" class="sidebar-link">
                   <i class="bi bi-file-earmark-spreadsheet-fill"></i>
-                  <span>Diagnostico</span>
+                  <span>Historiales</span>
                 </a>
 
                 <ul class="submenu">
@@ -117,7 +103,11 @@
                     <a href="table-datatable.html" class="submenu-link">Seguimiento de pacientes</a>
                   </li>
 
+                  <li class="submenu-item">
+                    <a href="table-datatable.html" class="submenu-link">Historial</a>
+                  </li>
                 </ul>
+
               </li>
 
               <li class="sidebar-title">Soporte Tecnico</li>
@@ -126,6 +116,13 @@
                 <a href="https://zuramai.github.io/mazer/docs" class="sidebar-link">
                   <i class="bi bi-life-preserver"></i>
                   <span>Soporte</span>
+                </a>
+              </li>
+
+              <li class="sidebar-item">
+                <a href="https://zuramai.github.io/mazer/docs" class="sidebar-link">
+                  <i class="bi bi-life-preserver"></i>
+                  <span>Ayuda</span>
                 </a>
               </li>
 
