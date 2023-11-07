@@ -13,9 +13,9 @@
                         </div>
                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                           <h6 class="text-muted font-semibold">
-                            Chat con
+                            Red
                           </h6>
-                          <h6 class="font-extrabold mb-0"> Profesionales</h6>
+                          <h6 class="font-extrabold mb-0"> medica</h6>
                         </div>
                       </div>
                     </div>
@@ -34,7 +34,7 @@
                         </div>
                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                           <h6 class="text-muted font-semibold">Chat con</h6>
-                          <h6 class="font-extrabold mb-0">IA</h6>
+                          <h6 class="font-extrabold mb-0">mediBot</h6>
                         </div>
                       </div>
                     </div>
@@ -71,8 +71,8 @@
                           </div>
                         </div>
                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
-                          <h6 class="text-muted font-semibold">Comunidad </h6>
-                          <h6 class="font-extrabold mb-0">Medica</h6>
+                          <h6 class="text-muted font-semibold">especialistas </h6>
+                          <h6 class="font-extrabold mb-0">Favoritos</h6>
                         </div>
                       </div>
                     </div>
@@ -165,15 +165,15 @@
                 <div class="col-12 col-xl-8">
                   <div class="card">
                     <div class="card-header">
-                      <h4>Latest Comments</h4>
+                      <h4>Chats recientes</h4>
                     </div>
                     <div class="card-body">
                       <div class="table-responsive">
                         <table class="table table-hover table-lg">
                           <thead>
                             <tr>
-                              <th>Name</th>
-                              <th>Comment</th>
+                              <th>Nombre</th>
+                              <th> Mensaje</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -183,12 +183,12 @@
                                   <div class="avatar avatar-md">
                                     <img src="./assets/compiled/jpg/5.jpg" />
                                   </div>
-                                  <p class="font-bold ms-3 mb-0">Si Cantik</p>
+                                  <p class="font-bold ms-3 mb-0">Gary Paul cartagena</p>
                                 </div>
                               </td>
                               <td class="col-auto">
                                 <p class="mb-0">
-                                  Congratulations on your graduation!
+                                  Su cita esta agendada para mañana!
                                 </p>
                               </td>
                             </tr>
@@ -198,18 +198,39 @@
                                   <div class="avatar avatar-md">
                                     <img src="./assets/compiled/jpg/2.jpg" />
                                   </div>
-                                  <p class="font-bold ms-3 mb-0">Si Ganteng</p>
+                                  <p class="font-bold ms-3 mb-0">Melvin Marroquin</p>
                                 </div>
                               </td>
                               <td class="col-auto">
                                 <p class="mb-0">
-                                  Wow amazing design! Can you make another
-                                  tutorial for this design?
+                                  Los horarios son de 7 am a 4 pm
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="col-3">
+                                <div class="d-flex align-items-center">
+                                  <div class="avatar avatar-md">
+                                    <img src="./assets/compiled/jpg/2.jpg" />
+                                  </div>
+                                  <p class="font-bold ms-3 mb-0">Luis Sorto</p>
+                                </div>
+                              </td>
+                              <td class="col-auto">
+                                <p class="mb-0">
+                                  Envieme su historial medico
                                 </p>
                               </td>
                             </tr>
                           </tbody>
                         </table>
+                        <div class="px-4">
+                    <button
+                      class="btn btn-block btn-sm btn-outline-primary font-bold mt-3"
+                    >
+                      ver todos
+                    </button>
+                  </div>
                       </div>
                     </div>
                   </div>
@@ -232,7 +253,7 @@
               </div>
               <div class="card">
                 <div class="card-header">
-                  <h4>Especialistas recientes</h4>
+                  <h4>Publicidad</h4>
                 </div>
                 <div class="card-content pb-4">
                   <div class="recent-message d-flex px-4 py-3">
