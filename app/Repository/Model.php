@@ -29,6 +29,17 @@ class Model extends Conexion implements Orm
       self::$Query = "SELECT * FROM $Tabla";
       return $this;
    }
+   public function MongoDB($collection)
+   {
+       $mongoConnec = $this->getMongoConexion();
+   
+       $collection = $mongoConnec->selectCollection($_ENV["DB_NAME"], $collection);
+       $cursor = $collection->find();
+       return $cursor;
+       
+   }
+   
+   
    public function QueryEspefico(array $campo)
    {
       self::$Query = "SELECT ";
