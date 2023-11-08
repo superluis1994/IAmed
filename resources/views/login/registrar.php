@@ -4,13 +4,14 @@
       <div id="auth-left">
         <div class="col-md-12">
           <a href="index.html">
-            <img src="<?= $utils->assets('assets/compiled/svg/logo.svg') ?>" width="300" alt="Logo" />
+            <img src="<?= $utils->assets('img/logo2.png') ?>" width="300" alt="Logo" />
           </a>
-          <h1 class="auth-title">Registrarse</h1>
+          <!--<h1 class="auth-title">Registrarse</h1>-->
         </div>
-        <!-- <p class="auth-subtitle mb-5">
+        <br>
+         <p class="auth-subtitle mb-5">
               Ingresa tus datos para registrarte en nuestro sitio web.
-            </p> -->
+            </p> 
 
         <form action="index.html">
           <div class="form-group position-relative has-icon-left mb-4">
