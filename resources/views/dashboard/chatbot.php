@@ -252,8 +252,8 @@
                         <span class="avatar-status bg-success"></span>
                       </div>
                       <div class="name flex-grow-1">
-                        <h6 class="mb-0">Bot</h6>
-                        <span class="text-xs">Online</span>
+                        <h6 class="mb-0">MediBot</h6>
+                        <span class="text-xs"> Siempre en linea</span>
                       </div>
                       <button class="btn btn-sm">
                         <i data-feather="x"></i>
@@ -265,31 +265,76 @@
                       <div class="chat">
                         <div class="chat-body">
                           <div class="chat-message">
-                            Hi Alfy, how can i help you?
+                          hola, tengo estos sintomas : Disnea,  Sibilancias, Tos, y Opresión en el pecho.
                           </div>
                         </div>
                       </div>
                       <div class="chat chat-left">
                         <div class="chat-body">
                           <div class="chat-message">
-                            I'm looking for the best admin dashboard template
+                          "Basado en los síntomas que has proporcionado, es posible que estés experimentando asma. El asma es una afección crónica que afecta las vías respiratorias y puede manifestarse con síntomas como disnea (dificultad para respirar), sibilancias, tos y opresión en el pecho. Es importante que busques atención médica para obtener un diagnóstico preciso y un plan de tratamiento adecuado.
                           </div>
                           <div class="chat-message">
-                            With bootstrap certainly
+                          te recomiendamos estos especialistas de IAmed:
                           </div>
                         </div>
                       </div>
+                      <style>
+    .doctor-info {
+      background-color: #007BFF; 
+      color: #fff; 
+      padding: 10px; 
+      border-radius: 5px; 
+      margin-bottom: 10px; 
+    }
+
+    .doctor-name {
+      font-weight: bold; 
+    }
+
+    .doctor-circle {
+      width: 50px; 
+      height: 50px;
+      background-color: #ccc; 
+      border-radius: 50%; 
+      display: inline-block; 
+      margin-right: 10px; 
+    }
+  </style>
+</head>
+<body>
+  <div class="chat chat-left">
+    <div class="chat-body">
+      <div class="chat-message">
+        <div class="doctor-info">
+          <div class="doctor-circle"></div>
+          <p><a href="enlace-al-dr-luis-respirino" class="doctor-name">Dr. Luis Respirino</a></p>
+          <p>Especialidad: Neumonología y Alergología.</p>
+        </div>
+        <div class="doctor-info">
+          <div class="doctor-circle"></div>
+          <p><a href="enlace-a-la-dra-maria-fernanda" class="doctor-name">Dra. Maria Fernanda</a></p>
+          <p>Especialidad: Pediatría y Alergología.</p>
+        </div>
+        <div class="doctor-info">
+          <div class="doctor-circle"></div>
+          <p><a href="enlace-al-dr-oscar-zapata" class="doctor-name">Dr. Oscar Zapata</a></p>
+          <p>Especialidad: Neumonología y Medicina Interna.</p>
+        </div>
+      </div>
+    </div>
+  </div>
                       <div class="chat">
                         <div class="chat-body">
                           <div class="chat-message">
-                            I recommend you to use Mazer Dashboard
+                            OK, muchas gracias medibot
                           </div>
                         </div>
                       </div>
                       <div class="chat chat-left">
                         <div class="chat-body">
                           <div class="chat-message">
-                            That's great! I like it so much :)
+                          Estoy para ayudarte, estare aqui si necesitas mas ayuda!
                           </div>
                         </div>
                       </div>
