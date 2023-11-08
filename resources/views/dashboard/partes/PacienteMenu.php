@@ -1,6 +1,6 @@
 <div class="sidebar-menu">
             <ul class="menu">
-              <li class="sidebar-title">Menu</li>
+              <li class="sidebar-title">Menú</li>
 
               <li class="sidebar-item active">
                 <a href="index.html" class="sidebar-link">
@@ -11,8 +11,8 @@
 
               <li class="sidebar-item has-sub">
                 <a href="#" class="sidebar-link">
-                  <i class="bi bi-stack"></i>
-                  <span>Comunidad Medica</span>
+                <i class="bi bi-people-fill"></i>
+                  <span>Comunidad Médica</span>
                 </a>
 
                 <ul class="submenu">
@@ -21,11 +21,11 @@
                   </li>
 
                   <li class="submenu-item">
-                    <a href="component-alert.html" class="submenu-link">Sector Publico</a>
+                    <a href="component-alert.html" class="submenu-link">Sector Público</a>
                   </li>
 
                   <li class="submenu-item">
-                    <a href="component-badge.html" class="submenu-link">Centro de Asistencia Medica</a>
+                    <a href="component-badge.html" class="submenu-link">Centro de Asistencia Médica</a>
                   </li>
 
                   <li class="submenu-item">
@@ -38,17 +38,17 @@
 
               <li class="sidebar-item has-sub">
                 <a href="#" class="sidebar-link">
-                  <i class="bi bi-collection-fill"></i>
+                <i class="bi bi-chat-fill"></i>
                   <span>Chat</span>
                 </a>
 
                 <ul class="submenu">
                   <li class="submenu-item">
-                    <a href="<?= $utils->url('/dashboard/chatbot') ?>" class="submenu-link">IA</a>
+                    <a href="<?= $utils->url('/dashboard/chatbot') ?>" class="submenu-link">MediBot</a>
                   </li>
 
                   <li class="submenu-item">
-                    <a href="<?= $utils->url('/dashboard/chatMedico') ?>" class="submenu-link">Doctor</a>
+                    <a href="<?= $utils->url('/dashboard/chatMedico') ?>" class="submenu-link">Médico</a>
                   </li>
 
                 </ul>
@@ -56,7 +56,7 @@
 
               <li class="sidebar-item has-sub">
                 <a href="#" class="sidebar-link">
-                  <i class="bi bi-grid-1x2-fill"></i>
+                <i class="bi bi-bell-fill"></i>
                   <span>Recordatorios</span>
                 </a>
 
@@ -73,11 +73,11 @@
                 </ul>
               </li>
 
-              <li class="sidebar-title">Configuracion </li>
+              <li class="sidebar-title">Configuración </li>
 
               <li class="sidebar-item has-sub">
                 <a href="#" class="sidebar-link">
-                  <i class="bi bi-hexagon-fill"></i>
+                <i class="bi bi-person-fill"></i>
                   <span>Perfil De Usuario</span>
                 </a>
 
@@ -90,20 +90,7 @@
                     <a href="form-element-input-group.html" class="submenu-link">Datos Personales</a>
                   </li>
 
-                  <li class="submenu-item">
-                    <a href="form-element-select.html" class="submenu-link">Select</a>
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="form-element-radio.html" class="submenu-link">Radio</a>
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="form-element-checkbox.html" class="submenu-link">Checkbox</a>
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="form-element-textarea.html" class="submenu-link">Textarea</a>
+                  
                   </li>
                 </ul>
               </li>
@@ -112,7 +99,7 @@
 
               <li class="sidebar-item has-sub">
                 <a href="#" class="sidebar-link">
-                  <i class="bi bi-journal-check"></i>
+                <i class="bi bi-shield-fill"></i>
                   <span>Privacidad</span>
                 </a>
 
@@ -123,10 +110,10 @@
                 </ul>
               </li>
 
-              <li class="sidebar-item has-sub">
+              <!--<li class="sidebar-item has-sub">
                 <a href="#" class="sidebar-link">
                   <i class="bi bi-pen-fill"></i>
-                  <span>Form Editor</span>
+                  <span>xd</span>
                 </a>
 
                 <ul class="submenu">
@@ -146,7 +133,7 @@
                     <a href="form-editor-tinymce.html" class="submenu-link">TinyMCE</a>
                   </li>
                 </ul>
-              </li>
+              </li> 
 
               <li class="sidebar-item">
                 <a href="table.html" class="sidebar-link">
@@ -170,11 +157,25 @@
                     <a href="table-datatable-jquery.html" class="submenu-link">Datatable (jQuery)</a>
                   </li>
                 </ul>
+              </li> -->
+
+              <li class="sidebar-title">Soporte Técnico</li>
+
+              <li class="sidebar-item">
+                <a href="" class="sidebar-link">
+                <i class="bi bi-headset"></i>
+                  <span>Soporte</span>
+                </a>
               </li>
 
-              <li class="sidebar-title">Extra UI</li>
+              <li class="sidebar-item">
+                <a href="" class="sidebar-link">
+                <i class="bi bi-question-circle-fill"></i>
+                  <span>Ayuda</span>
+                </a>
+              </li>
 
-              <li class="sidebar-item has-sub">
+              <!--<li class="sidebar-item has-sub">
                 <a href="#" class="sidebar-link">
                   <i class="bi bi-pentagon-fill"></i>
                   <span>Widgets</span>
@@ -232,16 +233,11 @@
                     <a href="ui-chart-apexcharts.html" class="submenu-link">Apexcharts</a>
                   </li>
                 </ul>
-              </li>
+              </li> -->
 
-              <li class="sidebar-item">
-                <a href="ui-file-uploader.html" class="sidebar-link">
-                  <i class="bi bi-cloud-arrow-up-fill"></i>
-                  <span>File Uploader</span>
-                </a>
-              </li>
 
-              <li class="sidebar-item has-sub">
+
+             <!-- <li class="sidebar-item has-sub">
                 <a href="#" class="sidebar-link">
                   <i class="bi bi-map-fill"></i>
                   <span>Maps</span>
@@ -289,9 +285,9 @@
                     </ul>
                   </li>
                 </ul>
-              </li>
+              </li> -->
 
-              <li class="sidebar-title">Pages</li>
+             <!-- <li class="sidebar-title">Pages</li>
 
               <li class="sidebar-item">
                 <a href="application-email.html" class="sidebar-link">
@@ -385,5 +381,5 @@
                   <span>Donate</span>
                 </a>
               </li>
-            </ul>
+            </ul> -->
           </div>

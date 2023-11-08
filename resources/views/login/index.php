@@ -3,8 +3,9 @@
     <div class="col-lg-5 col-12">
       <div id="auth-left">
         <div class="col-md-12">
-          <a href="<?= $utils->url('/login') ?>"><img src="<?= $utils->assets('assets/compiled/svg/logo.svg') ?>" alt="Logo" /></a>
-          <h1 class="auth-title">Ingresar</h1>
+          <a href="<?= $utils->url('/login') ?>"><img src="<?= $utils->assets('img/logo2.png') ?>" width="300px" alt="Logo" /></a>
+          <!--<h1 class="auth-title">Ingresar</h1>-->
+          <br><br>
           <p class="auth-subtitle mb-5">
             Inicie sesión con los datos que ingresó durante el registro.
           </p>
@@ -58,7 +59,7 @@
     <div class="modal-content ">
       <div class="modal-header bg-danger">
         <h4 class="modal-title white" id="myModalLabel4">
-          Disabled Backdrop
+          Recupera tu contraseña
         </h4>
         <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
           <i data-feather="x"></i>

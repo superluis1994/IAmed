@@ -31,7 +31,7 @@
                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
 
                           <h6 class="text-muted font-semibold">Chat</h6>
-                          <h6 class="font-extrabold mb-0">Con IA</h6>
+                          <h6 class="font-extrabold mb-0">Con MediBot</h6>
                         </div>
                       </div>
                     </div>
@@ -49,7 +49,7 @@
                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
 
                           <h6 class="text-muted font-semibold">Agenda</h6>
-                          <h6 class="font-extrabold mb-0">Medica</h6>
+                          <h6 class="font-extrabold mb-0">Médica</h6>
 
 
                         </div>
@@ -95,7 +95,7 @@
                           </div>
                         </div>
                         <div class="col-5">
-                          <h5 class="mb-0 text-end">862</h5>
+                          <h5 class="mb-0 text-end">17</h5>
                         </div>
                         <div class="col-12">
                           <div id="chart-europe"></div>
@@ -111,7 +111,7 @@
                           </div>
                         </div>
                         <div class="col-5">
-                          <h5 class="mb-0 text-end">375</h5>
+                          <h5 class="mb-0 text-end">59</h5>
                         </div>
                         <div class="col-12">
                           <div id="chart-america"></div>
@@ -127,7 +127,7 @@
                           </div>
                         </div>
                         <div class="col-5">
-                          <h5 class="mb-0 text-end">1025</h5>
+                          <h5 class="mb-0 text-end">720</h5>
                         </div>
                         <div class="col-12">
                           <div id="chart-indonesia"></div>
@@ -139,7 +139,7 @@
                 <div class="col-12 col-xl-8">
                   <div class="card">
                     <div class="card-header">
-                      <h4>Seguimiento de Pacientes</h4>
+                      <h4>Seguimiento de Citas</h4>
                     </div>
                     <div class="card-body">
                       <div class="table-responsive">
@@ -239,7 +239,7 @@
                 <div class="col-12">
                   <div class="card">
                     <div class="card-header">
-                      <h4>Profile Visit</h4>
+                      <h4>Registro de Citas Mensual</h4>
                     </div>
                     <div class="card-body">
                       <div id="chart-profile-visit"></div>
@@ -249,7 +249,7 @@
               </div>
 
             </div>
-            <div class="col-12 col-lg-3">
+          <!--<div class="col-12 col-lg-3">
               <div class="card">
                 <div class="card-body py-4 px-4">
                   <div class="d-flex align-items-center">

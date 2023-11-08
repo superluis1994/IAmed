@@ -79,7 +79,7 @@
           </div>
           <div class="sidebar-menu">
             <ul class="menu">
-              <li class="sidebar-title">Menu</li>
+              <li class="sidebar-title">Menú</li>
 
               <li class="sidebar-item">
                 <a href="<?=$utils->Url("/dashboard");?>" class="sidebar-link">
@@ -103,13 +103,13 @@
                 <ul class="submenu">
                   <li class="submenu-item">
                     <a href="component-accordion.html" class="submenu-link"
-                      >Accordion</a
+                      >Chat 1</a
                     >
                   </li>
 
                   <li class="submenu-item">
                     <a href="component-alert.html" class="submenu-link"
-                      >Alert</a
+                      >Chat 2</a
                     >
                   </li>
 
@@ -265,7 +265,7 @@
                       <div class="chat">
                         <div class="chat-body">
                           <div class="chat-message">
-                          hola, tengo estos sintomas : Disnea,  Sibilancias, Tos, y Opresión en el pecho.
+                          Hola, tengo estos sintomas : Disnea,  Sibilancias, Tos, y Opresión en el pecho.
                           </div>
                         </div>
                       </div>
@@ -275,7 +275,7 @@
                           "Basado en los síntomas que has proporcionado, es posible que estés experimentando asma. El asma es una afección crónica que afecta las vías respiratorias y puede manifestarse con síntomas como disnea (dificultad para respirar), sibilancias, tos y opresión en el pecho. Es importante que busques atención médica para obtener un diagnóstico preciso y un plan de tratamiento adecuado.
                           </div>
                           <div class="chat-message">
-                          te recomiendamos estos especialistas de IAmed:
+                          Te recomendamos estos especialistas de IAmed:
                           </div>
                         </div>
                       </div>
@@ -327,14 +327,14 @@
                       <div class="chat">
                         <div class="chat-body">
                           <div class="chat-message">
-                            OK, muchas gracias medibot
+                            OK, muchas gracias mediBot
                           </div>
                         </div>
                       </div>
                       <div class="chat chat-left">
                         <div class="chat-body">
                           <div class="chat-message">
-                          Estoy para ayudarte, estare aqui si necesitas mas ayuda!
+                          Estoy para ayudarte, estare aqui si necesitas más ayuda!
                           </div>
                         </div>
                       </div>
@@ -368,12 +368,12 @@
               <p>2023 &copy; Mazer</p>
             </div>
             <div class="float-end">
-              <p>
+             <!-- <p>
                 Crafted with
                 <span class="text-danger"
                   ><i class="bi bi-heart-fill icon-mid"></i
                 ></span>
-                by <a href="https://saugi.me">Saugi</a>
+                by <a href="https://saugi.me">Saugi</a> -->
               </p>
             </div>
           </div>
