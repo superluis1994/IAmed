@@ -5,7 +5,7 @@
               <li class="sidebar-item active">
                 <a href="index.html" class="sidebar-link">
                   <i class="bi bi-grid-fill"></i>
-                  <span>PANEL DOCTOR</span>
+                  <span>PANEL AFILIADO</span>
                 </a>
               </li>
               <li class="sidebar-item has-sub">
@@ -20,10 +20,32 @@
                   </li>
 
                   <li class="submenu-item">
-                    <a href="extra-component-divider.html" class="submenu-link">IA</a>
+                    <a href="extra-component-divider.html" class="submenu-link">MediBot</a>
                   </li>
 
                 </ul>
+              </li>
+
+              <li class="sidebar-item has-sub">
+                <a href="#" class="sidebar-link">
+                  <i class="bi bi-file-earmark-spreadsheet-fill"></i>
+                  <span>Seguimiento de Cita</span>
+                </a>
+
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="table-datatable.html" class="submenu-link">Nueva Cita</a>
+                  </li>
+
+                  <li class="submenu-item">
+                    <a href="table-datatable.html" class="submenu-link">Seguimiento de Cita</a>
+                  </li>
+
+                  <li class="submenu-item">
+                    <a href="table-datatable.html" class="submenu-link">Historiales Clínico</a>
+                  </li>
+                </ul>
+
               </li>
 
               <li class="sidebar-item has-sub">
@@ -45,7 +67,7 @@
                 </ul>
               </li>
 
-              <li class="sidebar-title">Configuracion </li>
+              <li class="sidebar-title">Configuración </li>
 
               <li class="sidebar-item has-sub">
                 <a href="#" class="sidebar-link">
@@ -92,25 +114,7 @@
                 </ul>
               </li>
 
-              <li class="sidebar-item has-sub">
-                <a href="#" class="sidebar-link">
-                  <i class="bi bi-file-earmark-spreadsheet-fill"></i>
-                  <span>Historiales</span>
-                </a>
-
-                <ul class="submenu">
-                  <li class="submenu-item">
-                    <a href="table-datatable.html" class="submenu-link">Seguimiento de pacientes</a>
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="table-datatable.html" class="submenu-link">Historial</a>
-                  </li>
-                </ul>
-
-              </li>
-
-              <li class="sidebar-title">Soporte Tecnico</li>
+              <li class="sidebar-title">Soporte Técnico</li>
 
               <li class="sidebar-item">
                 <a href="https://zuramai.github.io/mazer/docs" class="sidebar-link">

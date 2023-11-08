@@ -23,7 +23,7 @@ class DashboardControllers extends Token{
       
    }
    public function index(){
-      @$Data = $this->AuthModel->MongoDB("chats");
+   //   @$Data = $this->AuthModel->MongoDB("chats");
 
       foreach ($Data as $documento) {
          echo $documento["id"] . "\n";
