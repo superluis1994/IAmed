@@ -7,15 +7,15 @@
                         <div
                           class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start"
                         >
-                          <div class="stats-icon purple mb-2">
-                            <i class="iconly-boldShow"></i>
+                          <div class="stats-icon purple mb-2 justify-content-center" >
+                          <i class="bi bi-people-fill-boldshow"></i>
                           </div>
                         </div>
                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                           <h6 class="text-muted font-semibold">
-                            Red
+                            Comunidad
                           </h6>
-                          <h6 class="font-extrabold mb-0"> medica</h6>
+                          <h6 class="font-extrabold mb-0">Médica</h6>
                         </div>
                       </div>
                     </div>
@@ -34,7 +34,7 @@
                         </div>
                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                           <h6 class="text-muted font-semibold">Chat con</h6>
-                          <h6 class="font-extrabold mb-0">mediBot</h6>
+                          <h6 class="font-extrabold mb-0">MediBot</h6>
                         </div>
                       </div>
                     </div>
@@ -53,7 +53,7 @@
                         </div>
                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                           <h6 class="text-muted font-semibold">Recordatorios</h6>
-                          <h6 class="font-extrabold mb-0">Medicos</h6>
+                          <h6 class="font-extrabold mb-0">Médicos</h6>
                         </div>
                       </div>
                     </div>
@@ -71,7 +71,7 @@
                           </div>
                         </div>
                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
-                          <h6 class="text-muted font-semibold">especialistas </h6>
+                          <h6 class="text-muted font-semibold">Especialistas </h6>
                           <h6 class="font-extrabold mb-0">Favoritos</h6>
                         </div>
                       </div>
@@ -80,7 +80,7 @@
                 </div>
               </div>
               
-              <div class="row">
+             <div class="row">
                 <div class="col-12 col-xl-4">
                   <div class="card">
                     <div class="card-header">
@@ -175,7 +175,7 @@
                               <th>Nombre</th>
                               <th> Mensaje</th>
                             </tr>
-                          </thead>
+                          </thead> 
                           <tbody>
                             <tr>
                               <td class="col-3">
@@ -293,6 +293,6 @@
                   </div>
                 </div>
               </div>
-              
+            
             </div>
  

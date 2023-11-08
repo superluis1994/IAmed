@@ -79,7 +79,7 @@
           </div>
           <div class="sidebar-menu">
             <ul class="menu">
-              <li class="sidebar-title">Menu</li>
+              <li class="sidebar-title">Menú</li>
 
               <li class="sidebar-item">
                 <a href="<?=$utils->Url("/dashboard");?>" class="sidebar-link">
@@ -125,7 +125,7 @@
                     >
                   </li>
 
-                  <li class="submenu-item">
+                  <!--<li class="submenu-item">
                     <a href="component-button.html" class="submenu-link"
                       >Button</a
                     >
@@ -199,7 +199,7 @@
                     >
                   </li>
                 </ul>
-              </li>
+              </li>-->
             </ul>
           </div>
         </div>
@@ -215,9 +215,9 @@
           <div class="page-title">
             <div class="row">
               <div class="col-12 col-md-6 order-md-1 order-last">
-                <h3>ChatIA</h3>
+                <h3>Chatea con MediBot</h3>
                 <p class="text-subtitle text-muted">
-                  Our take on a chat conversation.
+                  Puedes chatear y consultar con nuestro asistente.
                 </p>
               </div>
               <div class="col-12 col-md-6 order-md-2 order-first">

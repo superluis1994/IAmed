@@ -79,7 +79,7 @@
           </div>
           <div class="sidebar-menu">
             <ul class="menu">
-              <li class="sidebar-title">Menu</li>
+              <li class="sidebar-title">Menú</li>
 
               <li class="sidebar-item">
                 <a href="<?=$utils->Url("/dashboard");?>" class="sidebar-link">
@@ -115,10 +115,89 @@
 
                   <li class="submenu-item">
                     <a href="component-badge.html" class="submenu-link"
-                      >Chat 3</a
+                      >Badge</a
                     >
                   </li>
 
+                  <li class="submenu-item">
+                    <a href="component-breadcrumb.html" class="submenu-link"
+                      >Breadcrumb</a
+                    >
+                  </li>
+
+                  <li class="submenu-item">
+                    <a href="component-button.html" class="submenu-link"
+                      >Button</a
+                    >
+                  </li>
+
+                  <li class="submenu-item">
+                    <a href="component-card.html" class="submenu-link">Card</a>
+                  </li>
+
+                  <li class="submenu-item">
+                    <a href="component-carousel.html" class="submenu-link"
+                      >Carousel</a
+                    >
+                  </li>
+
+                  <li class="submenu-item">
+                    <a href="component-collapse.html" class="submenu-link"
+                      >Collapse</a
+                    >
+                  </li>
+
+                  <li class="submenu-item">
+                    <a href="component-dropdown.html" class="submenu-link"
+                      >Dropdown</a
+                    >
+                  </li>
+
+                  <li class="submenu-item">
+                    <a href="component-list-group.html" class="submenu-link"
+                      >List Group</a
+                    >
+                  </li>
+
+                  <li class="submenu-item">
+                    <a href="component-modal.html" class="submenu-link"
+                      >Modal</a
+                    >
+                  </li>
+
+                  <li class="submenu-item">
+                    <a href="component-navs.html" class="submenu-link">Navs</a>
+                  </li>
+
+                  <li class="submenu-item">
+                    <a href="component-pagination.html" class="submenu-link"
+                      >Pagination</a
+                    >
+                  </li>
+
+                  <li class="submenu-item">
+                    <a href="component-progress.html" class="submenu-link"
+                      >Progress</a
+                    >
+                  </li>
+
+                  <li class="submenu-item">
+                    <a href="component-spinner.html" class="submenu-link"
+                      >Spinner</a
+                    >
+                  </li>
+
+                  <li class="submenu-item">
+                    <a href="component-toasts.html" class="submenu-link"
+                      >Toasts</a
+                    >
+                  </li>
+
+                  <li class="submenu-item">
+                    <a href="component-tooltip.html" class="submenu-link"
+                      >Tooltip</a
+                    >
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -136,9 +215,9 @@
           <div class="page-title">
             <div class="row">
               <div class="col-12 col-md-6 order-md-1 order-last">
-                <h3>MediBot</h3>
+                <h3>ChatIA</h3>
                 <p class="text-subtitle text-muted">
-                  Converzación de chat
+                  Our take on a chat conversation.
                 </p>
               </div>
               <div class="col-12 col-md-6 order-md-2 order-first">
@@ -186,7 +265,7 @@
                       <div class="chat">
                         <div class="chat-body">
                           <div class="chat-message">
-                          hola, tengo estos sintomas : Disnea,  Sibilancias, Tos, y Opresión en el pecho.
+                          Hola, tengo estos sintomas : Disnea,  Sibilancias, Tos, y Opresión en el pecho.
                           </div>
                         </div>
                       </div>
@@ -196,7 +275,7 @@
                           "Basado en los síntomas que has proporcionado, es posible que estés experimentando asma. El asma es una afección crónica que afecta las vías respiratorias y puede manifestarse con síntomas como disnea (dificultad para respirar), sibilancias, tos y opresión en el pecho. Es importante que busques atención médica para obtener un diagnóstico preciso y un plan de tratamiento adecuado.
                           </div>
                           <div class="chat-message">
-                          te recomiendamos estos especialistas de IAmed:
+                          Te recomendamos estos especialistas de IAmed:
                           </div>
                         </div>
                       </div>
@@ -248,14 +327,14 @@
                       <div class="chat">
                         <div class="chat-body">
                           <div class="chat-message">
-                            OK, muchas gracias medibot
+                            OK, muchas gracias mediBot
                           </div>
                         </div>
                       </div>
                       <div class="chat chat-left">
                         <div class="chat-body">
                           <div class="chat-message">
-                          Estoy para ayudarte, estare aqui si necesitas mas ayuda!
+                          Estoy para ayudarte, estare aqui si necesitas más ayuda!
                           </div>
                         </div>
                       </div>
@@ -289,12 +368,12 @@
               <p>2023 &copy; Mazer</p>
             </div>
             <div class="float-end">
-              <p>
+             <!-- <p>
                 Crafted with
                 <span class="text-danger"
                   ><i class="bi bi-heart-fill icon-mid"></i
                 ></span>
-                by <a href="https://saugi.me">Saugi</a>
+                by <a href="https://saugi.me">Saugi</a> -->
               </p>
             </div>
           </div>

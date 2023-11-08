@@ -13,7 +13,7 @@
                                 <div class="col-lg-7 text-start">
                                     <h1 class="display-1 text-white animated slideInRight mb-3">Acceso Inmediato a Profesionales de la Salud</h1>
                                     <p class="mb-5 animated slideInRight">Descubre cómo IAmed te conecta con profesionales de la salud en segundos. Tu bienestar, a un clic de distancia.</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInRight">Explorar Más</a>
+                                    <a href="<?=$utils->url("/servicios");?>" class="btn btn-primary py-3 px-5 animated slideInRight">Explorar Más</a>
                                 </div>
                             </div>
                         </div>
@@ -28,7 +28,7 @@
                                 <div class="col-lg-7 text-end">
                                     <h1 class="display-1 text-white animated slideInLeft mb-3">Prediagnósticos Médicos con Inteligencia Artificial</h1>
                                     <p class="mb-5 animated slideInLeft">Explora cómo la inteligencia artificial está revolucionando la medicina, mejorando diagnósticos y tratamientos. El futuro de la salud ya está aquí.</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Explorar Más</a>
+                                    <a href="<?=$utils->url("/servicios");?>" class="btn btn-primary py-3 px-5 animated slideInLeft">Explorar Más</a>
                                 </div>
                             </div>
                         </div>
@@ -38,11 +38,11 @@
                     <img class="w-100" src="<?=$utils->assets('img/carrusel5.jpg')?>" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
-                            <div class="row justify-content-end">
-                                <div class="col-lg-7 text-end">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-7 text-start">
                                     <h1 class="display-1 text-white animated slideInLeft mb-3">Recordatorios Médicos y Citas con Profesionales</h1>
-                                    <p class="mb-5 animated slideInLeft">Nunca más olvides una cita médica o una dosis de medicamento. IAmed te mantiene al tanto de tu salud.</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Explorar Más</a>
+                                    <p class="mb-5 animated slideInRight">Nunca más olvides una cita médica o una dosis de medicamento. IAmed te mantiene al tanto de tu salud.</p>
+                                    <a href="<?=$utils->url("/servicios");?>" class="btn btn-primary py-3 px-5 animated slideInLeft">Explorar Más</a>
                                 </div>
                             </div>
                         </div>
@@ -68,6 +68,11 @@
 
 
     <!-- Features Start -->
+    <br> <br>
+    <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="display-6 mb-3">IAmed te Ofrece</h1>
+                <p class="mb-5">Forma parte de nuestra comunidad y disfruta de los recursos y ventajas que IAmed tiene para ofrecerte. </p>
+            </div>
     <div class="container-fluid py-5">
         <div class="container">
             <div class="row g-0 feature-row">
@@ -76,35 +81,35 @@
                         <div class="icon-box-primary mb-4">
                         <i class="bi bi-people text-dark"></i>
                         </div>
-                        <h5 class="mb-3">Acceso Instantaneo</h5>
-                        <p class="mb-0">Conéctate con médicos en segundos. Tu bienestar merece atención inmediata.</p>
+                        <h5 class="mb-3">Comunidad Médica</h5>
+                        <p class="mb-0">Una comunidad que permita la comunicación entre profesionales de la salud y pacientes, ofreciendo información precisa y accesible</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
                     <div class="feature-item border h-100 p-5">
                         <div class="icon-box-primary mb-4">
-                            <i class="bi bi-chat text-dark"></i>
+                            <i class="bi bi-reddit text-dark"></i>
                         </div>
-                        <h5 class="mb-3">Red Social Médica</h5>
-                        <p class="mb-0">Profesionales y Especialistas de la salud confiables a tu alcance.</p>
+                        <h5 class="mb-3">Inteligencia Artificial</h5>
+                        <p class="mb-0">Usamos tecnologia avanzada mejorando tu salud. Generando prediagnósticos y recomendaciones personalizadas .</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
                     <div class="feature-item border h-100 p-5">
                         <div class="icon-box-primary mb-4">
-                            <i class="bi bi-graph-up text-dark"></i>
+                            <i class="bi bi-wifi text-dark"></i>
                         </div>
-                        <h5 class="mb-3">Tecnología Avanzada</h5>
-                        <p class="mb-0">Inteligencia artificial mejorando tu salud. Prediagnósticos y recomendaciones personalizadas.</p>
+                        <h5 class="mb-3">Consultas en Línea</h5>
+                        <p class="mb-0">Obtén consultas virtuales seguras y efectivas. Conecta con médicos expertos desde cualquier lugar y obtén el cuidado que necesitas en línea.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
                     <div class="feature-item border h-100 p-5">
                         <div class="icon-box-primary mb-4">
-                            <i class="bi bi-shield text-dark"></i>
-                        </div>
+                                <i class="bi bi-shield text-dark"></i>
+                            </div>
                         <h5 class="mb-3">Privacidad y Seguridad</h5>
-                        <p class="mb-0">Implementamos medidas robustas para proteger tus datos médicos y personales en todo momento.</p>
+                        <p class="mb-0">Implementamos medidas para garantizar la confidencialidad, integridad y protección de tus datos médicos y personales en todo momento.</p>
                     </div>
                 </div>
             </div>
@@ -119,25 +124,26 @@
             <div class="row g-0">
                 <div class="col-lg-6 pt-lg-5">
                     <div class="bg-white p-5 mt-lg-5">
-                        <h1 class="display-6 mb-4 wow fadeIn" data-wow-delay="0.3s">Impacto Social de IAmed en la Comunidad Médica</h1>
-                        <p class="mb-4 wow fadeIn" data-wow-delay="0.4s">El impacto de IAmed en la comunidad médica es innegable. Nuestra aplicación no solo facilita el acceso a atención médica de calidad, sino que también promueve una mayor eficiencia en el sistema de salud. Al conectar a pacientes con médicos y especialistas en tiempo récord, estamos reduciendo las largas listas de espera y permitiendo a más personas recibir atención cuando más la necesitan.</p>
+                        <h1 class="display-6 mb-4 wow fadeIn" data-wow-delay="0.3s">Regístrate y Unete a Nuestra Comunidad</h1>
+                        <p class="mb-4 wow fadeIn" data-wow-delay="0.4s">Te invitamos a unirte a nuestra comunidad de médicos, pacientes y entusiastas de la salud. Juntos, trabajamos para transformar la experiencia de atención médica
+                             y promover la colaboración en el campo de la medicina. Si compartes nuestra visión de un mundo donde la tecnología y la atención médica se unen para el bienestar de todos, ¡te animamos a registrarte y ser parte de esta emocionante transformación!</p>
                         <div class="row g-5 pt-2 mb-5">
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
                                 <div class="icon-box-primary mb-4">
                                     <i class="bi bi-person-plus text-dark"></i>
                                 </div>
-                                <h5 class="mb-3">Aceptación de Profesionales en Salud</h5>
+                                <h5 class="mb-3">Únete como Profesional en la Salud</h5>
                                 
                             </div>
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
                                 <div class="icon-box-primary mb-4">
                                     <i class="bi bi-check-all text-dark"></i>
                                 </div>
-                                <h5 class="mb-3">Aceptación de los Pacientes</h5>
+                                <h5 class="mb-3">Forma Parte de Nuestros Pacientes</h5>
                                 
                             </div>
                         </div>
-                        <a class="btn btn-primary py-3 px-5 wow fadeIn" data-wow-delay="0.5s" href="">Explorar Más</a>
+                        <a class="btn btn-primary py-3 px-5 wow fadeIn" data-wow-delay="0.5s" href="<?=$utils->url("/registrar");?>">Regístrate</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -154,7 +160,7 @@
                             <div class="bg-primary p-5">
                                 <div class="experience mb-4 wow fadeIn" data-wow-delay="0.3s">
                                     <div class="d-flex justify-content-between mb-2">
-                                        <span class="text-white">Estadísticas</span>
+                                        <span class="text-white">Pacientes Satisfechos</span>
                                         <span class="text-white">90%</span>
                                     </div>
                                     <div class="progress">
@@ -163,7 +169,7 @@
                                 </div>
                                 <div class="experience mb-4 wow fadeIn" data-wow-delay="0.4s">
                                     <div class="d-flex justify-content-between mb-2">
-                                        <span class="text-white">Estadísticas</span>
+                                        <span class="text-white">Profesionales Satisfechos</span>
                                         <span class="text-white">95%</span>
                                     </div>
                                     <div class="progress">
@@ -172,7 +178,7 @@
                                 </div>
                                 <div class="experience mb-0 wow fadeIn" data-wow-delay="0.5s">
                                     <div class="d-flex justify-content-between mb-2">
-                                        <span class="text-white">Estadísticas</span>
+                                        <span class="text-white">Usuarios Satisfechos</span>
                                         <span class="text-white">90%</span>
                                     </div>
                                     <div class="progress">
@@ -225,47 +231,7 @@
                             <i class="bi bi-search text-dark"></i>
                         </div>
                         <h5 class="mb-3">Búsqueda de Médicos</h4>
-                            <p class="mb-4">Encuentra médicos y especialistas cercanos con facilidad.</p>
-                        <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item">
-                        <div class="icon-box-primary mb-4">
-                            <i class="bi bi-pencil-square text-dark"></i>
-                        </div>
-                        <h5 class="mb-3">Agenda de Citas</h4>
-                            <p class="mb-4"> Programa y gestiona tus citas médicas de manera sencilla.</p>
-                        <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item">
-                        <div class="icon-box-primary mb-4">
-                            <i class="bi bi-bell text-dark"></i>
-                        </div>
-                        <h5 class="mb-3">Recordatorios Personalizados</h4>
-                            <p class="mb-4">Recibe alertas para tomar medicamentos y asistir a tus citas.</p>
-                        <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="service-item">
-                        <div class="icon-box-primary mb-4">
-                            <i class="bi bi-person-lines-fill text-dark"></i>
-                        </div>
-                        <h5 class="mb-3">Perfiles de Médicos</h4>
-                            <p class="mb-4">Accede a información detallada sobre los profesionales de la salud.</p>
-                        <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item">
-                        <div class="icon-box-primary mb-4">
-                            <i class="bi bi-file-medical text-dark"></i>
-                        </div>
-                        <h5 class="mb-3">Historial Médico Digital</h4>
-                            <p class="mb-4">Almacena y accede a tu historial médico de forma segura.</p>
+                            <p class="mb-4">Encuentra pérfiles de médicos y especialistas cercanos de forma rápida y fácil.</p>
                         <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
                     </div>
                 </div>
@@ -275,17 +241,38 @@
                             <i class="bi bi-wifi text-dark"></i>
                         </div>
                         <h5 class="mb-3">Consultas en Línea</h4>
-                            <p class="mb-4">Realiza consultas médicas virtuales con expertos.</p>
+                            <p class="mb-4">Realiza consultas médicas virtuales con expertos y especialistas en la salud.</p>
                         <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item">
                         <div class="icon-box-primary mb-4">
+                            <i class="bi bi-bell text-dark"></i>
+                        </div>
+                        <h5 class="mb-3">Recordatorios</h4>
+                            <p class="mb-4">Recibe alertas para tomar medicamentos y asistir a tus citas.</p>
+                        <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item">
+                        <div class="icon-box-primary mb-4">
+                            <i class="bi bi-file-medical text-dark"></i>
+                        </div>
+                        <h5 class="mb-3">Historial Médico Digital</h4>
+                            <p class="mb-4">Almacena y accede a tu historial médico de forma rápida en caso de emergencias.</p>
+                        <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
+                    </div>
+                </div>
+              
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="icon-box-primary mb-4">
                             <i class="bi bi-clipboard2-pulse text-dark"></i>
                         </div>
-                        <h5 class="mb-3">Seguimiento de Síntomas</h4>
-                            <p class="mb-4">Registra y sigue la evolución de tus síntomas.</p>
+                        <h5 class="mb-3">Control de Síntomas</h4>
+                            <p class="mb-4">Sigue y regístra la evolución de tus síntomas de manera sencilla y eficaz.</p>
                         <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
                     </div>
                 </div>
@@ -315,15 +302,13 @@
                     <img class="img-fluid w-100" src="<?=$utils->assets('img/team-1.jpg')?>" alt="">
                 </div>
                 <div class="col-md-6 wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="display-6 mb-3">Dr. John Martin</h1>
-                    <p class="mb-1">CEO y fundador</p>
+                    <h1 class="display-6 mb-3">Dr. Andrés Fernández</h1>
+                    <p class="mb-1">Nutricionista</p>
                     <p class="mb-5">Santa Ana, El Salvador</p>
                     <h3 class="mb-3">Bibliografía</h3>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar tortor. Quisque vel lorem porttitor, malesuada arcu quis, fringilla risus. Pellentesque eu consequat augue.</p>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar tortor. Quisque vel lorem porttitor, malesuada arcu quis, fringilla risus. Pellentesque eu consequat augue.</p>
+                    <p class="mb-4">Profesional de la salud especializado en la nutrición y la dieta. Diseña planes alimenticios personalizados, brinda educación nutricional y trabaja en colaboración con otros especialistas de la salud para mejorar la salud y el bienestar de los pacientes.</p>
+                    <p class="mb-4">Su enfoque se centra en la alimentación equilibrada y la prevención de enfermedades relacionadas con la nutrición.</p>
                     <div class="d-flex">
-                        <a class="btn btn-lg-square btn-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-lg-square btn-primary me-2" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-lg-square btn-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
                         <a class="btn btn-lg-square btn-primary me-2" href=""><i class="fab fa-youtube"></i></a>
                     </div>
@@ -335,14 +320,12 @@
                         <div class="position-relative overflow-hidden">
                             <img class="img-fluid w-100" src="<?=$utils->assets('img/team-2.jpg')?>" alt="">
                             <div class="team-social">
-                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
                                 <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-youtube"></i></a>
                             </div>
                         </div>
                         <div class="text-center p-4">
-                            <h5 class="mb-1">Alex Robin</h5>
+                            <h5 class="mb-1">Isabella Lopéz</h5>
                             <span>Fisioterapeuta</span>
                         </div>
                     </div>
@@ -352,14 +335,12 @@
                         <div class="position-relative overflow-hidden">
                             <img class="img-fluid w-100" src="<?=$utils->assets('img/team-3.jpg')?>" alt="">
                             <div class="team-social">
-                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
                                 <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-youtube"></i></a>
                             </div>
                         </div>
                         <div class="text-center p-4">
-                            <h5 class="mb-1">Andrew Bon</h5>
+                            <h5 class="mb-1">Alejandro Martínez</h5>
                             <span>Doctor General</span>
                         </div>
                     </div>
@@ -369,15 +350,13 @@
                         <div class="position-relative overflow-hidden">
                             <img class="img-fluid w-100" src="<?=$utils->assets('img/team-4.jpg')?>" alt="">
                             <div class="team-social">
-                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
                                 <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-youtube"></i></a>
                             </div>
                         </div>
                         <div class="text-center p-4">
-                            <h5 class="mb-1">Martin Tompson</h5>
-                            <span>Psicologa</span>
+                            <h5 class="mb-1">Mariana Pérez</h5>
+                            <span>Psicóloga</span>
                         </div>
                     </div>
                 </div>
@@ -386,14 +365,12 @@
                         <div class="position-relative overflow-hidden">
                             <img class="img-fluid w-100" src="<?=$utils->assets('img/team-5.jpg')?>" alt="">
                             <div class="team-social">
-                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
                                 <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-youtube"></i></a>
                             </div>
                         </div>
                         <div class="text-center p-4">
-                            <h5 class="mb-1">Clarabelle Samber</h5>
+                            <h5 class="mb-1">Carlos Gónzales</h5>
                             <span>Odontólogo</span>
                         </div>
                     </div>
@@ -420,11 +397,11 @@
                                 <div class="icon-box-primary mb-4">
                                     <i class="bi bi-chat-left-quote text-dark"></i>
                                 </div>
-                                <p class="fs-5 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar tortor. Quisque vel lorem porttitor, malesuada arcu quis, fringilla risus. Pellentesque eu consequat augue.</p>
+                                <p class="fs-5 mb-4">IAmed ha sido una verdadera bendición para mi salud. Como madre y profesional, la facilidad de acceder a consultas en línea ha hecho que la atención médica de mi familia sea mucho más eficiente y conveniente.</p>
                                 <div class="d-flex align-items-center">
                                     <img class="flex-shrink-0" src="<?=$utils->assets('img/testimonial-1.jpg')?>" alt="">
                                     <div class="ps-3">
-                                        <h5 class="mb-1">Client Name</h5>
+                                        <h5 class="mb-1">Ana Rodríguez</h5>
                                         <span class="text-primary">Profesional</span>
                                     </div>
                                 </div>
@@ -433,12 +410,12 @@
                                 <div class="icon-box-primary mb-4">
                                     <i class="bi bi-chat-left-quote text-dark"></i>
                                 </div>
-                                <p class="fs-5 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar tortor. Quisque vel lorem porttitor, malesuada arcu quis, fringilla risus. Pellentesque eu consequat augue.</p>
+                                <p class="fs-5 mb-4">Como paciente, ahora puedo comunicarme de manera efectiva con mis médicos y llevar un seguimiento detallado de mis síntomas. La facilidad de uso y la comodidad que ofrece esta plataforma son invaluables para mí.</p>
                                 <div class="d-flex align-items-center">
                                     <img class="flex-shrink-0" src="<?=$utils->assets('img/testimonial-2.jpg')?>" alt="">
                                     <div class="ps-3">
-                                        <h5 class="mb-1">Client Name</h5>
-                                        <span class="text-primary">Profesional</span>
+                                        <h5 class="mb-1">Juan Morales</h5>
+                                        <span class="text-primary">Paciente</span>
                                     </div>
                                 </div>
                             </div>
