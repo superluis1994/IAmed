@@ -1,5 +1,4 @@
-
-    <div id="app">
+<div id="app">
       <div id="sidebar">
         <div class="sidebar-wrapper active">
           <div class="sidebar-header position-relative">
@@ -79,7 +78,7 @@
           </div>
           <div class="sidebar-menu">
             <ul class="menu">
-              <li class="sidebar-title">Menu</li>
+              <li class="sidebar-title">Menú</li>
 
               <li class="sidebar-item">
                 <a href="<?=$utils->Url("/dashboard");?>" class="sidebar-link">
@@ -103,101 +102,22 @@
                 <ul class="submenu">
                   <li class="submenu-item">
                     <a href="component-accordion.html" class="submenu-link"
-                      >Accordion</a
+                      >Chat 1</a
                     >
                   </li>
 
                   <li class="submenu-item">
                     <a href="component-alert.html" class="submenu-link"
-                      >Alert</a
+                      >Chat 2</a
                     >
                   </li>
 
                   <li class="submenu-item">
                     <a href="component-badge.html" class="submenu-link"
-                      >Badge</a
+                      >Chat 3</a
                     >
                   </li>
 
-                  <li class="submenu-item">
-                    <a href="component-breadcrumb.html" class="submenu-link"
-                      >Breadcrumb</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-button.html" class="submenu-link"
-                      >Button</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-card.html" class="submenu-link">Card</a>
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-carousel.html" class="submenu-link"
-                      >Carousel</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-collapse.html" class="submenu-link"
-                      >Collapse</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-dropdown.html" class="submenu-link"
-                      >Dropdown</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-list-group.html" class="submenu-link"
-                      >List Group</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-modal.html" class="submenu-link"
-                      >Modal</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-navs.html" class="submenu-link">Navs</a>
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-pagination.html" class="submenu-link"
-                      >Pagination</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-progress.html" class="submenu-link"
-                      >Progress</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-spinner.html" class="submenu-link"
-                      >Spinner</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-toasts.html" class="submenu-link"
-                      >Toasts</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-tooltip.html" class="submenu-link"
-                      >Tooltip</a
-                    >
-                  </li>
                 </ul>
               </li>
             </ul>
@@ -215,9 +135,9 @@
           <div class="page-title">
             <div class="row">
               <div class="col-12 col-md-6 order-md-1 order-last">
-                <h3>ChatIA</h3>
+                <h3>Médico</h3>
                 <p class="text-subtitle text-muted">
-                  Our take on a chat conversation.
+                  Conversación
                 </p>
               </div>
               <div class="col-12 col-md-6 order-md-2 order-first">
@@ -230,7 +150,7 @@
                       <a href="<?=$utils->Url("/dashboard");?>">Dashboard</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      ChatMedico
+                      ChatIA
                     </li>
                   </ol>
                 </nav>
@@ -252,8 +172,8 @@
                         <span class="avatar-status bg-success"></span>
                       </div>
                       <div class="name flex-grow-1">
-                        <h6 class="mb-0">Bot</h6>
-                        <span class="text-xs">Online</span>
+                        <h6 class="mb-0">MediBot</h6>
+                        <span class="text-xs"> Siempre en linea</span>
                       </div>
                       <button class="btn btn-sm">
                         <i data-feather="x"></i>
@@ -265,31 +185,76 @@
                       <div class="chat">
                         <div class="chat-body">
                           <div class="chat-message">
-                            Hi Alfy, how can i help you?
+                          Hola, tengo estos sintomas : Disnea,  Sibilancias, Tos, y Opresión en el pecho.
                           </div>
                         </div>
                       </div>
                       <div class="chat chat-left">
                         <div class="chat-body">
                           <div class="chat-message">
-                            I'm looking for the best admin dashboard template
+                          "Basado en los síntomas que has proporcionado, es posible que estés experimentando asma. El asma es una afección crónica que afecta las vías respiratorias y puede manifestarse con síntomas como disnea (dificultad para respirar), sibilancias, tos y opresión en el pecho. Es importante que busques atención médica para obtener un diagnóstico preciso y un plan de tratamiento adecuado.
                           </div>
                           <div class="chat-message">
-                            With bootstrap certainly
+                          Te recomendamos estos especialistas de IAmed:
                           </div>
                         </div>
                       </div>
+                      <style>
+    .doctor-info {
+      background-color: #007BFF; 
+      color: #fff; 
+      padding: 10px; 
+      border-radius: 5px; 
+      margin-bottom: 10px; 
+    }
+
+    .doctor-name {
+      font-weight: bold; 
+    }
+
+    .doctor-circle {
+      width: 50px; 
+      height: 50px;
+      background-color: #ccc; 
+      border-radius: 50%; 
+      display: inline-block; 
+      margin-right: 10px; 
+    }
+  </style>
+</head>
+<body>
+  <div class="chat chat-left">
+    <div class="chat-body">
+      <div class="chat-message">
+        <div class="doctor-info">
+          <div class="doctor-circle"></div>
+          <p><a href="enlace-al-dr-luis-respirino" class="doctor-name">Dr. Luis Respirino</a></p>
+          <p>Especialidad: Neumonología y Alergología.</p>
+        </div>
+        <div class="doctor-info">
+          <div class="doctor-circle"></div>
+          <p><a href="enlace-a-la-dra-maria-fernanda" class="doctor-name">Dra. Maria Fernanda</a></p>
+          <p>Especialidad: Pediatría y Alergología.</p>
+        </div>
+        <div class="doctor-info">
+          <div class="doctor-circle"></div>
+          <p><a href="enlace-al-dr-oscar-zapata" class="doctor-name">Dr. Oscar Zapata</a></p>
+          <p>Especialidad: Neumonología y Medicina Interna.</p>
+        </div>
+      </div>
+    </div>
+  </div>
                       <div class="chat">
                         <div class="chat-body">
                           <div class="chat-message">
-                            I recommend you to use Mazer Dashboard
+                            OK, muchas gracias mediBot
                           </div>
                         </div>
                       </div>
                       <div class="chat chat-left">
                         <div class="chat-body">
                           <div class="chat-message">
-                            That's great! I like it so much :)
+                          Estoy para ayudarte, estare aqui si necesitas más ayuda!
                           </div>
                         </div>
                       </div>
@@ -323,12 +288,12 @@
               <p>2023 &copy; Mazer</p>
             </div>
             <div class="float-end">
-              <p>
+             <!-- <p>
                 Crafted with
                 <span class="text-danger"
                   ><i class="bi bi-heart-fill icon-mid"></i
                 ></span>
-                by <a href="https://saugi.me">Saugi</a>
+                by <a href="https://saugi.me">Saugi</a> -->
               </p>
             </div>
           </div>
