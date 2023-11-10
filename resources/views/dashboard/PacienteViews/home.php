@@ -1,6 +1,9 @@
 
 <div class="col-12 col-lg-12">
+<<<<<<< HEAD
 <div class="col-12 col-lg-11">
+=======
+>>>>>>> b8add46 (He dejado el perfil del usuario como el del medico, he comentado la parte de publicidad y a el contenedor principal ahora tiene un md-12)
   <div class="row">
     <div class="col-6 col-lg-3 col-md-6">
       <div class="card">
