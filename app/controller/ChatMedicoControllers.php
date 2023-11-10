@@ -14,7 +14,13 @@ class ChatMedicoControllers extends Token{
       
    }
    public function index(){
-    return Utils::view('dashboard.chatMedico',$data=[],"");
+    return Utils::viewChat('dashboard.chatMedico.ViewChat.homePaciente',$data=[],"");
+   //  return Utils::viewChat('dashboard.chatMedico.ViewChat.chatDoctor',$data=[],"");
+    // return Utils::viewDasboard('productos.index');
+ }
+   public function chatMedico(){
+    
+    return Utils::viewChat('dashboard.chatMedico.ViewChat.chatDoctor',$data=[],"");
     // return Utils::viewDasboard('productos.index');
  }
    /**SE ENCARGA DE CARGAR LOS MENSAJES */
