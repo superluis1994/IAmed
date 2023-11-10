@@ -25,6 +25,7 @@ Route::group('/dashboard', function () {
     Route::get('/', "DashboardControllers@index");
     Route::get('', "DashboardControllers@index");
     Route::get('/chatbot', "ChatbotControllers@chatbot");
+    Route::get('/chatMedico', "ChatMedicoControllers@index");
     Route::get('/sectorPrivado', "SectorPrivadoControllers@index");
     Route::get('/farmacias', "farmaciasControllers@index");
     // Route::get('/login', function () {
