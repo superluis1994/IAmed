@@ -1,5 +1,5 @@
 
-<div class="col-12 col-lg-9">
+<div class="col-12 col-lg-12">
   <div class="row">
     <div class="col-6 col-lg-3 col-md-6">
       <div class="card">
@@ -12,7 +12,7 @@
             </div>
             <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
               <h6 class="text-muted font-semibold">
-                comunidad
+                Comunidad
               </h6>
               <h6 class="font-extrabold mb-0">Médica</h6>
             </div>
@@ -87,7 +87,7 @@
                 <svg class="bi text-primary" width="32" height="32" fill="blue" style="width: 10px">
                   <use xlink:href="assets/static/images/bootstrap-icons.svg#circle-fill" />
                 </svg>
-                <h5 class="mb-0 ms-3">Citas medicas</h5>
+                <h5 class="mb-0 ms-3">Citas Médicas</h5>
               </div>
             </div>
             <div class="col-5">
@@ -137,7 +137,7 @@
                       <div class="avatar avatar-md">
                         <img src="./assets/compiled/jpg/5.jpg" />
                       </div>
-                      <p class="font-bold ms-3 mb-0">Gary Paul Cartagena</p>
+                      <p class="font-bold ms-3 mb-0">Paul Cartagena</p>
                     </div>
                   </td>
                   <td class="col-auto">
@@ -189,7 +189,7 @@
     </div>
   </div>
 </div>
-<div class="col-12 col-lg-3">
+<!-- <div class="col-12 col-lg-3">
   <div class="card">
     <div class="card-body py-4 px-4">
       <div class="d-flex align-items-center">
@@ -198,7 +198,7 @@
         </div>
         <div class="ms-2 name">
           <h7 class="font-bold"><?php echo $_SESSION["datosUser"]["user"]; ?></h7>
-          <h6 class="text-muted mb-0">Emanuel Temple</h6>
+          <h6 class="text-muted mb-0">Emmanuel</h6>
         </div>
       </div>
     </div>
@@ -213,7 +213,7 @@
           <img src="<?=$utils->assets('assets/compiled/jpg/4.jpg')?>" />
         </div>
         <div class="name ms-4">
-          <h5 class="mb-1">Gary Paul Cartagena</h5>
+          <h5 class="mb-1">Paul Cartagena</h5>
           <h6 class="text-muted mb-0">Pediatra</h6>
         </div>
       </div>
@@ -231,7 +231,7 @@
           <img src="<?=$utils->assets('assets/compiled/jpg/1.jpg')?>" />
         </div>
         <div class="name ms-4">
-          <h5 class="mb-1">John Chayanne</h5>
+          <h5 class="mb-1">Luis Sorto</h5>
           <h6 class="text-muted mb-0">Enfermero</h6>
         </div>
       </div>
@@ -241,5 +241,5 @@
         </button>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
