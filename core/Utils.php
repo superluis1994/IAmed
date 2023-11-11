@@ -90,7 +90,8 @@ class Utils
         $content .= require_once  $url . "partials/header.php";
         $content .= require_once  $url . "" . $path[0] . "/partes/panel.php";
         // $content .= require_once  $url . "" . $path[0] . "/partes/".$_SESSION[""].".php";
-        $content .= require_once  $url . "" . $path[0] . "/" . $path[1] . "Views/" . $path[2] .".php";
+        $content .= require_once  $url . "" . $path[0] . "/" .$_SESSION['datosUser']['rol']."Views/" . $path[1] .".php" 
+        ?? require_once  $url . "" . $path[0] . "/error.php";
         $content .= require_once  $url . "" . $path[0] . "/partes/panelF.php";
         $content .= require_once  $url . "partials/footer.php";
         

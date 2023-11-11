@@ -7,19 +7,19 @@ use core\Utils;
 // parametro 1 : Controlador
 // parametro 2 :  vista
 // Route::get('/', "MainControllers@index");
-Route::group('/login',function(){
-    Route::get('/entrar', "LoginControllers@authenticate");
-    // Route::get('/entrar', "LoginControllers@prueba");
-    Route::get('', "LoginControllers@index");
-    Route::get('/', "LoginControllers@index");
-    Route::get('/resetpassword', "LoginControllers@registrar");
-    Route::get('/cerrar', "LoginControllers@CerrarSession");
-    // Route::get('/registrar/', "LoginControllers@registrar");
-});
-Route::group('/registrar',function(){
-    Route::get('', "RegistrarControllers@index");
-    Route::get('/', "RegistrarControllers@index");
-});
+// Route::group('/login',function(){
+//     Route::get('/entrar', "LoginControllers@authenticate");
+//     // Route::get('/entrar', "LoginControllers@prueba");
+//     Route::get('', "LoginControllers@index");
+//     Route::get('/', "LoginControllers@index");
+//     Route::get('/resetpassword', "LoginControllers@registrar");
+//     Route::get('/cerrar', "LoginControllers@CerrarSession");
+//     // Route::get('/registrar/', "LoginControllers@registrar");
+// });
+// Route::group('/registrar',function(){
+//     Route::get('', "RegistrarControllers@index");
+//     Route::get('/', "RegistrarControllers@index");
+// });
 
 Route::group('/dashboard', function () {
     Route::get('/', "DashboardControllers@index");
@@ -34,6 +34,14 @@ Route::group('/dashboard', function () {
         Route::get('/chat', "ChatMedicoControllers@chatMedico");
         Route::get('chat/', "ChatMedicoControllers@chatMedico");
         Route::get('/chat/', "ChatMedicoControllers@chatMedico");
+
+    });
+    Route::group('/dashboard/comunidaMedica', function () {
+        Route::get('', "ComunidaMedicaControllers@index");
+        Route::get('/', "ComunidaMedicaControllers@index");
+        // Route::get('/chat', "ComunidaMedicaControllers@chatMedico");
+        // Route::get('chat/', "ComunidaMedicaControllers@chatMedico");
+        // Route::get('/chat/', "ComunidaMedicaControllers@chatMedico");
 
     });
     // Route::get('/login', function () {

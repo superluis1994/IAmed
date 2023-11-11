@@ -14,6 +14,8 @@ spl_autoload_register(function ($class) {
 });
 
 
+
+
 require_once('vendor/autoload.php');
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
@@ -21,6 +23,7 @@ $dotenv->load();
 use core\Request;
 use core\Route;
 use core\App;
+use core\Requiere;
 // use core\Utils;
 // use app\controller\MainControllers;
 
@@ -28,12 +31,9 @@ use core\App;
 $request = new Request();
 $route = new Route();
 $app = new App();
-// $utils = new Utils();
-// $contro = new MainControllers();
-// $mainController= new MainController();
-include_once('routes/web.php');
-include_once('routes/dashboard.php');
-// include_once('core/Resources.php');
+$Requiere = new Requiere('routes');
+$Requiere->cargar();
+
 
 // MainController::show(1);
 // Código de la aplicación
