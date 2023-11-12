@@ -1,6 +1,6 @@
 <div class="sidebar-menu">
             <ul class="menu">
-              <li class="sidebar-title">Menu</li>
+              <li class="sidebar-title">Menú</li>
 
               <li class="sidebar-item active">
                 <a href="index.html" class="sidebar-link">

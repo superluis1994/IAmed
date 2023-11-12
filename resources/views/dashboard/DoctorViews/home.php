@@ -85,7 +85,7 @@
                 <div class="col-12 col-xl-4">
                   <div class="card">
                     <div class="card-header">
-                      <h4>Citas Medicas</h4>
+                      <h4>Citas Médicas</h4>
                     </div>
                     <div class="card-body">
                       <div class="row">
@@ -150,7 +150,7 @@
                           <thead>
                             <tr>
                               <th>Nombre</th>
-                              <th>Diagnostico</th>
+                              <th>Diagnóstico</th>
                               <th>Status</th>
                               <th>Fecha</th>
                             </tr>
@@ -167,7 +167,7 @@
                               </td>
                               <td class="col-auto">
                                 <p class="mb-0">
-                                  Lesion de tobillo
+                                  Lesión de tobillo
                                 </p>
                               </td>
                               <td class="col-auto">
@@ -192,7 +192,7 @@
                               </td>
                               <td class="col-auto">
                                 <p class="mb-0">
-                                  Gripe comun
+                                  Gripe común
                                 </p>
                               </td>
                               <td class="col-auto">

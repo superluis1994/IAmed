@@ -115,89 +115,10 @@
 
                   <li class="submenu-item">
                     <a href="component-badge.html" class="submenu-link"
-                      >Badge</a
+                      >Chat 3</a
                     >
                   </li>
 
-                  <li class="submenu-item">
-                    <a href="component-breadcrumb.html" class="submenu-link"
-                      >Breadcrumb</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-button.html" class="submenu-link"
-                      >Button</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-card.html" class="submenu-link">Card</a>
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-carousel.html" class="submenu-link"
-                      >Carousel</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-collapse.html" class="submenu-link"
-                      >Collapse</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-dropdown.html" class="submenu-link"
-                      >Dropdown</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-list-group.html" class="submenu-link"
-                      >List Group</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-modal.html" class="submenu-link"
-                      >Modal</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-navs.html" class="submenu-link">Navs</a>
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-pagination.html" class="submenu-link"
-                      >Pagination</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-progress.html" class="submenu-link"
-                      >Progress</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-spinner.html" class="submenu-link"
-                      >Spinner</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-toasts.html" class="submenu-link"
-                      >Toasts</a
-                    >
-                  </li>
-
-                  <li class="submenu-item">
-                    <a href="component-tooltip.html" class="submenu-link"
-                      >Tooltip</a
-                    >
-                  </li>
                 </ul>
               </li>
             </ul>
@@ -215,9 +136,9 @@
           <div class="page-title">
             <div class="row">
               <div class="col-12 col-md-6 order-md-1 order-last">
-                <h3>ChatIA</h3>
+                <h3>Doctor Melvin Marroquin</h3>
                 <p class="text-subtitle text-muted">
-                  Our take on a chat conversation.
+                  Conversación de chat.
                 </p>
               </div>
               <div class="col-12 col-md-6 order-md-2 order-first">
@@ -230,7 +151,7 @@
                       <a href="<?=$utils->Url("/dashboard");?>">Dashboard</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      ChatIA
+                      Doctor
                     </li>
                   </ol>
                 </nav>
@@ -252,8 +173,8 @@
                         <span class="avatar-status bg-success"></span>
                       </div>
                       <div class="name flex-grow-1">
-                        <h6 class="mb-0">MediBot</h6>
-                        <span class="text-xs"> Siempre en linea</span>
+                        <h6 class="mb-0">Doctor. Melvin Marroquín</h6>
+                        <span class="text-xs"> Siempre en línea</span>
                       </div>
                       <button class="btn btn-sm">
                         <i data-feather="x"></i>
