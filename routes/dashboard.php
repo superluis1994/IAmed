@@ -4,6 +4,7 @@ namespace routes;
 
 use core\Route;
 use core\Utils;
+
 // parametro 1 : Controlador
 // parametro 2 :  vista
 // Route::get('/', "MainControllers@index");
