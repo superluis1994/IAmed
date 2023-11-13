@@ -1,5 +1,8 @@
 <div id="app">
+<<<<<<< HEAD
 <div id="app">
+=======
+>>>>>>> e9d7ed65c0f96a5f2b3c59e2a3c80574b6f437df
       <div id="sidebar">
         <div class="sidebar-wrapper active">
           <div class="sidebar-header position-relative">
@@ -109,6 +112,30 @@
               </li>
 
 
+<<<<<<< HEAD
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="component-accordion.html" class="submenu-link"
+                      >Chat 1</a
+                    >
+                  </li>
+
+                  <li class="submenu-item">
+                    <a href="component-alert.html" class="submenu-link"
+                      >Chat 2</a
+                    >
+                  </li>
+
+                  <li class="submenu-item">
+                    <a href="component-badge.html" class="submenu-link"
+                      >Chat 3</a
+                    >
+                  </li>
+
+                </ul>
+              </li>
+=======
+>>>>>>> origin/main
             </ul>
           </li>
         </ul>
@@ -122,6 +149,10 @@
       </a>
     </header>
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e9d7ed65c0f96a5f2b3c59e2a3c80574b6f437df
         <div class="page-heading">
           <div class="page-title">
             <div class="row">
@@ -198,6 +229,8 @@
       border-radius: 5px; 
       margin-bottom: 10px; 
     }
+<<<<<<< HEAD
+=======
 
     .doctor-name {
       font-weight: bold; 
@@ -291,3 +324,105 @@
         </footer>
       </div>
     </div>
+=======
+>>>>>>> e9d7ed65c0f96a5f2b3c59e2a3c80574b6f437df
+
+    .doctor-name {
+      font-weight: bold; 
+    }
+
+<<<<<<< HEAD
+    .doctor-circle {
+      width: 50px; 
+      height: 50px;
+      background-color: #ccc; 
+      border-radius: 50%; 
+      display: inline-block; 
+      margin-right: 10px; 
+    }
+  </style>
+</head>
+<body>
+  <div class="chat chat-left">
+    <div class="chat-body">
+      <div class="chat-message">
+        <div class="doctor-info">
+          <div class="doctor-circle"></div>
+          <p><a href="enlace-al-dr-luis-respirino" class="doctor-name">Dr. Luis Respirino</a></p>
+          <p>Especialidad: Neumonología y Alergología.</p>
+        </div>
+        <div class="doctor-info">
+          <div class="doctor-circle"></div>
+          <p><a href="enlace-a-la-dra-maria-fernanda" class="doctor-name">Dra. Maria Fernanda</a></p>
+          <p>Especialidad: Pediatría y Alergología.</p>
+        </div>
+        <div class="doctor-info">
+          <div class="doctor-circle"></div>
+          <p><a href="enlace-al-dr-oscar-zapata" class="doctor-name">Dr. Oscar Zapata</a></p>
+          <p>Especialidad: Neumonología y Medicina Interna.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+                      <div class="chat">
+                        <div class="chat-body">
+                          <div class="chat-message">
+                            OK, muchas gracias mediBot
+                          </div>
+                        </div>
+                      </div>
+                      <div class="chat chat-left">
+                        <div class="chat-body">
+                          <div class="chat-message">
+                          Estoy para ayudarte, estare aqui si necesitas más ayuda!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div
+                      class="message-form d-flex flex-direction-column align-items-center"
+                    >
+                      <a href="http://" class="black"
+                        ><i data-feather="smile"></i
+                      ></a>
+                      <div class="d-flex flex-grow-1 ms-4">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Type your message.."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <footer>
+          <div class="footer clearfix mb-0 text-muted">
+            <div class="float-start">
+              <p>2023 &copy; Mazer</p>
+            </div>
+            <div class="float-end">
+             <!-- <p>
+                Crafted with
+                <span class="text-danger"
+                  ><i class="bi bi-heart-fill icon-mid"></i
+                ></span>
+                by <a href="https://saugi.me">Saugi</a> -->
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+=======
+  
+  <!-- </div>
+</div> -->
+>>>>>>> origin/main
+>>>>>>> e9d7ed65c0f96a5f2b3c59e2a3c80574b6f437df
