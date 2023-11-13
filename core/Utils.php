@@ -38,6 +38,24 @@ class Utils
         $content .= require_once  $url . "partials/footer.php";
         return $content;
     }
+    static function viewChat($path = "", $data = [])
+    {
+        // instancie la clase aqui para tener acceso a sus clases assets
+        $utils = new Utils();
+        $url = "./resources/views/";
+        // $path = str_replace(".", "/", $path);
+        $path = explode('.', $path);
+        foreach ($data as $key => $value) {
+            $$key = $value;
+        }
+        
+        $content = "";
+        $content .= require_once  $url . "partials/header.php";
+        $content .= require_once  $url . "".$path[0]."/".$path[1].".php";
+        $content .=  require_once $url . '' . $path[0]."/".$path[2]. "/".$path[3].".php";
+        $content .= require_once  $url . "partials/footer.php";
+        return $content;
+    }
     static function viewStatic($path = "", $data = [])
     {
         // instancie la clase aqui para tener acceso a sus clases assets
@@ -72,7 +90,8 @@ class Utils
         $content .= require_once  $url . "partials/header.php";
         $content .= require_once  $url . "" . $path[0] . "/partes/panel.php";
         // $content .= require_once  $url . "" . $path[0] . "/partes/".$_SESSION[""].".php";
-        $content .= require_once  $url . "" . $path[0] . "/" . $path[1] . "Views/" . $path[2] .".php";
+        $content .= require_once  $url . "" . $path[0] . "/" .$_SESSION['datosUser']['rol']."Views/" . $path[1] .".php" 
+        ?? require_once  $url . "" . $path[0] . "/error.php";
         $content .= require_once  $url . "" . $path[0] . "/partes/panelF.php";
         $content .= require_once  $url . "partials/footer.php";
         
