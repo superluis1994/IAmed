@@ -5,7 +5,7 @@ namespace routes;
 use core\Route;
 use core\Utils;
 
-Route::get('/luis', "MainControllers@inicio");
+Route::get('/', "MainControllers@inicio");
 Route::get('/about', "MainControllers@informacion");
 Route::get('/servicios', "MainControllers@funciones");
 Route::get('/contacto', "MainControllers@contacto");
