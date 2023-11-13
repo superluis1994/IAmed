@@ -25,10 +25,19 @@ class DashboardControllers extends Token{
    public function index(){
      // @$Data = $this->AuthModel->MongoDB("chats");
 
+<<<<<<< HEAD
+      // foreach ($Data as $documento) {
+      //   echo $documento["id"] . "\n";
+      //   echo " - ".$documento["msg"] . "\n";
+      // }
+=======
+
      // foreach ($Data as $documento) {
      //    echo $documento["id"] . "\n";
     //     echo " - ".$documento["msg"] . "\n";
     // }
+
+>>>>>>> e9d7ed65c0f96a5f2b3c59e2a3c80574b6f437df
       // var_dump($Data);
       // $alerta="<script> Swal.fire('SweetAlert2 is working!')</script>";
        $alerta="";
