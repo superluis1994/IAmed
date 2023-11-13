@@ -108,6 +108,30 @@
               </li>
 
 
+<<<<<<< HEAD
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="component-accordion.html" class="submenu-link"
+                      >Chat 1</a
+                    >
+                  </li>
+
+                  <li class="submenu-item">
+                    <a href="component-alert.html" class="submenu-link"
+                      >Chat 2</a
+                    >
+                  </li>
+
+                  <li class="submenu-item">
+                    <a href="component-badge.html" class="submenu-link"
+                      >Chat 3</a
+                    >
+                  </li>
+
+                </ul>
+              </li>
+=======
+>>>>>>> origin/main
             </ul>
           </li>
         </ul>
@@ -121,6 +145,7 @@
       </a>
     </header>
 
+<<<<<<< HEAD
         <div class="page-heading">
           <div class="page-title">
             <div class="row">
@@ -290,3 +315,10 @@
         </footer>
       </div>
     </div>
+=======
+
+
+  
+  <!-- </div>
+</div> -->
+>>>>>>> origin/main
