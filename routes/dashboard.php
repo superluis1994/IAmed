@@ -4,6 +4,7 @@ namespace routes;
 
 use core\Route;
 use core\Utils;
+
 // parametro 1 : Controlador
 // parametro 2 :  vista
 // Route::get('/', "MainControllers@index");
@@ -31,6 +32,12 @@ Route::group('/dashboard', function () {
     Route::group('/dashboard/chatMedico', function () {
         Route::get('', "ChatMedicoControllers@index");
         Route::get('/', "ChatMedicoControllers@index");
+        // Route::get('/chatMedico/{categoria}', function ($route) {
+        //     return Utils::viewChat("dashboard.chatMedico.ViewChat.listadoDoctores", ["categoria" => $route["categoria"]]);
+        // });
+        Route::post('/categoria/{id}',"ChatMedicoControllers@chatMedicos");
+
+        
         Route::get('/chat', "ChatMedicoControllers@chatMedico");
         Route::get('chat/', "ChatMedicoControllers@chatMedico");
         Route::get('/chat/', "ChatMedicoControllers@chatMedico");
