@@ -1,5 +1,5 @@
 
-<div class="col-12 col-lg-11">
+<div class="col-12 col-lg-12">
   <div class="row">
     <div class="col-6 col-lg-3 col-md-6">
       <a href="<?=$utils->url('/dashboard/comunidaMedica');?>">
@@ -13,7 +13,7 @@
               </div>
               <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                 <h6 class="text-muted font-semibold">
-                comunidad
+                Comunidad
               </h6>
               <h6 class="font-extrabold mb-0">Médica</h6>
             </div>
@@ -144,9 +144,9 @@
                   <td class="col-3">
                     <div class="d-flex align-items-center">
                       <div class="avatar avatar-md">
-                        <img src="./assets/compiled/jpg/5.jpg" />
+                      <img src="<?=$utils->assets('assets/compiled/jpg/2.jpg')?>" />
                       </div>
-                      <p class="font-bold ms-3 mb-0">Gary Paul Cartagena</p>
+                      <p class="font-bold ms-3 mb-0">Paul Cartagena</p>
                     </div>
                   </td>
                   <td class="col-auto">
@@ -159,7 +159,7 @@
                   <td class="col-3">
                     <div class="d-flex align-items-center">
                       <div class="avatar avatar-md">
-                        <img src="./assets/compiled/jpg/2.jpg" />
+                      <img src="<?=$utils->assets('assets/compiled/jpg/4.jpg')?>" />
                       </div>
                       <p class="font-bold ms-3 mb-0">Melvin Marroquín</p>
                     </div>
@@ -174,7 +174,7 @@
                   <td class="col-3">
                     <div class="d-flex align-items-center">
                       <div class="avatar avatar-md">
-                        <img src="./assets/compiled/jpg/2.jpg" />
+                      <img src="<?=$utils->assets('assets/compiled/jpg/7.jpg')?>" />
                       </div>
                       <p class="font-bold ms-3 mb-0">Luis Sorto</p>
                     </div>
@@ -218,16 +218,16 @@
           <div class="card-content pb-4">
             <div class="recent-message d-flex px-4 py-3">
               <div class="avatar avatar-lg">
-                <img src="<?=$utils->assets('assets/compiled/jpg/4.jpg')?>" />
+                <img src="<?=$utils->assets('assets/compiled/jpg/2.jpg')?>" />
               </div>
               <div class="name ms-4">
-                <h5 class="mb-1">Gary Paul Cartagena</h5>
+                <h5 class="mb-1">Paul Cartagena</h5>
                 <h6 class="text-muted mb-0">Pediatra</h6>
               </div>
             </div>
             <div class="recent-message d-flex px-4 py-3">
               <div class="avatar avatar-lg">
-                <img src="<?=$utils->assets('assets/compiled/jpg/5.jpg')?>" />
+                <img src="<?=$utils->assets('assets/compiled/jpg/4.jpg')?>" />
               </div>
               <div class="name ms-4">
                 <h5 class="mb-1">Melvin Marroquín</h5>
@@ -236,10 +236,10 @@
             </div>
             <div class="recent-message d-flex px-4 py-3">
               <div class="avatar avatar-lg">
-                <img src="<?=$utils->assets('assets/compiled/jpg/1.jpg')?>" />
+                <img src="<?=$utils->assets('assets/compiled/jpg/7.jpg')?>" />
               </div>
               <div class="name ms-4">
-                <h5 class="mb-1">John Chayanne</h5>
+                <h5 class="mb-1">Luis Sorto</h5>
                 <h6 class="text-muted mb-0">Enfermero</h6>
               </div>
             </div>

@@ -84,7 +84,7 @@
               <li class="sidebar-item">
                 <a href="<?=$utils->Url("/dashboard");?>" class="sidebar-link">
                   <i class="bi bi-grid-fill"></i>
-                  <span>Dashboard</span>
+                  <span>Inicio</span>
                 </a>
               </li>
               <li class="sidebar-item">
@@ -115,11 +115,11 @@
 
                   <li class="submenu-item">
                     <a href="component-badge.html" class="submenu-link"
-                      >Badge</a
+                      >Chat 3</a
                     >
                   </li>
 
-                  <li class="submenu-item">
+                  <!-- <li class="submenu-item">
                     <a href="component-breadcrumb.html" class="submenu-link"
                       >Breadcrumb</a
                     >
@@ -197,7 +197,7 @@
                     <a href="component-tooltip.html" class="submenu-link"
                       >Tooltip</a
                     >
-                  </li>
+                  </li>  -->
                 </ul>
               </li>
             </ul>
@@ -217,7 +217,7 @@
               <div class="col-12 col-md-6 order-md-1 order-last">
                 <h3>ChatIA</h3>
                 <p class="text-subtitle text-muted">
-                  Our take on a chat conversation.
+                  Puedes iniciar una conversación.
                 </p>
               </div>
               <div class="col-12 col-md-6 order-md-2 order-first">
@@ -227,7 +227,7 @@
                 >
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <a href="<?=$utils->Url("/dashboard");?>">Dashboard</a>
+                      <a href="<?=$utils->Url("/dashboard");?>">Inicio</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
                       ChatIA
