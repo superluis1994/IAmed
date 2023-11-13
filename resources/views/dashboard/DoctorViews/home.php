@@ -1,7 +1,8 @@
             <div class="col-12 col-lg-12">
               <div class="row">
                 <div class="col-6 col-lg-3 col-md-6">
-                  <div class="card">
+                  <a href="<?=$utils->url("/dashboard/chatbot");?>">
+                  <div class="card" >
                     <div class="card-body px-4 py-4-5">
                       <div class="row">
                         <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start">
@@ -18,6 +19,8 @@
                       </div>
                     </div>
                   </div>
+                </a>
+
                 </div>
                 <div class="col-6 col-lg-3 col-md-6">
                   <div class="card">
