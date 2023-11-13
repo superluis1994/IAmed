@@ -14,7 +14,7 @@
                 >
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <a href="<?=$utils->Url("/dashboard");?>">Dashboard</a>
+                      <a href="<?=$utils->Url("/dashboard");?>">Inicio</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
                       ChatIA

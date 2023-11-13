@@ -1,16 +1,16 @@
 <div class="sidebar-menu">
             <ul class="menu">
-              <li class="sidebar-title">Menu</li>
+              <li class="sidebar-title">Menú</li>
 
               <li class="sidebar-item active">
                 <a href="index.html" class="sidebar-link">
                   <i class="bi bi-grid-fill"></i>
-                  <span>PANEL</span>
+                  <span>PANEL AFILIADO</span>
                 </a>
               </li>
               <li class="sidebar-item has-sub">
                 <a href="#" class="sidebar-link">
-                  <i class="bi bi-collection-fill"></i>
+                <i class="bi bi-chat-fill"></i>
                   <span>Chat</span>
                 </a>
 
@@ -50,7 +50,7 @@
 
               <li class="sidebar-item has-sub">
                 <a href="#" class="sidebar-link">
-                  <i class="bi bi-grid-1x2-fill"></i>
+                <i class="bi bi-bell-fill"></i>
                   <span>Recordatorios</span>
                 </a>
 
@@ -71,8 +71,8 @@
 
               <li class="sidebar-item has-sub">
                 <a href="#" class="sidebar-link">
-                  <i class="bi bi-hexagon-fill"></i>
-                  <span>Perfil De Usuario</span>
+                <i class="bi bi-person-fill"></i>
+                  <span>Perfil De Afiliado</span>
                 </a>
 
                 <ul class="submenu">
@@ -103,7 +103,7 @@
 
               <li class="sidebar-item has-sub">
                 <a href="#" class="sidebar-link">
-                  <i class="bi bi-journal-check"></i>
+                <i class="bi bi-shield-fill"></i>
                   <span>Privacidad</span>
                 </a>
 
@@ -125,7 +125,7 @@
 
               <li class="sidebar-item">
                 <a href="https://zuramai.github.io/mazer/docs" class="sidebar-link">
-                  <i class="bi bi-life-preserver"></i>
+                <i class="bi bi-question-circle-fill"></i>
                   <span>Ayuda</span>
                 </a>
               </li>

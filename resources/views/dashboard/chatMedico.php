@@ -32,12 +32,12 @@
       </div>
       <div class="sidebar-menu">
         <ul class="menu">
-          <li class="sidebar-title">Menu</li>
+          <li class="sidebar-title">Menú</li>
 
           <li class="sidebar-item">
             <a href="<?= $utils->Url("/dashboard"); ?>" class="sidebar-link">
               <i class="bi bi-houses-fill"></i>
-              <span>Dashboard</span>
+              <span>Inicio</span>
             </a>
           </li>
           <li class="sidebar-item">
@@ -57,7 +57,7 @@
               <li class="submenu-item">
                 <a href="<?=$utils->url("/dashboard/chatMedico/chat");?>" class="submenu-link">
                   <i class="bi bi-arrow-right-circle-fill"></i>
-                  Accordion
+                  Chat 1
                 </a>
               </li>
 

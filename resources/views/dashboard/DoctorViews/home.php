@@ -85,7 +85,7 @@
                 <div class="col-12 col-xl-4">
                   <div class="card">
                     <div class="card-header">
-                      <h4>Citas Medicas</h4>
+                      <h4>Citas Médicas</h4>
                     </div>
                     <div class="card-body">
                       <div class="row">
@@ -150,7 +150,7 @@
                           <thead>
                             <tr>
                               <th>Nombre</th>
-                              <th>Diagnostico</th>
+                              <th>Diagnóstico</th>
                               <th>Status</th>
                               <th>Fecha</th>
                             </tr>
@@ -160,7 +160,7 @@
                               <td class="col-3">
                                 <div class="d-flex align-items-center">
                                   <div class="avatar avatar-md">
-                                    <img src="./assets/compiled/jpg/5.jpg" />
+                                  <img src="<?=$utils->assets('assets/compiled/jpg/4.jpg')?>" />
                                   </div>
                                   <p class="font-bold ms-3 mb-0">Melvin Marroquin</p>
                                 </div>
@@ -185,7 +185,7 @@
                               <td class="col-3">
                                 <div class="d-flex align-items-center">
                                   <div class="avatar avatar-md">
-                                    <img src="./assets/compiled/jpg/2.jpg" />
+                                  <img src="<?=$utils->assets('assets/compiled/jpg/7.jpg')?>" />
                                   </div>
                                   <p class="font-bold ms-3 mb-0">Luis Sorto</p>
                                 </div>
@@ -210,7 +210,7 @@
                               <td class="col-3">
                                 <div class="d-flex align-items-center">
                                   <div class="avatar avatar-md">
-                                    <img src="./assets/compiled/jpg/2.jpg" />
+                                  <img src="<?=$utils->assets('assets/compiled/jpg/2.jpg')?>" />
                                   </div>
                                   <p class="font-bold ms-3 mb-0">Emmanuel Mazariego</p>
                                 </div>

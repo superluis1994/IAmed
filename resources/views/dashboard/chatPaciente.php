@@ -84,7 +84,7 @@
               <li class="sidebar-item">
                 <a href="<?=$utils->Url("/dashboard");?>" class="sidebar-link">
                   <i class="bi bi-grid-fill"></i>
-                  <span>Dashboard</span>
+                  <span>Inicio</span>
                 </a>
               </li>
               <li class="sidebar-item">
@@ -103,7 +103,7 @@
                 <ul class="submenu">
                   <li class="submenu-item">
                     <a href="component-accordion.html" class="submenu-link"
-                      >Accordion</a
+                      >Chat 1</a
                     >
                   </li>
             </ul>
