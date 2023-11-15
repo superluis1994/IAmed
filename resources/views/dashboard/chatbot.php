@@ -239,7 +239,7 @@
           </div>
           <section class="section">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-9"> <!-- TAMAÑO DEL CHAT-->
                 <div class="card">
                   <div class="card-header">
                     <div class="media d-flex align-items-center">
