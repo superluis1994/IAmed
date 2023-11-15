@@ -305,7 +305,7 @@
                     <h1 class="display-6 mb-3">Dr. Andrés Fernández</h1>
                     <p class="mb-1">Nutricionista</p>
                     <p class="mb-5">Santa Ana, El Salvador</p>
-                    <h3 class="mb-3">Bibliografía</h3>
+                    <h3 class="mb-3">Biografía</h3>
                     <p class="mb-4">Profesional de la salud especializado en la nutrición y la dieta. Diseña planes alimenticios personalizados, brinda educación nutricional y trabaja en colaboración con otros especialistas de la salud para mejorar la salud y el bienestar de los pacientes.</p>
                     <p class="mb-4">Su enfoque se centra en la alimentación equilibrada y la prevención de enfermedades relacionadas con la nutrición.</p>
                     <div class="d-flex">
