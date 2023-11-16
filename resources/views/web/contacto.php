@@ -14,8 +14,7 @@
                         <a href="<?= $utils->url('/') ?>#body" class="nav-item nav-link active ">Inicio</a>
                         <a href="<?= $utils->url('/') ?>#servicios" class="nav-item nav-link">Servicios</a>
                         <a href="<?= $utils->url('/') ?>#comunidad" class="nav-item nav-link">Comunidad Médica</a>
-                        <a href="<?= $utils->url('/servicios') ?>" class="nav-item nav-link">Afiliados</a>
-                        <a href="<?= $utils->url('/contacto') ?>" class="nav-item nav-link">Contactos</a>
+                        <a href="<?= $utils->url('/') ?>#especialistas" class="nav-item nav-link">Especialistas</a>
                     </div>
                     <div class="ms-auto d-none d-lg-flex">
                     <a href="<?= $utils->url('/login') ?>" class="nav-item nav-link">Iniciar Sesión</a>
