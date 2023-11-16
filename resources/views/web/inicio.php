@@ -1,9 +1,18 @@
 
+
+<script>
+var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: '#navbar-example2'
+})
+
+</script>
+
+
    <!-- Navbar Start -->
    <div class="container-fluid sticky-top">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
-                <a href="index.html" class="navbar-brand d-lg-none">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3" id="navbar-example2">
+                <a href="#" class="navbar-brand d-lg-none">
                     <h1 class="text-primary m-0">IA<span class="text-dark">med</span></h1>
                 </a>
                 <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
@@ -12,23 +21,25 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
-                        <a href="#body" class="nav-item nav-link active ">Inicio</a>
-                        <a href="#servicios" class="nav-item nav-link">Servicios</a>
+                        <a href="#" class="nav-item nav-link ">Inicio</a>
                         <a href="#comunidad" class="nav-item nav-link">Comunidad Médica</a>
-                        <a href="<?= $utils->url('/servicios') ?>" class="nav-item nav-link">Afiliados</a>
+                        <a href="#servicios" class="nav-item nav-link">Servicios</a>
+                        <a href="#especialistas" class="nav-item nav-link">Especialistas</a>
                         <a href="<?= $utils->url('/contacto') ?>" class="nav-item nav-link">Contactos</a>
                     </div>
                     <div class="ms-auto d-none d-lg-flex">
                     <a href="<?= $utils->url('/login') ?>" class="nav-item nav-link">Iniciar Sesión</a>
-                        <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-sm-square btn-primary ms-2" href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-sm-square btn-primary ms-2" href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-sm-square btn-primary ms-2" href="www.youtube.com"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
     <!-- Navbar End -->
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+    
 
     <!-- Carousel Start -->
     <div class="container-fluid header-carousel px-0 mb-5">
@@ -90,7 +101,7 @@
     </div>
     <!-- final del caruosel -->
     
-    <div class="container-fluid feature mt-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container-fluid feature mt-5 wow fadeInUp" data-wow-delay="0.1s" id="comunidad">
         <div class="container">
             <div class="row g-0">
                 <div class="col-lg-6 pt-lg-5">
@@ -191,7 +202,7 @@
     <div class="container-fluid container-service py-5" id="servicios">
         <div class="container pt-5" >
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="display-6 mb-3">Funciones Principales de IAmed</h1>
+                <h1 class="display-6 mb-3">Servicios Principales de IAmed</h1>
                 <p class="mb-5">Explora las numerosas funcionalidades de IAmed que mejoran tu experiencia médica y te ayudan a cuidar de tu salud de manera eficiente y personalizada.</p>
             </div>
             <div class="row g-4">
@@ -285,7 +296,7 @@
     <!-- Appoinment Start -->
 
     <!-- Team Start -->
-    <div class="container-fluid container-team py-5" id="comunidad">
+    <div class="container-fluid container-team py-5" id="especialistas">
         <div class="container pb-5" >
             <div class="row g-5 align-items-center mb-5" >
                 <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
@@ -413,6 +424,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- Testimonial End -->
 
