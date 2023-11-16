@@ -69,7 +69,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
                 <a href="index.html" class="navbar-brand d-lg-none">
-                    <h1 class="text-primary m-0">Lab<span class="text-dark">Sky</span></h1>
+                    <h1 class="text-primary m-0">IA<span class="text-dark">med</span></h1>
                 </a>
                 <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -78,21 +78,13 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
                         <a href="<?= $utils->url('/') ?>" class="nav-item nav-link active">Inicio</a>
-                        <a href="<?= $utils->url('/about') ?>" class="nav-item nav-link">Información</a>
-                        <a href="<?= $utils->url('/servicios') ?>" class="nav-item nav-link">Funciones</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Páginas</a>
-                            <div class="dropdown-menu bg-light m-0">
-                                <a href="feature.html" class="dropdown-item">Caracteristicas</a>
-                                <a href="team.html" class="dropdown-item">Equipo</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimoninos</a>
-                                <a href="appoinment.html" class="dropdown-item">Objetivos</a>
-                                <a href="404.html" class="dropdown-item">Página 404</a>
-                            </div>
-                        </div>
+                        <a href="<?= $utils->url('/about') ?>" class="nav-item nav-link">Comunidad Médica</a>
+                        <a href="<?= $utils->url('/servicios') ?>" class="nav-item nav-link">Servicios</a>
+                        <a href="<?= $utils->url('/servicios') ?>" class="nav-item nav-link">Afiliados</a>
                         <a href="<?= $utils->url('/contacto') ?>" class="nav-item nav-link">Contactos</a>
                     </div>
                     <div class="ms-auto d-none d-lg-flex">
+                    <a href="<?= $utils->url('/login') ?>" class="nav-item nav-link">Iniciar Sesión</a>
                         <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-youtube"></i></a>
