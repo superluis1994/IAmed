@@ -13,7 +13,7 @@
                                 <div class="col-lg-7 text-start">
                                     <h1 class="display-1 text-white animated slideInRight mb-3">Acceso Inmediato a Profesionales de la Salud</h1>
                                     <p class="mb-5 animated slideInRight">Descubre cómo IAmed te conecta con profesionales de la salud en segundos. Tu bienestar, a un clic de distancia.</p>
-                                    <a href="<?=$utils->url("/servicios");?>" class="btn btn-primary py-3 px-5 animated slideInRight">Explorar Más</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -28,7 +28,7 @@
                                 <div class="col-lg-7 text-end">
                                     <h1 class="display-1 text-white animated slideInLeft mb-3">Prediagnósticos Médicos con Inteligencia Artificial</h1>
                                     <p class="mb-5 animated slideInLeft">Explora cómo la inteligencia artificial está revolucionando la medicina, mejorando diagnósticos y tratamientos. El futuro de la salud ya está aquí.</p>
-                                    <a href="<?=$utils->url("/servicios");?>" class="btn btn-primary py-3 px-5 animated slideInLeft">Explorar Más</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -42,7 +42,7 @@
                                 <div class="col-lg-7 text-start">
                                     <h1 class="display-1 text-white animated slideInLeft mb-3">Recordatorios Médicos y Citas con Profesionales</h1>
                                     <p class="mb-5 animated slideInRight">Nunca más olvides una cita médica o una dosis de medicamento. IAmed te mantiene al tanto de tu salud.</p>
-                                    <a href="<?=$utils->url("/servicios");?>" class="btn btn-primary py-3 px-5 animated slideInLeft">Explorar Más</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -59,66 +59,6 @@
             </button>
         </div>
     </div>
-    <!-- Carousel End -->
-
-
-    <!-- About Start -->
-    
-    <!-- About End -->
-
-
-    <!-- Features Start -->
-    <br> <br>
-    <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="display-6 mb-3">IAmed te Ofrece</h1>
-                <p class="mb-5">Forma parte de nuestra comunidad y disfruta de los recursos y ventajas que IAmed tiene para ofrecerte. </p>
-            </div>
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="row g-0 feature-row">
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="feature-item border h-100 p-5">
-                        <div class="icon-box-primary mb-4">
-                        <i class="bi bi-people text-dark"></i>
-                        </div>
-                        <h5 class="mb-3">Comunidad Médica</h5>
-                        <p class="mb-0">Una comunidad que permita la comunicación entre profesionales de la salud y pacientes, ofreciendo información precisa y accesible</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="feature-item border h-100 p-5">
-                        <div class="icon-box-primary mb-4">
-                            <i class="bi bi-reddit text-dark"></i>
-                        </div>
-                        <h5 class="mb-3">Inteligencia Artificial</h5>
-                        <p class="mb-0">Usamos tecnologia avanzada mejorando tu salud. Generando prediagnósticos y recomendaciones personalizadas .</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="feature-item border h-100 p-5">
-                        <div class="icon-box-primary mb-4">
-                            <i class="bi bi-wifi text-dark"></i>
-                        </div>
-                        <h5 class="mb-3">Consultas en Línea</h5>
-                        <p class="mb-0">Obtén consultas virtuales seguras y efectivas. Conecta con médicos expertos desde cualquier lugar y obtén el cuidado que necesitas en línea.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <div class="feature-item border h-100 p-5">
-                        <div class="icon-box-primary mb-4">
-                                <i class="bi bi-shield text-dark"></i>
-                            </div>
-                        <h5 class="mb-3">Privacidad y Seguridad</h5>
-                        <p class="mb-0">Implementamos medidas para garantizar la confidencialidad, integridad y protección de tus datos médicos y personales en todo momento.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Features End -->
-
-
-    <!-- Features Start -->
     <div class="container-fluid feature mt-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-0">
@@ -146,43 +86,42 @@
                         <a class="btn btn-primary py-3 px-5 wow fadeIn" data-wow-delay="0.5s" href="<?=$utils->url("/registrar");?>">Regístrate</a>
                     </div>
                 </div>
+                
                 <div class="col-lg-6">
-                    <div class="row h-100 align-items-end">
-                        <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
-                            <div class="d-flex align-items-center justify-content-center" style="min-height: 300px;">
-                                <button type="button" class="btn-play" data-bs-toggle="modal"
-                                    data-src="https://youtu.be/sj8MGPfmp8o" data-bs-target="#videoModal">
-                                    <span></span>
-                                </button>
+                    <div class="align-items-end">
+                        <br><br><br><br>
+                        <div class="col-12" data-wow-delay="0.3s">
+                            <div class="d-flex">
+                                <iframe width="800" height="400" src="https://www.youtube.com/embed/sj8MGPfmp8o" title="IA med" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"allowfullscreeen></iframe>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="bg-primary p-5">
-                                <div class="experience mb-4 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="experience mb-4" data-wow-delay="0.5s">
                                     <div class="d-flex justify-content-between mb-2">
-                                        <span class="text-white">Pacientes Satisfechos</span>
-                                        <span class="text-white">90%</span>
+                                        <span class="text-white">Pacientes Atendidos</span>
+                                        <span class="text-white">545</span>
                                     </div>
                                     <div class="progress">
-                                        <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <div class="experience mb-4 wow fadeIn" data-wow-delay="0.4s">
                                     <div class="d-flex justify-content-between mb-2">
-                                        <span class="text-white">Profesionales Satisfechos</span>
-                                        <span class="text-white">95%</span>
+                                        <span class="text-white">Profesionales Registrados</span>
+                                        <span class="text-white">48</span>
                                     </div>
                                     <div class="progress">
-                                        <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <div class="experience mb-0 wow fadeIn" data-wow-delay="0.5s">
                                     <div class="d-flex justify-content-between mb-2">
-                                        <span class="text-white">Usuarios Satisfechos</span>
-                                        <span class="text-white">90%</span>
+                                        <span class="text-white">Prediagnósticos con IA</span>
+                                        <span class="text-white">312</span>
                                     </div>
                                     <div class="progress">
-                                        <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                             </div>
@@ -286,6 +225,26 @@
                         <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
                     </div>
                 </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item">
+                        <div class="icon-box-primary mb-4">
+                            <i class="bi bi-heart-pulse text-dark"></i>
+                        </div>
+                        <h5 class="mb-3">Educación en Salud</h4>
+                            <p class="mb-4">Accede a recursos informativos sobre tu salud y condiciones médicas.</p>
+                        <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item">
+                        <div class="icon-box-primary mb-4">
+                            <i class="bi bi-heart-pulse text-dark"></i>
+                        </div>
+                        <h5 class="mb-3">Educación en Salud</h4>
+                            <p class="mb-4">Accede a recursos informativos sobre tu salud y condiciones médicas.</p>
+                        <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -305,7 +264,7 @@
                     <h1 class="display-6 mb-3">Dr. Andrés Fernández</h1>
                     <p class="mb-1">Nutricionista</p>
                     <p class="mb-5">Santa Ana, El Salvador</p>
-                    <h3 class="mb-3">Bibliografía</h3>
+                    <h3 class="mb-3">Biografía</h3>
                     <p class="mb-4">Profesional de la salud especializado en la nutrición y la dieta. Diseña planes alimenticios personalizados, brinda educación nutricional y trabaja en colaboración con otros especialistas de la salud para mejorar la salud y el bienestar de los pacientes.</p>
                     <p class="mb-4">Su enfoque se centra en la alimentación equilibrada y la prevención de enfermedades relacionadas con la nutrición.</p>
                     <div class="d-flex">

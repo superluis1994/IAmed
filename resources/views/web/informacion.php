@@ -20,7 +20,7 @@
     <!-- About End -->
 
     <!-- Features Start -->
-    <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+   <!-- <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <h1 class="display-6 mb-3">IAmed te Ofrece</h1>
                 <p class="mb-5">Forma parte de nuestra comunidad y disfruta de los recursos y ventajas que IAmed tiene para ofrecerte. </p>
             </div>
@@ -65,7 +65,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Features End -->
 
 

@@ -119,6 +119,7 @@
                     >
                   </li>
 
+<<<<<<< HEAD
                   <!-- <li class="submenu-item">
                     <a href="component-breadcrumb.html" class="submenu-link"
                       >Breadcrumb</a
@@ -198,6 +199,8 @@
                       >Tooltip</a
                     >
                   </li>  -->
+=======
+>>>>>>> 273f8afd79f816b8ca23e9a0bf1fb575d52479ca
                 </ul>
               </li>
             </ul>
@@ -215,9 +218,13 @@
           <div class="page-title">
             <div class="row">
               <div class="col-12 col-md-6 order-md-1 order-last">
-                <h3>ChatIA</h3>
+                <h3>Doctor Melvin Marroquin</h3>
                 <p class="text-subtitle text-muted">
+<<<<<<< HEAD
                   Puedes iniciar una conversación.
+=======
+                  Conversación de chat.
+>>>>>>> 273f8afd79f816b8ca23e9a0bf1fb575d52479ca
                 </p>
               </div>
               <div class="col-12 col-md-6 order-md-2 order-first">
@@ -230,7 +237,7 @@
                       <a href="<?=$utils->Url("/dashboard");?>">Inicio</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      ChatIA
+                      Doctor
                     </li>
                   </ol>
                 </nav>
@@ -239,7 +246,7 @@
           </div>
           <section class="section">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-9"> <!-- TAMAÑO DEL CHAT-->
                 <div class="card">
                   <div class="card-header">
                     <div class="media d-flex align-items-center">
@@ -252,8 +259,8 @@
                         <span class="avatar-status bg-success"></span>
                       </div>
                       <div class="name flex-grow-1">
-                        <h6 class="mb-0">MediBot</h6>
-                        <span class="text-xs"> Siempre en linea</span>
+                        <h6 class="mb-0">Doctor. Melvin Marroquín</h6>
+                        <span class="text-xs"> Siempre en línea</span>
                       </div>
                       <button class="btn btn-sm">
                         <i data-feather="x"></i>

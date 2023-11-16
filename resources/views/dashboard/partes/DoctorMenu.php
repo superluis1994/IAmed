@@ -29,7 +29,7 @@
               <li class="sidebar-item has-sub">
                 <a href="#" class="sidebar-link">
                   <i class="bi bi-file-earmark-spreadsheet-fill"></i>
-                  <span>Seguimiento de Cita</span>
+                  <span>Citas</span>
                 </a>
 
                 <ul class="submenu">

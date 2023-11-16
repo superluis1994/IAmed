@@ -20,19 +20,19 @@
                     <div class="row g-5">
                         <div class="col-sm-6">
                             <h4 class="text-light mb-4">Enlaces Rápidos</h4>
-                            <a class="btn btn-link" href="">Información</a>
+                            <a class="btn btn-link" href="">Inicio</a>
+                            <a class="btn btn-link" href="">Comunidad Médica</a>
                             <a class="btn btn-link" href="">Servicios</a>
-                            <a class="btn btn-link" href="">Testimonios</a>
-                            <a class="btn btn-link" href="">Objetivos</a>
-                            <a class="btn btn-link" href="">Soporte</a>
+                            <a class="btn btn-link" href="">Especialistas</a>
+                            <a class="btn btn-link" href="">Contactos</a>
                         </div>
                         <div class="col-sm-6">
                             <h4 class="text-light mb-4">Enlaces Populares</h4>
-                            <a class="btn btn-link" href="">Información</a>
+                            <a class="btn btn-link" href="">Inicio</a>
+                            <a class="btn btn-link" href="">Comunidad Médica</a>
                             <a class="btn btn-link" href="">Servicios</a>
-                            <a class="btn btn-link" href="">Testimonios</a>
-                            <a class="btn btn-link" href="">Objetivos</a>
-                            <a class="btn btn-link" href="">Soporte</a>
+                            <a class="btn btn-link" href="">Especialistas</a>
+                            <a class="btn btn-link" href="">Contactos</a>
                         </div>
                         <div class="col-sm-12">
                             <h4 class="text-light mb-4">Informate Más</h4>
