@@ -73,8 +73,8 @@
               </div>
             </div>
             <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
-              <h6 class="text-muted font-semibold">Especialistas</h6>
-              <h6 class="font-extrabold mb-0">Favoritos</h6>
+              <h6 class="text-muted font-semibold">Contactos de</h6>
+              <h6 class="font-extrabold mb-0">Emergencia</h6>
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@
   </div>
   
   <div class="row">
-    <div class="col-12 col-xl-4">
+    <div class="col-12 col-xl-3">
       <div class="card">
         <div class="card-header">
           <h4>Recordatorios Activos</h4>
@@ -125,7 +125,7 @@
         </div>
       </div>
     </div>
-    <div class="col-12 col-xl-5">
+    <div class="col-12 col-xl-6">
       <div class="card">
         <div class="card-header">
           <h4>Chats Recientes</h4>
@@ -136,6 +136,7 @@
               <thead>
                 <tr>
                   <th>Nombre</th>
+                  <th>Especialidad</th>
                   <th>Mensaje</th>
                 </tr>
               </thead>
@@ -148,6 +149,11 @@
                       </div>
                       <p class="font-bold ms-3 mb-0">Paul Cartagena</p>
                     </div>
+                  </td>
+                  <td class="col-auto">
+                    <p class="mb-0">
+                      Pediatra
+                    </p>
                   </td>
                   <td class="col-auto">
                     <p class="mb-0">
@@ -166,6 +172,11 @@
                   </td>
                   <td class="col-auto">
                     <p class="mb-0">
+                      Fisioterapeuta
+                    </p>
+                  </td>
+                  <td class="col-auto">
+                    <p class="mb-0">
                       Los horarios son de 7 am a 4 pm.
                     </p>
                   </td>
@@ -178,6 +189,11 @@
                       </div>
                       <p class="font-bold ms-3 mb-0">Luis Sorto</p>
                     </div>
+                  </td>
+                  <td class="col-auto">
+                    <p class="mb-0">
+                      Medico General
+                    </p>
                   </td>
                   <td class="col-auto">
                     <p class="mb-0">
