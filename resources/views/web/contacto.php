@@ -1,4 +1,34 @@
-    <!-- Page Header Start -->
+   <!-- Navbar Start -->
+   <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
+                <a href="index.html" class="navbar-brand d-lg-none">
+                    <h1 class="text-primary m-0">IA<span class="text-dark">med</span></h1>
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="<?= $utils->url('/') ?>#body" class="nav-item nav-link active ">Inicio</a>
+                        <a href="<?= $utils->url('/') ?>#servicios" class="nav-item nav-link">Servicios</a>
+                        <a href="<?= $utils->url('/') ?>#comunidad" class="nav-item nav-link">Comunidad Médica</a>
+                        <a href="<?= $utils->url('/servicios') ?>" class="nav-item nav-link">Afiliados</a>
+                        <a href="<?= $utils->url('/contacto') ?>" class="nav-item nav-link">Contactos</a>
+                    </div>
+                    <div class="ms-auto d-none d-lg-flex">
+                    <a href="<?= $utils->url('/login') ?>" class="nav-item nav-link">Iniciar Sesión</a>
+                        <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+<!-- Page Header Start -->
     <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5 mt-4">
             <h1 class="display-2 text-white mb-3 animated slideInDown">Contactos</h1>
