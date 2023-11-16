@@ -1,4 +1,4 @@
-<div class="row">
+div<div class="row">
 
     <div class="col-12 col-md-10 order-md-2 order-first">
         <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
@@ -35,50 +35,7 @@
         
         
     </div>
-    <!-- <section class="section">
-        <div class="card">
-            <div class="card-header">
-                <h4 class="card-title">Default Layout</h4>
-            </div>
-            <div class="card-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-                commodi? Ullam quaerat similique iusto temporibus, vero aliquam
-                praesentium, odit deserunt eaque nihil saepe hic deleniti?
-                Placeat delectus quibusdam ratione ullam!
-            </div>
-        </div>
-    </section> -->
-    
-    <!-- <div class="row">
-        <hr class="text-mute">
-        <h5 class="text-center">Categorias</h5>
-
-
-        <div class="col-md-4 col-sm-12 col-lg-4">
-            <div class="card">
-                <div class="card-content">
-                    <div class="card-body" >
-                        <div class="row">
-                            <div class="col-4">
-                                <img class="card-img-top img-fluid" src="<?=$utils->assets('assets/static/images/categorias-cirujano.png');?>" alt="Card image cap" style="height: 5rem">
-
-                            </div>
-                            <div class="col-8">
-                                <h4 class="card-title">CIRUJANO</h4>
-                                <p class="card-text">Todo tipo de cirujano</p>
-                                <a class="btn btn-sm btn-primary block" href="<?=$utils->url("/dashboard/chatMedico/categoria/c12")?>">Seleccionar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-    </div> -->
-
-
-
+  
     <div class="row">
         <hr class="text-mute">
         <h5 class="text-center">Categorias</h5>
@@ -90,14 +47,19 @@ foreach ($data as $categoria) {
     <div class="card">
         <div class="card-content">
             <div class="card-body">
-                <div class="row">
-                    <div class="col-4">
-                        <img class="card-img-top img-fluid" src='"$utils->assets("assets/static/images/categorias-cirujano.png")"' alt="Card image cap" style="height: 5rem">
+                <div class="row justify-content-center text-center">
+                    <div class="col-6">
+                        <img class="card-img-top img-fluid" src='{$utils->assets("assets/static/images/categorias-cirujano.png")}' alt="Card image cap" style="height: 5rem">
                     </div>
-                    <div class="col-8">
-                        <h4 class="card-title">{$categoria["nombre"]}</h4>
-                        <p class="card-text">{$categoria["descripcion"]}</p>
-                        <a class="btn btn-sm btn-primary block" href='".$utils->url("/dashboard/chatMedico/categoria/{$categoria["id_especialidad"]}")."'>Seleccionar</a>
+                    <div class="col-12">
+
+                        <h4 class="card-title text-capitalize">{$categoria["nombre"]}</h4>
+                    </div>
+                    <div class="col-12">
+                        <div class="col-12" style="height: 100px; overflow-y: auto;;text-align: justify;">
+                            <p class="card-text" >{$categoria["descripcion"]}</p>
+                        </div>                        
+                        <a class="btn btn-sm btn-primary block" href="{$utils->url("/dashboard/chatMedico/categoria/{$categoria["id_especialidad"]}")}">Seleccionar</a>
                     </div>
                 </div>
             </div>
