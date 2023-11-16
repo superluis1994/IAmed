@@ -167,7 +167,7 @@
                               </td>
                               <td class="col-auto">
                                 <p class="mb-0">
-                                  Lesion de tobillo
+                                  Lesión de tobillo
                                 </p>
                               </td>
                               <td class="col-auto">
@@ -192,7 +192,7 @@
                               </td>
                               <td class="col-auto">
                                 <p class="mb-0">
-                                  Gripe comun
+                                  Gripe común
                                 </p>
                               </td>
                               <td class="col-auto">
