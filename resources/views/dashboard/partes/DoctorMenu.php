@@ -97,9 +97,8 @@
                   </li>
 
                 </ul>
+
               </li>
-
-
 
               <li class="sidebar-item has-sub">
                 <a href="#" class="sidebar-link">
@@ -113,6 +112,16 @@
                   </li>
                 </ul>
               </li>
+              <Br>
+
+              <ul class="list-unstyled">
+                <li class="sidebar-item-">
+                    <a href="#" class="btn btn-primary">
+                        <i class="bi bi-gem"></i>
+                        <span>&nbsp;&nbsp;Cambiar a Premium</span>
+                    </a>
+                </li>
+              </ul>
 
               <li class="sidebar-title">Soporte Técnico</li>
 
