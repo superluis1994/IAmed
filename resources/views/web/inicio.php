@@ -213,7 +213,7 @@ var scrollSpy = new bootstrap.ScrollSpy(document.body, {
                         </div>
                         <h5 class="mb-3">Búsqueda de Médicos</h4>
                             <p class="mb-4">Encuentra pérfiles de médicos y especialistas cercanos de forma rápida y fácil.</p>
-                        <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
+                        
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -223,7 +223,7 @@ var scrollSpy = new bootstrap.ScrollSpy(document.body, {
                         </div>
                         <h5 class="mb-3">Consultas en Línea</h4>
                             <p class="mb-4">Realiza consultas médicas virtuales con expertos y especialistas en la salud.</p>
-                        <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
+                        
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -233,7 +233,7 @@ var scrollSpy = new bootstrap.ScrollSpy(document.body, {
                         </div>
                         <h5 class="mb-3">Recordatorios</h4>
                             <p class="mb-4">Recibe alertas para tomar medicamentos y asistir a tus citas.</p>
-                        <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
+                        
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -243,7 +243,7 @@ var scrollSpy = new bootstrap.ScrollSpy(document.body, {
                         </div>
                         <h5 class="mb-3">Historial Médico Digital</h4>
                             <p class="mb-4">Almacena y accede a tu historial médico de forma rápida en caso de emergencias.</p>
-                        <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
+                        
                     </div>
                 </div>
               
@@ -254,7 +254,7 @@ var scrollSpy = new bootstrap.ScrollSpy(document.body, {
                         </div>
                         <h5 class="mb-3">Control de Síntomas</h4>
                             <p class="mb-4">Sigue y regístra la evolución de tus síntomas de manera sencilla y eficaz.</p>
-                        <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
+                        
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
@@ -264,27 +264,27 @@ var scrollSpy = new bootstrap.ScrollSpy(document.body, {
                         </div>
                         <h5 class="mb-3">Educación en Salud</h4>
                             <p class="mb-4">Accede a recursos informativos sobre tu salud y condiciones médicas.</p>
-                        <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
+                        
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="service-item">
                         <div class="icon-box-primary mb-4">
-                            <i class="bi bi-heart-pulse text-dark"></i>
+                        <i class="bi bi-robot text-dark"></i>
                         </div>
-                        <h5 class="mb-3">Educación en Salud</h4>
-                            <p class="mb-4">Accede a recursos informativos sobre tu salud y condiciones médicas.</p>
-                        <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
+                        <h5 class="mb-3">Inteligencia Artificial</h4>
+                            <p class="mb-4">Puedes consultar sobre tus síntomas diarios de forma rápida y confiable.</p>
+                        
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="service-item">
                         <div class="icon-box-primary mb-4">
-                            <i class="bi bi-heart-pulse text-dark"></i>
+                        <i class="bi bi-hospital-fill text-dark"></i>
                         </div>
-                        <h5 class="mb-3">Educación en Salud</h4>
-                            <p class="mb-4">Accede a recursos informativos sobre tu salud y condiciones médicas.</p>
-                        <a class="btn btn-light px-3" href="">Leer Más<i class="bi bi-chevron-double-right ms-1"></i></a>
+                        <h5 class="mb-3">Números de Emergencia</h4>
+                            <p class="mb-4">La IA puede generarte contactos de emergencia según tu necesidad.</p>
+                        
                     </div>
                 </div>
             </div>
