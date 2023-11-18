@@ -41,7 +41,7 @@
             </a>
           </li>
           <li class="sidebar-item">
-            <a href="#" class="sidebar-link">
+            <a href="<?=$utils->url("/dashboard/chatMedico");?>" class="sidebar-link">
               <i class="bi bi-plus-circle-fill"></i>
               <span>Nuevo Chat</span>
             </a>

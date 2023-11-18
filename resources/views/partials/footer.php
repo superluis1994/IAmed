@@ -9,7 +9,8 @@
     <script src="<?=$utils->assets('assets/static/js/pages/dashboard.js')?>"></script>
     <script src="<?=$utils->assets('assets/extensions/sweetalert2/sweetalert2V.all.min.js')?>"></script>
     <script src="<?=$utils->assets('assets/static/js/pages/sweetalert2.js')?>"></script>
- <?php echo @$msg;  ?>
+  
+    <?php echo @$msg;  ?>
 
   </body>
 </html>
