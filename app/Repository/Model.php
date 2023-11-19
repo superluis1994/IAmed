@@ -29,16 +29,29 @@ class Model extends Conexion implements Orm
       self::$Query = "SELECT * FROM $Tabla";
       return $this;
    }
-   public function MongoDB($collection)
-   {
-       $mongoConnec = $this->getMongoConexion();
+   // public function MongoDB($collection)
+   // {
+   //     $mongoConnec = $this->getMongoConexion();
    
-       $collection = $mongoConnec->selectCollection($_ENV["DB_NAME"], $collection);
-       $cursor = $collection->find();
-       return $cursor;
+   //     $collection = $mongoConnec->selectCollection($_ENV["DB_NAME"], $collection);
+   //     $cursor = $collection->find();
+   //     return $cursor;
        
-   }
+   // }
    
+
+   public function MongoDBAll($collection)
+{
+  try {
+    $conexion = parent::mongoDbConexion();
+    $coleccion = $conexion->selectCollection($_ENV["MONGODB_DB"],$collection); // Select the collection
+    $datos = $coleccion->find();
+    return $datos;
+  } catch (\Throwable $th) {
+    return $th->getMessage();
+  }
+}
+
    
    public function QueryEspefico(array $campo)
    {
