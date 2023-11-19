@@ -20,9 +20,9 @@ Route::group('/dashboard', function () {
         //     return Utils::viewChat("dashboard.chatMedico.ViewChat.listadoDoctores", ["categoria" => $route["categoria"]]);
         // });
         Route::post('/categoria/{id}',"ChatMedicoControllers@chatMedicos");
-        Route::get('/chat', "ChatMedicoControllers@chatMedico");
-        Route::get('chat/', "ChatMedicoControllers@chatMedico");
-        Route::get('/chat/', "ChatMedicoControllers@chatMedico");
+        // Route::get('/chat', "ChatMedicoControllers@chatMedico");
+        Route::get('chat/{id}', "ChatMedicoControllers@chatMedico");
+        Route::get('/chat/{id}', "ChatMedicoControllers@chatMedico");
 
     });
     Route::group('/dashboard/comunidaMedica', function () {
