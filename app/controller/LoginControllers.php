@@ -87,6 +87,7 @@ class LoginControllers
          $jwt = JWT::encode($payload, $key, 'HS256');
 
          @$_SESSION['datosUser'];
+         $datos['id'] = $Data[0]['id_user'];
          $datos['user'] = $Data[0]['username'];
          $datos['status'] = $Data[0]['status'];
          $datos['rol'] = $Data[0]['nombreRol'];

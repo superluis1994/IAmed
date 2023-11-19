@@ -98,3 +98,6 @@
 
     </div>
 </div>
+<?php 
+// print_r($data)
+?>

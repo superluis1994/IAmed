@@ -47,7 +47,7 @@
                 <div class="slider">
                     <div class="owl-carousel">
                         <?php
-                        foreach ($data as $categoria) {
+                        foreach ($data["especialidades"] as $categoria) {
                             echo <<<HTML
         <div class="slider-card">
             <!-- <div class="d-flex justify-content-center align-items-center mb-4">

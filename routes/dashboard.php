@@ -5,22 +5,6 @@ namespace routes;
 use core\Route;
 use core\Utils;
 
-// parametro 1 : Controlador
-// parametro 2 :  vista
-// Route::get('/', "MainControllers@index");
-// Route::group('/login',function(){
-//     Route::get('/entrar', "LoginControllers@authenticate");
-//     // Route::get('/entrar', "LoginControllers@prueba");
-//     Route::get('', "LoginControllers@index");
-//     Route::get('/', "LoginControllers@index");
-//     Route::get('/resetpassword', "LoginControllers@registrar");
-//     Route::get('/cerrar', "LoginControllers@CerrarSession");
-//     // Route::get('/registrar/', "LoginControllers@registrar");
-// });
-// Route::group('/registrar',function(){
-//     Route::get('', "RegistrarControllers@index");
-//     Route::get('/', "RegistrarControllers@index");
-// });
 
 Route::group('/dashboard', function () {
     Route::get('/', "DashboardControllers@index");
@@ -36,11 +20,9 @@ Route::group('/dashboard', function () {
         //     return Utils::viewChat("dashboard.chatMedico.ViewChat.listadoDoctores", ["categoria" => $route["categoria"]]);
         // });
         Route::post('/categoria/{id}',"ChatMedicoControllers@chatMedicos");
-
-        
-        Route::get('/chat', "ChatMedicoControllers@chatMedico");
-        Route::get('chat/', "ChatMedicoControllers@chatMedico");
-        Route::get('/chat/', "ChatMedicoControllers@chatMedico");
+        // Route::get('/chat', "ChatMedicoControllers@chatMedico");
+        Route::get('chat/{id}', "ChatMedicoControllers@chatMedico");
+        Route::get('/chat/{id}', "ChatMedicoControllers@chatMedico");
 
     });
     Route::group('/dashboard/comunidaMedica', function () {

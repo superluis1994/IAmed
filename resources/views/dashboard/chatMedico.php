@@ -54,13 +54,20 @@
             </a>
 
             <ul class="submenu">
+              <?php
+               foreach ($data["chats"] as $chats) {
+            echo <<<HTML
               <li class="submenu-item">
-                <a href="<?=$utils->url("/dashboard/chatMedico/chat");?>" class="submenu-link">
+                <a href="{$utils->url('/dashboard/chatMedico/chat')}/{$chats->participants[0]['doctorId']}" class="submenu-link">
                   <i class="bi bi-arrow-right-circle-fill"></i>
-                  Chat 1
+                 
+                 {$chats->participants[0]["username"]}
                 </a>
               </li>
-
+              HTML;
+               }
+              // echo var_dump($data["chats"]->);
+             ?>
 
             </ul>
           </li>

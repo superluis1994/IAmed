@@ -1,80 +1,6 @@
 <?php 
-// namespace app\setting;
-// use MongoDB\Client;
-// use PDO;
-
-// class Conexion 
-// {
-//     public static string $Query;
-
-//     private static $Conector = null;
-
-//     public static $Pps = null;
-
-//     private static ?MongoDB\Client $MongoConector = null;
-// //prueba de pull requests
-//     // realiza la conexión a la base de datos
-//     public static function getConexion_()
-//     {
-//        try {
-//         // self::$Conector = new PDO("mysql:host=".$_ENV["DB_HOST"].";dbname=".$_ENV["DB_NAME"]);
-//         self::$Conector = new PDO(
-//             "mysql:host=" . $_ENV["DB_HOST"] . ";dbname=" . $_ENV["DB_NAME"],
-//             $_ENV["DB_USER"],
-//             $_ENV["DB_PASSWORD"]
-//         );
-        
-        
-//         self::$Conector->exec("set names utf8");
-//         self::$Conector->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-
-//        } catch (\Throwable $th) {
-//         echo $th->getMessage();
-//        }
-
-//        return self::$Conector;
-//     }
-
-
-//     public static function getConexionMongoDB(): ?MongoDB\Client
-//     {
-//         if (self::$MongoConector === null) {
-//             try {
-//                 $uri = "mongodb://localhost:27017";
-//                 self::$MongoConector = new Client($uri);
-//             } catch (\Throwable $th) {
-//                 echo $th->getMessage();
-//             }
-//         }
-
-//         return self::$MongoConector;
-//     }
-
-
-//     /// liberar recursos
-
-//     public static function closeConexionBD()
-//     {
-//         if(self::$Conector != null)
-//         {
-//             self::$Conector = null;
-//         }
-
-//         if(self::$Pps != null)
-//         {
-//             self::$Pps = null;
-//         }
-//     }
-
-
-// }
-
-
-
-
-
-namespace app\setting;
-
+namespace app\Setting;
+use MongoDB\MongoDB;
 use MongoDB\Client;
 use PDO;
 
@@ -108,16 +34,31 @@ class Conexion
 
         return self::$Conector;
     }
+    public function mongoDbConexion(){
+        try {
 
-    public static function getMongoConexion()
-{
-    if (self::$MongoConnector === null) {
-        self::$MongoConnector = new Client($_ENV["MONGODB_URI"]);
-        
+            $Mongo = "mongodb+srv://".
+            $_ENV["MONGODB_USERNAME"].":".
+            $_ENV["MONGODB_PASSWORD"]."@".
+            $_ENV["MONGODB_SERVIDOR"]."/".
+            $_ENV["MONGODB_DB"];
+            self::$MongoConnector = new client($Mongo);
+            // self::$MongoConnector->selectDatabase($_ENV["MONGODB_DB"]);
+            return self::$MongoConnector;
+        } catch(\Throwable $th){
+           return $th->getMessage();
+        }
     }
 
-    return self::$MongoConnector;
-}
+//     public static function getMongoConexion()
+// {
+//     if (self::$MongoConnector === null) {
+//         self::$MongoConnector = new Client($_ENV["MONGODB_URI"]);
+        
+//     }
+
+//     return self::$MongoConnector;
+// }
 
 
     
