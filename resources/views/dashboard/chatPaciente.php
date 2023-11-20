@@ -6,10 +6,7 @@
             <div class="d-flex justify-content-between align-items-center">
               <div class="logo">
                 <a href="index.html"
-                  ><img
-                    src="<?= $utils->assets('assets/compiled/svg/logo.svg') ?>"
-                    alt="Logo"
-                    srcset=""
+                  >
                 /></a>
               </div>
               <div class="theme-toggle d-flex gap-2 align-items-center mt-2">
