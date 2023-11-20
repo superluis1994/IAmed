@@ -19,7 +19,7 @@ Route::group('/dashboard', function () {
         // Route::get('/chatMedico/{categoria}', function ($route) {
         //     return Utils::viewChat("dashboard.chatMedico.ViewChat.listadoDoctores", ["categoria" => $route["categoria"]]);
         // });
-        Route::post('/categoria/{id}',"ChatMedicoControllers@chatMedicos");
+        Route::post('/categoria/{id}',"ChatMedicoControllers@listadoMedicos");
         // Route::get('/chat', "ChatMedicoControllers@chatMedico");
         Route::get('chat/{id}', "ChatMedicoControllers@chatMedico");
         Route::get('/chat/{id}', "ChatMedicoControllers@chatMedico");
@@ -31,6 +31,12 @@ Route::group('/dashboard', function () {
         // Route::get('/chat', "ComunidaMedicaControllers@chatMedico");
         // Route::get('chat/', "ComunidaMedicaControllers@chatMedico");
         // Route::get('/chat/', "ComunidaMedicaControllers@chatMedico");
+
+    });
+    Route::group('/dashboard/suscripciones', function () {
+        Route::get('', "SuscripcionesControllers@index");
+        Route::get('/', "ComunidaMedicaControllers@index");
+
 
     });
     // Route::get('/login', function () {
