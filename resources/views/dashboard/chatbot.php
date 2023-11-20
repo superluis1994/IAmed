@@ -4,7 +4,7 @@
       <div class="sidebar-header position-relative">
         <div class="d-flex justify-content-between align-items-center">
           <div class="logo">
-            <a href="index.html"><img src="<?= $utils->assets('assets/compiled/svg/logo.svg') ?>" alt="Logo" srcset="" /></a>
+          <a href="index.html"><img src="<?= $utils->assets('assets/compiled/svg/log.svg') ?>" alt="Logo" srcset="" /></a>
           </div>
           <div class="theme-toggle d-flex gap-2 align-items-center mt-2">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--system-uicons" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21">
@@ -83,9 +83,9 @@
       <div class="page-title">
         <div class="row">
           <div class="col-12 col-md-6 order-md-1 order-last">
-            <h3>Chat con especialista</h3>
+            <h3>Chat con MediBot</h3>
             <p class="text-subtitle text-muted">
-              Conversación de chat.
+              Consulta tus síntomas e inicia una conversación con la Inteligencia Artificial.
 
             </p>
           </div>
@@ -114,7 +114,7 @@
                     <span class="avatar-status bg-success"></span>
                   </div>
                   <div class="name flex-grow-1">
-                    <h6 class="mb-0">Doctor. Melvin Marroquín</h6>
+                    <h6 class="mb-0">MediBot</h6>
                     <span class="text-xs"> Siempre en línea</span>
                   </div>
                   <button class="btn btn-sm">
@@ -134,7 +134,7 @@
                   <div class="chat chat-left">
                     <div class="chat-body">
                       <div class="chat-message">
-                        "Basado en los síntomas que has proporcionado, es posible que estés experimentando asma. El asma es una afección crónica que afecta las vías respiratorias y puede manifestarse con síntomas como disnea (dificultad para respirar), sibilancias, tos y opresión en el pecho. Es importante que busques atención médica para obtener un diagnóstico preciso y un plan de tratamiento adecuado.
+                        Basado en los síntomas que has proporcionado, es posible que estés experimentando asma. El asma es una afección crónica que afecta las vías respiratorias y puede manifestarse con síntomas como disnea (dificultad para respirar), sibilancias, tos y opresión en el pecho. Es importante que busques atención médica para obtener un diagnóstico preciso y un plan de tratamiento adecuado.
                       </div>
                       <div class="chat-message">
                         Te recomendamos estos especialistas de IAmed:
@@ -152,6 +152,7 @@
 
                     .doctor-name {
                       font-weight: bold;
+                      color: #fff;
                     }
 
                     .doctor-circle {
