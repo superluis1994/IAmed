@@ -16,7 +16,7 @@
 
                 <ul class="submenu">
                   <li class="submenu-item">
-                    <a href="<?= $utils->url('/dashboard/chatbot') ?>" class="submenu-link">Paciente</a>
+                    <a href="<?=$utils->url('/dashboard/chatbot') ?>" class="submenu-link">Paciente</a>
                   </li>
 
                   <li class="submenu-item">
@@ -85,7 +85,7 @@
                   </li>
 
                   <li class="submenu-item">
-                    <a href="form-element-select.html" class="submenu-link">Suscripción</a>
+                    <a href="#" class="submenu-link">Suscripción</a>
                   </li>
 
                   <li class="submenu-item">
@@ -116,7 +116,7 @@
 
               <ul class="list-unstyled">
                 <li class="sidebar-item-">
-                    <a href="#" class="btn btn-primary">
+                    <a href="<?=$utils->url('/dashboard/suscripciones');?>" class="btn btn-primary">
                         <i class="bi bi-gem"></i>
                         <span>&nbsp;&nbsp;Cambiar a Premium</span>
                     </a>

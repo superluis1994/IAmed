@@ -60,7 +60,12 @@ class ChatMedicoControllers extends Token{
    ];
    // print_r($Data);
     return Utils::viewChat('dashboard.chatMedico.ViewChat.chatDoctor',$Data);
-
+    
+   }
+   public function listadoMedicos($id){
+      
+    
+      return Utils::viewChat('dashboard.chatMedico.ViewChat.chatDoctor',$Data=[]);
  }
 //    public function chatMedicos($id){
 
