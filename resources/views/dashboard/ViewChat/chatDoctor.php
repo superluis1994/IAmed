@@ -2,9 +2,9 @@
       <div class="page-title">
         <div class="row">
           <div class="col-12 col-md-6 order-md-1 order-last">
-            <h3>Chat con Medico</h3>
+            <h3>Chat con Profesional de la Salud</h3>
             <p class="text-subtitle text-muted">
-              Conversacion
+              Puedes iniciar una conversación.
             </p>
           </div>
           <div class="col-12 col-md-6 order-md-2 order-first">
@@ -23,7 +23,7 @@
       </div>
       <section class="section">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-9"> <!-- TAMAÑO DEL CHAT -->
             <div class="card">
               <div class="card-header">
                 <div class="media d-flex align-items-center">
@@ -32,7 +32,7 @@
                     <span class="avatar-status bg-success"></span>
                   </div>
                   <div class="name flex-grow-1">
-                    <h6 class="mb-0">Nombre del medico
+                    <h6 class="mb-0"> Nombre del profesional
                     </h6>
                     <span class="text-xs">En linea</span>
                   </div>
@@ -46,31 +46,31 @@
                   <div class="chat">
                     <div class="chat-body">
                       <div class="chat-message">
-                        Hi Alfy, how can i help you?
+                        Hola, necesito agendar una cita médica. 
                       </div>
                     </div>
                   </div>
                   <div class="chat chat-left">
                     <div class="chat-body">
                       <div class="chat-message">
-                        I'm looking for the best admin dashboard template
+                        Hola! 
                       </div>
                       <div class="chat-message">
-                        With bootstrap certainly
+                        El dia de mañana a las 8:00 am puedo atenderlo.
                       </div>
                     </div>
                   </div>
                   <div class="chat">
                     <div class="chat-body">
                       <div class="chat-message">
-                        I recommend you to use Mazer Dashboard
+                        Excelente, muchas gracias. 
                       </div>
                     </div>
                   </div>
                   <div class="chat chat-left">
                     <div class="chat-body">
                       <div class="chat-message">
-                        That's great! I like it so much :)
+                        A su servicio! :)
                       </div>
                     </div>
                   </div>
