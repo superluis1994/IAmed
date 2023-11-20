@@ -96,7 +96,7 @@
                 <svg class="bi text-primary" width="32" height="32" fill="blue" style="width: 10px">
                   <use xlink:href="assets/static/images/bootstrap-icons.svg#circle-fill" />
                 </svg>
-                <h5 class="mb-0 ms-3">Citas medicas</h5>
+                <h5 class="mb-0 ms-3">Citas médicas</h5>
               </div>
             </div>
             <div class="col-5">
@@ -192,7 +192,7 @@
                   </td>
                   <td class="col-auto">
                     <p class="mb-0">
-                      Medico General
+                      Médico General
                     </p>
                   </td>
                   <td class="col-auto">
