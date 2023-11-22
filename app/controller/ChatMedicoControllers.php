@@ -19,7 +19,7 @@ class ChatMedicoControllers extends Token{
       $this->Encrypto = new Encryptar($_ENV["JWT_SECRET_KEY"]);
       $this->Mongo = new ModelMongo;
        $this->Especialidad = new especialidadesModel;
-      
+       Utils::tituloPagina("Panel | ChatMedico");
       
    }
    public function index(){

@@ -15,6 +15,7 @@ class DashboardControllers extends Token{
    {
       $this->AuthModel = new AuthModel;
       $this->Mongo = new ModelMongo;
+
       /**VALIDO QUE EL TOKEN NO EXISTA Y NO ESTE EXPIRADO */
       if(isset($_SESSION['datosUser']['token']) ){
        self::validarToken($_SESSION['datosUser']['token']);
@@ -22,7 +23,7 @@ class DashboardControllers extends Token{
       else{
          return  header("Location:".Utils::url('/login'));
       }
-      
+      Utils::tituloPagina("Panel");
       
    }
    public function index(){

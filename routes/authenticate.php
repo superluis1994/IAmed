@@ -7,6 +7,7 @@ use core\Utils;
 
 Route::group('/login',function(){
     Route::get('/entrar', "LoginControllers@authenticate");
+    Route::get('/publicidadBaner', "LoginControllers@bannerPublicitarios");
     // Route::get('/entrar', "LoginControllers@prueba");
     Route::get('', "LoginControllers@index");
     Route::get('/', "LoginControllers@index");

@@ -2,7 +2,7 @@
   <div class="row h-100">
     <div class="col-lg-5 col-12">
       <div id="auth-left">
-        <div class="col-md-12">
+        <div class="col-12 col-md-12">
           <a href="index.html">
             <img src="<?= $utils->assets('img/logo2.png') ?>" width="300" alt="Logo" />
           </a>
@@ -13,7 +13,7 @@
               Ingresa tus datos para registrarte en nuestro sitio web.
             </p> 
 
-        <form action="index.html">
+        <form action="#">
           <div class="form-group position-relative has-icon-left mb-4">
             <input type="text" class="form-control form-control-xl" placeholder="Correo electrónico" />
             <div class="form-control-icon">
@@ -53,11 +53,11 @@
               <i class="bi bi-people"></i>
             </div>
           </div>
-          <button class="btn btn-primary btn-block btn-lg shadow-lg mt-5">
+          <button class="btn btn-primary btn-block btn-lg shadow-lg mt-2">
             Registrarse
           </button>
         </form>
-        <div class="text-center mt-5 text-lg fs-4">
+        <div class="text-center mt-2 text-lg fs-4">
           <p class="text-gray-600">
             ¿Ya tienes una cuenta?<br>
             <a href="<?= $utils->url('/login') ?>" class="font-bold">Inicia sesión</a>.
@@ -66,7 +66,9 @@
       </div>
     </div>
     <div class="col-lg-7 d-none d-lg-block">
-      <div id="auth-right"></div>
+      <div id="auth-right" style="background-image: url(<?=$utils->assets("img/carousel-2.jpg");?>);">
+      </div>
+      
     </div>
   </div>
 </div>

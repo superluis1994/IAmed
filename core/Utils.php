@@ -21,6 +21,16 @@ class Utils
         $url = preg_replace('#/+#', '/', $url);
         return $url;
     }
+    static function tituloPagina($titulo)
+    {
+        $title = $titulo;
+        // Enviar el encabezado Title
+        header("Title: $title");
+        // Mostrar el nuevo título de la página
+       
+         echo "<title>$title</title>";
+         return 0;
+    }
     // Esta carga la view unicas que no tienen vista internas 
     static function view($path = "", $data = [])
     {

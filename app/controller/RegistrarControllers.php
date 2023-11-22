@@ -16,11 +16,11 @@ class RegistrarControllers
    {
   
       $this->RolesModel = new RolesModel;
-      
    }
-
+   
    public function index()
    {
+      Utils::tituloPagina("Registrar");
       
       @$Data = $this->RolesModel->QueryEspefico(["campo1"=>"id_rol","campo2"=>"nombreRol"])->all();
       return Utils::view('login.registrar',$Data);

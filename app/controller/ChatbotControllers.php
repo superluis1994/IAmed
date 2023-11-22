@@ -10,7 +10,7 @@ class ChatbotControllers extends Token{
    public function __construct()
    {
 
-      
+      Utils::tituloPagina("Panel | Chatbot");
       
    }
    public function chatbot(){

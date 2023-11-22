@@ -1,25 +1,4 @@
 
-// async function formularioEnvio(link) {
-    
-//     const url = link;
-//     const method = "GET";
-
-//     const fetchOptions = {
-//         method,
-//         headers: {
-//             "Content-Type": "application/json",
-//             "Authorization": "Bearer <token>",
-//   },
-// };
-
-// const response = await fetch(url, fetchOptions);
-// const Data = await response.json();
-// console.log(Data);
-
-// // if (response.ok) {
-// // } 
-// }
-// // formularioEnvio();
 
 const redirectUrl="";
 
@@ -58,3 +37,87 @@ async function formularioEnvio(link,formulario) {
     });
     return false;
 }
+/**BANNER PUBLICITARIO DE LOGIN */
+// async function obtenerRecurso(url, method) {
+//   try {
+//     const options = {
+//       method: method,
+//     };
+//     const respuesta = await fetch(url, options);
+//     if (!respuesta.ok) {
+//       throw new Error(`Error al obtener el recurso: ${respuesta.status}`);
+//     }
+//     return await respuesta.json();
+//   } catch (error) {
+//     console.error(error);
+//   }
+// }
+
+// function loadBackgroundImages(banners, currentImageIndex) {
+//   // Obtener la imagen actual
+//   const currentImage = banners.data[currentImageIndex];
+// console.log(banners.url)
+//   // Establecer la imagen de fondo del div
+//   document.getElementById('auth-right').style.backgroundImage = `url(${banners.url}/${currentImage.src})`;
+
+//   // Actualizar el índice de imagen actual
+//   currentImageIndex = (currentImageIndex + 1) % banners.data.length;
+// }
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   obtenerRecurso('login/publicidadBaner', "POST")
+//     .then(respuesta => {
+//       // Obtener los datos de los banners
+//       const banners = respuesta.data;
+
+//       // Cargar las imágenes al inicio de la página
+//       loadBackgroundImages(banners, 0);
+
+//       // Establecer el intervalo para cambiar la imagen de fondo cada tres segundos
+//       let currentImageIndex = 0; // Declarar currentImageIndex dentro del alcance de la función de devolución de llamada
+//       setInterval(() => {
+//         loadBackgroundImages(banners, currentImageIndex); // Pasar banners y currentImageIndex
+//         currentImageIndex = (currentImageIndex + 1) % banners.data.length;
+//       }, 2000); // 3 segundos en milisegundos
+//     })
+//     .catch(error => {
+//       // Manejar el error
+//       console.error(error);
+//     });
+// });
+
+
+
+const imageUrls = [
+  '/IAmed/resources/assets/img/team-3.jpg',
+  '/IAmed/resources/assets/img/team-5.jpg',
+  '/IAmed/resources/assets/img/team-2.jpg',
+];
+
+const authRightElement = document.getElementById('auth-right');
+
+let currentIndex = 0;
+
+// Create a function to change the image
+function changeImage() {
+  // Increment the index or reset to 0 if it exceeds the length of imageUrls
+  currentIndex = (currentIndex + 1) % imageUrls.length;
+
+  // Get the next image URL
+  const imageUrl = imageUrls[currentIndex];
+
+  // Update the CSS property with the new image URL and gradient
+  authRightElement.style.cssText = `background-image: linear-gradient(90deg, #2d499d, #3f5491), url(${imageUrl}); background-repeat: no-repeat; background-position: center center; background-size: cover;`;
+}
+
+// Set the timer
+setInterval(changeImage, 5000);
+
+
+// const authRightElement = document.getElementById('auth-right');
+
+// // Set the background image
+// authRightElement.style.backgroundImage = 'url(/IAmed/resources/assets//img/team-2.jpg)';
+
+
+
