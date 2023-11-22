@@ -1,10 +1,11 @@
-<link rel="stylesheet" href="<?= $utils->assets("css/bootstrap.min.css")?>" />
 <div id="auth">
   <div class="row h-100">
     <div class="col-lg-5 col-12">
       <div id="auth-left">
         <div class="col-md-12">
-          <a href="<?= $utils->url('/login') ?>"><img src="<?= $utils->assets('img/logo2.png') ?>" width="300px" alt="Logo" /></a>
+          <a href="<?= $utils->url('/login') ?>">
+          <img src="<?= $utils->assets('img/logo2.png') ?>" width="300px" alt="Logo" />
+        </a>
           <!--<h1 class="auth-title">Ingresar</h1>-->
           <br><br>
           <p class="auth-subtitle mb-5">
@@ -51,77 +52,8 @@
     </div>
     <div class="col-lg-7 d-none d-lg-block" >
       <div id="auth-right"  >
-        <!-- <div id="carouselExampleFade" class="carousel slide carousel-fade "  data-bs-ride="carouselfade">
-          <ol class="carousel-indicators">
-            <li data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#carouselExampleFade" data-bs-slide-to="1"></li>
-            <li data-bs-target="#carouselExampleFade" data-bs-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active" >
-              <img src="<?= $utils->assets("/img/team-5.jpg");?>" class="d-block w-100" alt="..."  />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>
-                  Nulla vitae elit libero, a pharetra augue mollis
-                  interdum.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/compiled/png/2.png" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>
-                  Nulla vitae elit libero, a pharetra augue mollis
-                  interdum.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/compiled/png/3.png" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>
-                  Nulla vitae elit libero, a pharetra augue mollis
-                  interdum.
-                </p>
-              </div>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </a>
-        </div> -->
-        
+     
       </div>
-
-      <!-- <div class="container" id="auth-right">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="<?= $utils->assets("/img/team-5.jpg"); ?>" style="background-position:center; background-repeat:no-repeat" class="d-block w-100 img-fluid " alt="Imagen 1">
-
-            </div> -->
-          </div>
-          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-          </button> -->
-        <!-- </div>
-      </div> -->
-
-      
-
     </div>
   </div>
 </div>
