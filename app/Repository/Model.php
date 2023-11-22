@@ -29,16 +29,6 @@ class Model extends Conexion implements Orm
       self::$Query = "SELECT * FROM $Tabla";
       return $this;
    }
-   // public function MongoDB($collection)
-   // {
-   //     $mongoConnec = $this->getMongoConexion();
-   
-   //     $collection = $mongoConnec->selectCollection($_ENV["DB_NAME"], $collection);
-   //     $cursor = $collection->find();
-   //     return $cursor;
-       
-   // }
-   
 
    public function MongoDBAll($collection)
 {
@@ -131,22 +121,22 @@ class Model extends Conexion implements Orm
          self::closeConexionBD();
       }
    }
-   //  public function first()
-   //  {
-   //     try {
-   //         self::$Pps = self::getConexion_()->prepare(self::$Query);
-   //         self::$Pps->bindParam(1,$this->Value);
-   //         self::$Pps->execute();
+    public function Singlefirst()
+    {
+       try {
+           self::$Pps = self::getConexion_()->prepare(self::$Query);
+           self::$Pps->bindParam(1,$this->Value);
+           self::$Pps->execute();
 
-   //         if(self::$Pps->rowCount() > 0)
-   //         {
-   //          return self::$Pps->fetchAll(\PDO::FETCH_OBJ)[0];
-   //         }
-   //         return [];
-   //        } catch (\Throwable $th) {
-   //          echo $th->getMessage();
-   //        }finally{self::closeConexionBD();}
-   //  }
+           if(self::$Pps->rowCount() > 0)
+           {
+            return self::$Pps->fetchAll(\PDO::FETCH_OBJ)[0];
+           }
+           return [];
+          } catch (\Throwable $th) {
+            echo $th->getMessage();
+          }finally{self::closeConexionBD();}
+    }
 
    public function get()
    {

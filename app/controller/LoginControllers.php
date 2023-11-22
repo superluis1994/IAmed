@@ -21,8 +21,6 @@ class LoginControllers
       $this->AuthModel = new AuthModel;
       $this->RolesModel = new RolesModel;
       $this->BannerModel = new BannerModel;
-      
-
    }
    public function index()
    {
@@ -82,7 +80,7 @@ class LoginControllers
             'data' => $Data
          ];
          $jwt = JWT::encode($payload, $key, 'HS256');
-        
+
 
          @$_SESSION['datosUser'];
          $datos['id'] = $Data[0]['id_user'];
@@ -129,7 +127,7 @@ class LoginControllers
 
    public function bannerPublicitarios()
    {
-      
+
       if ($_SERVER['REQUEST_METHOD'] == 'POST') {
          @$Data = $this->BannerModel->Query()->all();
          $response = [
