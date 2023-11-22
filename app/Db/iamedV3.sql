@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-11-2023 a las 21:56:11
+-- Tiempo de generación: 22-11-2023 a las 22:48:07
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.0.28
 
@@ -114,16 +114,15 @@ CREATE TABLE `datos_personales` (
   `rol` int(11) NOT NULL,
   `fecha_nacimiento` date NOT NULL,
   `telefono` varchar(30) NOT NULL,
-  `sexo` int(11) NOT NULL,
-  `id_perfil_afiliado` int(11) NOT NULL
+  `sexo` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Volcado de datos para la tabla `datos_personales`
 --
 
-INSERT INTO `datos_personales` (`id_datos`, `nombres`, `apellidos`, `email`, `pais`, `estado`, `ciudad`, `direccion`, `id_user`, `documento_de_identidad`, `status`, `rol`, `fecha_nacimiento`, `telefono`, `sexo`, `id_perfil_afiliado`) VALUES
-(1, 'Luis', 'Sorto Lemus', 'superluis1994@gmail.com', '503', 10, 1, 'chalchuapa/ san antonio', 2, 466464646, 1, 2, '2023-11-22', '55555555', 1, 1);
+INSERT INTO `datos_personales` (`id_datos`, `nombres`, `apellidos`, `email`, `pais`, `estado`, `ciudad`, `direccion`, `id_user`, `documento_de_identidad`, `status`, `rol`, `fecha_nacimiento`, `telefono`, `sexo`) VALUES
+(1, 'Luis', 'Sorto Lemus', 'superluis1994@gmail.com', '503', 10, 1, 'chalchuapa/ san antonio', 2, 466464646, 1, 2, '2023-11-22', '55555555', 1);
 
 -- --------------------------------------------------------
 
@@ -243,16 +242,15 @@ INSERT INTO `pais` (`codigo_pais`, `nombre`, `usuario_creacion`, `usuario_actual
 
 CREATE TABLE `pefil_afiliado` (
   `id_afiliado` int(11) NOT NULL,
-  `id_user` int(11) NOT NULL,
-  `especialidades` int(11) NOT NULL
+  `id_datos` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Volcado de datos para la tabla `pefil_afiliado`
 --
 
-INSERT INTO `pefil_afiliado` (`id_afiliado`, `id_user`, `especialidades`) VALUES
-(1, 2, 1);
+INSERT INTO `pefil_afiliado` (`id_afiliado`, `id_datos`) VALUES
+(1, 1);
 
 -- --------------------------------------------------------
 
