@@ -21,9 +21,9 @@ class MainControllers{
          "corousel"=>$Datos,
          "active"=>0
       ];
-      echo"<pre>";
-      echo var_dump($Data);
-      echo"</pre>";
+      // echo"<pre>";
+      // echo var_dump($Data);
+      // echo"</pre>";
       return Utils::viewStatic('web.inicio',$Data);
    
    }
