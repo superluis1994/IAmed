@@ -13,7 +13,7 @@ class MainControllers{
    }
    public function inicio(){
 
-      @$Datos = $this->BannerModel->QueryEspefico(["titulo","descripcion","src"])->Mult_Where([
+      @$Datos = $this->BannerModel->QueryEspefico(["titulo","descripcion","src","colocacion","seleccionado","efecto"])->Mult_Where([
          [ "atributo"=>"tipo","condicion"=>"=","value"=> "web_carousel","operador"=>"AND"],
          ["atributo"=>"status","condicion"=>"=","value"=> "1","operador"=>""]
       ])->first();

@@ -45,16 +45,16 @@ var scrollSpy = new bootstrap.ScrollSpy(document.body, {
 
                 <?php
                 foreach ($data["corousel"] as $key => $carousel) {
-                    $active = $key == $data['active'] ? 'active' : '';
+                    // $active = $key == $data['active'] ? 'active' : '';
                     echo <<<HTML
-                <div class="carousel-item {$active}">
+                <div class="carousel-item {$carousel['seleccionado']}">
                     <img class="w-100" src="{$utils->assets($carousel['src'])}" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-lg-7 text-start">
-                                    <h1 class="display-1 text-white animated slideInRight mb-3">{$carousel["titulo"]}</h1>
-                                    <p class="mb-5 animated slideInRight">{$carousel["descripcion"]}</p>
+                            <div class="row justify-content-{$carousel['colocacion']}">
+                                <div class="col-lg-7 text-{$carousel['colocacion']}">
+                                    <h1 class="display-1 text-white animated {$carousel['efecto']} mb-3">{$carousel["titulo"]}</h1>
+                                    <p class="mb-5 animated {$carousel['efecto']}">{$carousel["descripcion"]}</p>
                                 </div>
                             </div>
                         </div>
