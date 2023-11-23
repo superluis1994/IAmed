@@ -107,7 +107,7 @@ function changeImage() {
   const imageUrl = imageUrls[currentIndex];
 
   // Update the CSS property with the new image URL and gradient
-  authRightElement.style.cssText = `background-image: linear-gradient(90deg, #2d499d, #3f5491), url(${imageUrl}); background-repeat: no-repeat; background-position: center center; background-size: cover;`;
+  authRightElement.style.cssText = `background-image:  url(${imageUrl}); background-repeat: no-repeat; background-position: center center; background-size: cover;`;
 }
 
 // Set the timer

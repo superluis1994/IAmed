@@ -5,7 +5,7 @@ namespace app\controller;
 use core\Utils;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
-use app\Models\AuthModel;
+use app\Models\UserModel;
 use app\Models\RolesModel;
 use app\repository\Model;
 use app\Setting\Token;
@@ -13,12 +13,12 @@ use app\models\BannerModel;
 
 class LoginControllers
 {
-   private Model $AuthModel;
+   private Model $UserModel;
    private Model $RolesModel;
    private Model $BannerModel;
    public function __construct()
    {
-      $this->AuthModel = new AuthModel;
+      $this->UserModel = new UserModel;
       $this->RolesModel = new RolesModel;
       $this->BannerModel = new BannerModel;
    }
@@ -61,15 +61,17 @@ class LoginControllers
       // Eliminar los caracteres especiales
       $user = rtrim(preg_replace("/[^a-zA-Z0-9@#_-]/", "", $usuario));
       $password = rtrim(preg_replace("/[^a-zA-Z0-9@#_-]/", "", $passw));
-      ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-      @$Data = $this->AuthModel->Query()->MultJoin([["pk" => "rol", "tabla" => "roles", "fk" => "id_rol"]])->Mult_Where([
+      /* Data del usuario que se loguio**/
+      @$Data = $this->UserModel->QueryEspefico(["user.id_user","user.username","user.status","roles.nombreRol"])->MultJoin([
+         ["tablaPk" =>"user","pk" => "rol", "tablaFk" => "roles", "fk" => "id_rol"]
+         ])->Mult_Where([
          ["atributo" => "username", "condicion" => "=", "value" => $user, "operador" => "AND"],
          ["atributo" => "password", "condicion" => "=", "value" => $password, "operador" => ""]
 
       ])->first();
-
-      ////////////////////////////////////////////////////////////////////////////////////////////////////////
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     
       if (count($Data) > 0) {
 
          // conectarme a una base de datos y validar los datos

@@ -6,14 +6,14 @@ use Firebase\JWT\Key;
 use app\Setting\Token;
 use app\Repository\Model;
 use app\Repository\ModelMongo;
-use app\Models\AuthModel;
+use app\Models\UserModel;
 class DashboardControllers extends Token{
 
-   private Model $AuthModel;
+   private Model $UserModel;
    private ModelMongo $Mongo;
    public function __construct()
    {
-      $this->AuthModel = new AuthModel;
+      $this->UserModel = new UserModel;
       $this->Mongo = new ModelMongo;
 
       /**VALIDO QUE EL TOKEN NO EXISTA Y NO ESTE EXPIRADO */
