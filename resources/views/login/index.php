@@ -15,13 +15,13 @@
 
         <form method="POST" id="frmLogin" async>
           <div class="form-group position-relative has-icon-left mb-4">
-            <input type="text" name="user" class="form-control form-control-xl" placeholder="Usuario" />
+            <input type="text" name="user" class="form-control form-control-xl" placeholder="Usuario" required/>
             <div class="form-control-icon">
               <i class="bi bi-person"></i>
             </div>
           </div>
           <div class="form-group position-relative has-icon-left mb-4">
-            <input type="password" name="password" class="form-control form-control-xl" placeholder="Contraseña" />
+            <input type="password" name="password" class="form-control form-control-xl" placeholder="Contraseña" required/>
             <div class="form-control-icon">
               <i class="bi bi-shield-lock"></i>
             </div>

@@ -9,7 +9,7 @@ class Model extends Conexion implements Orm
 {
    protected $Tabla;
 
-   private array $Value;
+   private array $Value=[];
 
    private array $ValuesWhereOr = [];
 
@@ -75,7 +75,8 @@ class Model extends Conexion implements Orm
          "campo" => $atributo,
          "value" => $valor
       ];
-
+   //  echo $valor;
+//   echo self::$Query;
       return $this;
    }
 
@@ -86,13 +87,13 @@ class Model extends Conexion implements Orm
    {
       self::$Query .= " WHERE ";
       foreach ($datos as $atributo => $value) {
-         self::$Query .= $value['atributo'] . " " . $value['condicion'] . " :" . $value['atributo'] . " " . $value['operador'] . " ";
+         self::$Query .= $value['atributo'] . " " . $value['condicion'] . " :" . str_replace('.', '',$value['atributo']) . " " . $value['operador'] . " ";
+         $valor=str_replace('.', '', $value['atributo']);
          $this->Value[] = [
-            "campo" => $value['atributo'],
+            "campo" => $valor,
             "value" => $value['value']
          ];
       }
-      // echo self::$Query;
       return $this;
    }
 
@@ -115,6 +116,7 @@ class Model extends Conexion implements Orm
 
          }
          return [];
+         unset($this->Value);
       } catch (\Throwable $th) {
          echo $th->getMessage();
       } finally {
@@ -124,8 +126,15 @@ class Model extends Conexion implements Orm
     public function Singlefirst()
     {
        try {
+         echo "<pre>";
+      echo var_dump($this->Value);
+      echo "</pre>";
            self::$Pps = self::getConexion_()->prepare(self::$Query);
-           self::$Pps->bindParam(1,$this->Value);
+         //   self::$Pps->bindParam(1,$this->Value);
+         foreach ($this->Value as $key => $value) {
+            
+            self::$Pps->bindParam(1, $value['value']);
+         }
            self::$Pps->execute();
 
            if(self::$Pps->rowCount() > 0)
@@ -168,8 +177,9 @@ class Model extends Conexion implements Orm
      
       foreach ($datos as $key=>$value){
 
-      self::$Query .= " INNER JOIN ".$value["tabla"]." ON ".$this->Tabla.".".$value["pk"]." = ".$value["tabla"].".".$value["fk"];
+      self::$Query .= " INNER JOIN ".$value["tablaFk"]." ON ".$value["tablaPk"].".".$value["pk"]." = ".$value["tablaFk"].".".$value["fk"];
       }
+      // echo self::$Query;
       return $this;
    }
    public function Join(string $TablaFk, string $Fk, string $operador, string $PK)
