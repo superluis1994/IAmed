@@ -13,10 +13,8 @@ class ChatPacienteControllers extends Token{
       
       
    }
-   public function chatPaciente(){
-    return Utils::view('dashboard.chatPaciente',$data=[],"");
-    echo "chat paciente";
-    // return Utils::viewDasboard('productos.index');
+   public function index(){
+      return Utils::viewChat('dashboard.chatPaciente.ViewChat.homePaciente',$Data=[],"");
  }
    /**SE ENCARGA DE CARGAR LOS MENSAJES */
     public function loadMsg()

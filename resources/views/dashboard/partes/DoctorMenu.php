@@ -16,7 +16,7 @@
 
                 <ul class="submenu">
                   <li class="submenu-item">
-                    <a href="<?=$utils->url('/dashboard/chatbot') ?>" class="submenu-link">Paciente</a>
+                    <a href="<?=$utils->url('/dashboard/chatPaciente') ?>" class="submenu-link">Paciente</a>
                   </li>
 
                   <li class="submenu-item">
