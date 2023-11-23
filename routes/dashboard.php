@@ -25,6 +25,10 @@ Route::group('/dashboard', function () {
         Route::get('/chat/{id}', "ChatMedicoControllers@chatMedico");
 
     });
+    Route::group('/dashboard/chatPaciente', function () { // Ruta del chat paciente
+        Route::get('', "ChatPacienteControllers@index");
+        Route::get('/', "ChatPacienteControllers@index");
+    });
     Route::group('/dashboard/comunidaMedica', function () {
         Route::get('', "ComunidaMedicaControllers@index");
         Route::get('/', "ComunidaMedicaControllers@index");
