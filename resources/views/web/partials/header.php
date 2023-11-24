@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="<?=$utils->assets('/img/web/web-favicon.png');?>" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,6 +30,7 @@
 
     <!-- Template Stylesheet -->
     <link href="<?=$utils->assets('css/style.css')?>"rel="stylesheet">
+  
 </head>
 
 <body id="body">
@@ -40,11 +41,6 @@
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem; " ></div>
     </div>
     <!-- Spinner End -->
-
-
-    <!-- Topbar Start -->
-   
-    <!-- Topbar End -->
 
 
     <!-- Brand Start -->

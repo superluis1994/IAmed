@@ -1,15 +1,7 @@
-<!-- <script>
-var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-  target: '#navbar-example2'
-})
-
-</script> -->
-
-
 <!-- Navbar Start -->
 <div class="container-fluid sticky-top">
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3" id="navbar-example2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3" id="nav">
             <a href="#" class="navbar-brand d-lg-none">
                 <h1 class="text-primary m-0">IA<span class="text-dark">med</span></h1>
             </a>
@@ -18,8 +10,8 @@ var scrollSpy = new bootstrap.ScrollSpy(document.body, {
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
-                    <a href="#" class="nav-item nav-link ">Inicio</a>
-                    <a href="#comunidad" class="nav-item nav-link">Comunidad Médica</a>
+                    <a href="#inicio" aria-current="page" class="nav-item nav-link ">Inicio</a>
+                    <a href="#comunidad" aria-current="page" class="nav-item nav-link">Comunidad Médica</a>
                     <a href="#servicios" class="nav-item nav-link">Servicios</a>
                     <a href="#especialista" class="nav-item nav-link">Especialistas</a>
                     <a href="<?= $utils->url('/contacto') ?>" class="nav-item nav-link">Contactos</a>
@@ -35,13 +27,11 @@ var scrollSpy = new bootstrap.ScrollSpy(document.body, {
     </div>
 </div>
 <!-- Navbar End -->
-<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-
 
     <!-- Carousel Start -->
-    <div class="container-fluid header-carousel px-0 mb-5">
+    <div class="container-fluid header-carousel px-0 mb-5 "   >
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
+            <div class="carousel-inner" id="inicio"  >
 
                 <?php
                 foreach ($data["corousel"] as $key => $carousel) {
@@ -78,7 +68,7 @@ var scrollSpy = new bootstrap.ScrollSpy(document.body, {
     <!-- final del caruosel -->
 
     <div class="container-fluid feature mt-5 wow fadeInUp" data-wow-delay="0.1s" id="comunidad">
-        <div class="container">
+        <div class="container" data-spy="scroll" data-bs-target=".my-class" data-bs-offset="100">
             <div class="row g-0">
                 <div class="col-lg-6 pt-lg-5">
                     <div class="bg-white p-5 mt-lg-5">
@@ -399,5 +389,5 @@ var scrollSpy = new bootstrap.ScrollSpy(document.body, {
             </div>
         </div>
     </div>
-</div>
+
 <!-- Testimonial End -->
