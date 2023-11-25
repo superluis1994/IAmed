@@ -96,4 +96,4 @@
     </div>
   </div>
 </div>
-<script src="<?php echo $utils->assets("js/login.js"); ?>" type="text/javascript"></script>
+<script src="<?php echo $utils->assets("js/login/login.js"); ?>" type="text/javascript"></script>

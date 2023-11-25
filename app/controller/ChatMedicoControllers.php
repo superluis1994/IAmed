@@ -35,11 +35,16 @@ class ChatMedicoControllers extends Token{
             "chats"=>$chats
          ];
       //   echo var_dump($_SESSION['datosUser']);
-      //    foreach ($chats as $document) {
-      //            $chats->$document->participants[0]["doctorId"] = $this->Encrypto->encrypt($document->participants[0]["doctorId"]);
+      //    foreach ($chats as $key=>$document) {
+      //       echo $key." = ";
+      //          //   echo $chats->$document->participants[0]["doctorId"] ."<br>";
       //   }
       // echo json_encode($chats);
+      // $usuarios = iterator_to_array($chats);
+   
+      // print_r($usuarios);
          // echo $this->Encrypto->encrypt("1");
+         
       // var_dump($Data);
     return Utils::viewChat('dashboard.chatMedico.ViewChat.homeMedico',$Data,"");
 

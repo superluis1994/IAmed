@@ -134,7 +134,7 @@ class LoginControllers
          @$Data = $this->BannerModel->Query()->all();
          $response = [
             'status' => 'ok',
-            'titulo' => 'Error',
+            'titulo' => 'Contenido',
             'url' => Utils::assets("/"),
             'data' => $Data
          ];
