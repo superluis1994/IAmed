@@ -29,24 +29,47 @@ Route::group('/dashboard', function () {
         Route::get('', "ChatPacienteControllers@index");
         Route::get('/', "ChatPacienteControllers@index");
     });
+
+
+    // INICIO BLOQUE DE CITAS 
    
-    Route::group('/dashboard/cita/agregar', function () { // Ruta del chat paciente
+    Route::group('/dashboard/cita/agregar', function () { // Ruta de agregar una nueva cita
         Route::get('', "AgregarCitaControllers@index");
         Route::get('/', "AgregarCitaControllers@index");
     });
-    Route::group('/dashboard/cita/seguimiento', function () { // Ruta del chat paciente
+    Route::group('/dashboard/cita/seguimiento', function () { // Ruta de llevar el sguimiento de citas 
         Route::get('', "SeguimientoCitaControllers@index");
         Route::get('/', "SeguimientoCitaControllers@index");
     });
+    Route::group('/dashboard/cita/historiales', function () { // Ruta para ver todo el historial medico de los pacientes
+        Route::get('', "HistorialesClinicosControllers@index");
+        Route::get('/', "HistorialesClinicosControllers@index");
+    });
     
+    // FIN DEL BLOQUE DE CITAS
+
+    
+    // INICIO DEL BLOQUE DE RECORDATORIOS 
+    
+    Route::group('/dashboard/recordatorios/agregar', function () { // Ruta para agregar un nuevo recordatorio
+        Route::get('', "AgregarRecordatorioControllers@index");
+        Route::get('/', "AgregarRecordatorioControllers@index");
+    });
+    Route::group('/dashboard/recordatorios/historial', function () { // Ruta de revisar el historila de recordatorios
+        Route::get('', "HistorialRecordatorioControllers@index");
+        Route::get('/', "HistorialRecordatorioControllers@index");
+    });
+    
+    // FIN DEL BLOQUE DE RECORDATORIOS
+
     Route::group('/dashboard/comunidaMedica', function () {
         Route::get('', "ComunidaMedicaControllers@index");
         Route::get('/', "ComunidaMedicaControllers@index");
         // Route::get('/chat', "ComunidaMedicaControllers@chatMedico");
         // Route::get('chat/', "ComunidaMedicaControllers@chatMedico");
         // Route::get('/chat/', "ComunidaMedicaControllers@chatMedico");
-
-    });
+    
+});
     Route::group('/dashboard/suscripciones', function () {
         Route::get('', "SuscripcionesControllers@index");
         Route::get('/', "ComunidaMedicaControllers@index");
