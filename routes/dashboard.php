@@ -29,6 +29,16 @@ Route::group('/dashboard', function () {
         Route::get('', "ChatPacienteControllers@index");
         Route::get('/', "ChatPacienteControllers@index");
     });
+   
+    Route::group('/dashboard/cita/agregar', function () { // Ruta del chat paciente
+        Route::get('', "AgregarCitaControllers@index");
+        Route::get('/', "AgregarCitaControllers@index");
+    });
+    Route::group('/dashboard/cita/seguimiento', function () { // Ruta del chat paciente
+        Route::get('', "SeguimientoCitaControllers@index");
+        Route::get('/', "SeguimientoCitaControllers@index");
+    });
+    
     Route::group('/dashboard/comunidaMedica', function () {
         Route::get('', "ComunidaMedicaControllers@index");
         Route::get('/', "ComunidaMedicaControllers@index");

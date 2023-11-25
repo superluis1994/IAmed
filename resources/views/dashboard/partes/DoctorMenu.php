@@ -34,11 +34,11 @@
 
                 <ul class="submenu">
                   <li class="submenu-item">
-                    <a href="table-datatable.html" class="submenu-link">Nueva Cita</a>
+                    <a href="<?=$utils->url('/dashboard/cita/agregar') ?>" class="submenu-link">Nueva Cita</a>
                   </li>
 
                   <li class="submenu-item">
-                    <a href="table-datatable.html" class="submenu-link">Seguimiento de Cita</a>
+                    <a href="<?=$utils->url('/dashboard/cita/seguimiento') ?>" class="submenu-link" class="submenu-link">Seguimiento de Cita</a>
                   </li>
 
                   <li class="submenu-item">
