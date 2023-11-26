@@ -9,9 +9,6 @@ Route::group('/dashboard', function () {
     Route::get('/', "DashboardControllers@index");
     Route::get('', "DashboardControllers@index");
     Route::get('/chatbot', "ChatbotControllers@chatbot");
-    Route::get('/sectorPrivado', "SectorPrivadoControllers@index");
-    Route::get('/farmacias', "farmaciasControllers@index");
-
     /** RUTA PARA ABRIR EL CHAT CON MEDICOS*/
     Route::group('/dashboard/chatMedico', function () {
         Route::get('', "ChatMedicoControllers@index");
@@ -25,6 +22,26 @@ Route::group('/dashboard', function () {
         Route::get('', "ChatPacienteControllers@index");
         Route::get('/', "ChatPacienteControllers@index");
     });
+      /** RUTA PARA SECTOR PRIVADO */
+      Route::group('/dashboard/sectorPrivado', function () {
+        Route::get('', "SectorPrivadoControllers@index");
+        Route::get('/', "SectorPrivadoControllers@index");
+    });
+    /** RUTA PARA SECTOR PUBLICO */
+    Route::group('/dashboard/sectorPublico', function () {
+        Route::get('', "SectorPublicoControllers@index");
+        Route::get('/', "SectorPublicoControllers@index");
+    });
+       /** RUTA PARA CENTRO DE ASISTENCIA MEDICA */
+       Route::group('/dashboard/centroAsistecia', function () {
+        Route::get('', "CentroAsistenciaControllers@index");
+        Route::get('/', "CentroAsistenciaControllers@index");
+    });
+           /** RUTA PARA FARMACIAS */
+           Route::group('/dashboard/farmacias', function () {
+            Route::get('', "farmaciasControllers@index");
+            Route::get('/', "farmaciasControllers@index");
+        });
 
     /** RUTA PARA AGREGAR UNA NUEVA CITA */
     Route::group('/dashboard/cita/agregar', function () {
@@ -35,6 +52,11 @@ Route::group('/dashboard', function () {
     Route::group('/dashboard/cita/seguimiento', function () {
         Route::get('', "SeguimientoCitaControllers@index");
         Route::get('/', "SeguimientoCitaControllers@index");
+    });
+     /** RUTA PARA CITA EN LINEA */
+     Route::group('/dashboard/cita/citaEnLinea', function () {
+        Route::get('', "CitaEnLineaControllers@index");
+        Route::get('/', "CitaEnLineaControllers@index");
     });
     /** RUTA PARA VER TODO EL HISTORIAL MEDICO DE LOS PACIENTES */
     Route::group('/dashboard/cita/historiales', function () {
