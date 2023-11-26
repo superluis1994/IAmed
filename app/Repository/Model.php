@@ -94,6 +94,7 @@ class Model extends Conexion implements Orm
             "value" => $value['value']
          ];
       }
+    
       return $this;
    }
 
@@ -108,6 +109,7 @@ class Model extends Conexion implements Orm
          foreach ($this->Value as $key => $value) {
             self::$Pps->bindParam(":" . $value['campo'], $value['value']);
          }
+       
          self::$Pps->execute();
 
          if (self::$Pps->rowCount() > 0) {

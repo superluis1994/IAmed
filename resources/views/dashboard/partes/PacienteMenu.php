@@ -17,19 +17,19 @@
 
                 <ul class="submenu">
                   <li class="submenu-item">
-                    <a href="component-accordion.html" class="submenu-link">Sector Privado</a>
+                    <a href="<?=$utils->url('/dashboard/sectorPrivado');?>" class="submenu-link">Sector Privado</a>
                   </li>
 
                   <li class="submenu-item">
-                    <a href="component-alert.html" class="submenu-link">Sector Público</a>
+                    <a href="<?=$utils->url('/dashboard/sectorPublico');?>" class="submenu-link">Sector Público</a>
                   </li>
 
                   <li class="submenu-item">
-                    <a href="component-badge.html" class="submenu-link">Centro de Asistencia Médica</a>
+                    <a href="<?=$utils->url('/dashboard/centroAsistecia');?>" class="submenu-link">Centro de Asistencia Médica</a>
                   </li>
 
                   <li class="submenu-item">
-                    <a href="component-badge.html" class="submenu-link">Farmacias</a>
+                    <a href="<?=$utils->url('/dashboard/farmacias');?>" class="submenu-link">Farmacias</a>
                   </li>
 
 
