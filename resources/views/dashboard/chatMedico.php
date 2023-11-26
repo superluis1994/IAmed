@@ -58,7 +58,7 @@
                foreach ($data["chats"] as $chats) {
             echo <<<HTML
               <li class="submenu-item">
-                <a href="{$utils->url('/dashboard/chatMedico/chat')}/{$chats->participants[0]['doctorId']}" class="submenu-link">
+                <a href="{$utils->url('/dashboard/chatMedico/chat/')}{$chats->participants[0]['doctorId']}" class="submenu-link">
                   <i class="bi bi-arrow-right-circle-fill"></i>
                  
                  {$chats->participants[0]["username"]}

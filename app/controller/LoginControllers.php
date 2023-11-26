@@ -10,17 +10,20 @@ use app\Models\RolesModel;
 use app\repository\Model;
 use app\Setting\Token;
 use app\models\BannerModel;
+use app\Setting\Encryptar;
 
 class LoginControllers
 {
    private Model $UserModel;
    private Model $RolesModel;
    private Model $BannerModel;
+   private Encryptar $Encrypto;
    public function __construct()
    {
       $this->UserModel = new UserModel;
       $this->RolesModel = new RolesModel;
       $this->BannerModel = new BannerModel;
+      $this->Encrypto = new Encryptar($_ENV["JWT_SECRET_KEY"]);
    }
    public function index()
    {
@@ -85,7 +88,7 @@ class LoginControllers
 
 
          @$_SESSION['datosUser'];
-         $datos['id'] = $Data[0]['id_user'];
+         $datos['id'] = $this->Encrypto->encryptItem($Data[0]['id_user']);
          $datos['user'] = $Data[0]['username'];
          $datos['status'] = $Data[0]['status'];
          $datos['rol'] = $Data[0]['nombreRol'];
