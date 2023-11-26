@@ -23,7 +23,12 @@ class ChatMedicoControllers extends Token{
       
    }
    public function index(){
-   @$chats = $this->Mongo->MongoDBBusqueda(["collection"=>"chats","consulta"=>["participants.userId"=>intval($_SESSION['datosUser']['id'])]]);
+      
+      // $t=$this->Encrypto->decrypt($_SESSION['datosUser']['id']);
+      // echo "este es la desec :".$t;
+      // echo var_dump($_SESSION['datosUser']['id']);
+   // @$chats = $this->Mongo->MongoDBBusqueda(["collection"=>"chats","consulta"=>["participants.userId"=>intval($_SESSION['datosUser']['id'])]]);
+   @$chats = $this->Mongo->MongoDBBusqueda(["collection"=>"chats","consulta"=>["participants.userId"=>$_SESSION['datosUser']['id']]]);
    @$especialidades = $this->Especialidad->QueryEspefico(
       [
          "campo1"=>"id_especialidad",
@@ -43,28 +48,39 @@ class ChatMedicoControllers extends Token{
       // $usuarios = iterator_to_array($chats);
    
       // print_r($usuarios);
-         // echo $this->Encrypto->encrypt("1");
-         
+
+
+         echo $this->Encrypto->encryptItem(2);
+      
       // var_dump($Data);
     return Utils::viewChat('dashboard.chatMedico.ViewChat.homeMedico',$Data,"");
 
  }
    public function chatMedico($id){
-     
    //  @$Data = $this->Mongo->MongoDBAll("chats");
-   @$chat = $this->Mongo->MongoDBBusqueda(["collection"=>"chats","consulta"=>["userId"=>intval($_SESSION['datosUser']['id']),"doctorId"=>intval($id)]]);
-   @$chats = $this->Mongo->MongoDBBusqueda(["collection"=>"chats","consulta"=>["participants.userId"=>intval($_SESSION['datosUser']['id'])]]);
+   @$msg = $this->Mongo->MongoDBBusqueda(["collection"=>"chats","consulta"=>["userId"=>$_SESSION['datosUser']['id'],"doctorId"=>$id]]);
+   @$chats = $this->Mongo->MongoDBBusqueda(["collection"=>"chats","consulta"=>["participants.userId"=>$_SESSION['datosUser']['id']]]);
 
    // @$Data = $this->Mongo->MongoDBBusqueda(["collection"=>"chats","consulta"=>["participants.userId"=>intval($_SESSION['datosUser']['id'])]]);
-   // foreach ($Data as $documento ) {
-   //    echo @$documento["_id"] . "\n";
-   // }
-   $Data=[
-      "msg"=>$chat,
-      "chats"=>$chats
-   ];
-   // print_r($Data);
-    return Utils::viewChat('dashboard.chatMedico.ViewChat.chatDoctor',$Data);
+   foreach ($msg as $documento ) {
+      echo "aqui".@$documento["_id"] . "\n";
+   }
+   // $Data=[
+   //    "msg"=>$msg,
+   //    "chats"=>$chats
+   // ];
+// foreach ($msg as $key) {
+//         echo "mensaje: ".$key["messages"]["senderId"]."\n";
+// }
+   
+   
+// $json = json_decode('{"database": "iamed", "collection": "chats", ...}');
+
+foreach ($msg as $key => $value) {
+    echo $key . ": " . $value . "\n";
+}
+
+    return Utils::viewChat('dashboard.chatMedico.ViewChat.chatDoctor',$Data=[]);
     
    }
    public function listadoMedicos($id){
