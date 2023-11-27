@@ -51,9 +51,14 @@
       </div>
     </div>
     <div class="col-lg-7 d-none d-lg-block" >
-      <div id="auth-right"  >
+      <!-- <div id="auth-right"  >
      
-      </div>
+      </div> -->
+
+      <div id="auth-right" class="container p-5 d-flex flex-column align-items-center">
+    <!-- <h2 class="mb-3">Título</h2>
+    <button type="button" class="btn btn-primary">Botón</button> -->
+  </div>
     </div>
   </div>
 </div>

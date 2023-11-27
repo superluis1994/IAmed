@@ -2,9 +2,9 @@
 
 /**BANNER PUBLICITARIO DE LOGIN */
 const imageUrls = [
-  '/IAmed/resources/assets/img/login/team-3.jpg',
-  '/IAmed/resources/assets/img/login/team-5.jpg',
-  '/IAmed/resources/assets/img/login/team-2.jpg',
+  '/IAmed/resources/assets/img/login/publicidad_login_p1.png',
+  '/IAmed/resources/assets/img/login/publicidad_login_p2.png',
+  '/IAmed/resources/assets/img/login/publicidad_login_p3.png',
 ];
 
 const authRightElement = document.getElementById('auth-right');
