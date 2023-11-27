@@ -53,7 +53,37 @@ Route::group('/dashboard', function () {
         Route::get('', "SeguimientoCitaControllers@index");
         Route::get('/', "SeguimientoCitaControllers@index");
     });
-     /** RUTA PARA CITA EN LINEA */
+    /** RUTA DE CAMBIAR FOTO EN LA CONFIGURACION **/
+    Route::group('/dashboard/configuracion/cambiarFoto', function () {
+        Route::get('', "CambiarFotoControllers@index");
+        Route::get('/', "CambiarFotoControllers@index");
+    });
+    /** RUTA PARA VER LOS DATOS PERSONALES **/
+    Route::group('/dashboard/configuracion/datosPersonales', function () {
+        Route::get('', "DatosPersonalesControllers@index");
+        Route::get('/', "DatosPersonalesControllers@index");
+    });
+    /** RUTA DE LAS SUSCRIPCIONES **/
+    Route::group('/dashboard/configuracion/suscripciones', function () {
+        Route::get('', "SuscripcionesControllers@index");
+        Route::get('/', "SuscripcionesControllers@index");
+    });
+    /** RUTA PARA VER MI PERFIL COMO PROFESIONAL DE LA SALUD **/
+    Route::group('/dashboard/configuracion/perfilProfesional', function () {
+        Route::get('', "PerfilProfesionalControllers@index");
+        Route::get('/', "PerfilProfesionalControllers@index");
+    });
+    /** RUTA PARA LA COMUNIDAD DE LOS REFERIDOS **/
+    Route::group('/dashboard/configuracion/comunidadReferidos', function () {
+        Route::get('', "ComunidadReferidosControllers@index");
+        Route::get('/', "ComunidadReferidosControllers@index");
+    });
+    /** CAMBIO DE CONTRASEÑA **/
+    Route::group('/dashboard/privacidad/newPassword', function () {
+        Route::get('', "CambioPasswordControllers@index");
+        Route::get('/', "CambioPasswordControllers@index");
+    });
+    /** RUTA PARA CITA EN LINEA */
      Route::group('/dashboard/cita/citaEnLinea', function () {
         Route::get('', "CitaEnLineaControllers@index");
         Route::get('/', "CitaEnLineaControllers@index");

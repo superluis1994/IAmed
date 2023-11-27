@@ -77,23 +77,23 @@
 
                 <ul class="submenu">
                   <li class="submenu-item">
-                    <a href="form-element-input.html" class="submenu-link">Cambiar foto</a>
+                    <a href="<?=$utils->url('/dashboard/configuracion/cambiarFoto') ?>">Cambiar foto</a>
                   </li>
 
                   <li class="submenu-item">
-                    <a href="form-element-input-group.html" class="submenu-link">Datos Personales</a>
+                    <a href="<?=$utils->url('/dashboard/configuracion/datosPersonales') ?>" class="submenu-link">Datos Personales</a>
                   </li>
 
                   <li class="submenu-item">
-                    <a href="#" class="submenu-link">Suscripción</a>
+                    <a href="<?=$utils->url('/dashboard/configuracion/suscripciones') ?>" class="submenu-link">Suscripción</a>
                   </li>
 
                   <li class="submenu-item">
-                    <a href="form-element-radio.html" class="submenu-link">Perfil Profesional</a>
+                    <a href="<?=$utils->url('/dashboard/configuracion/perfilProfesional') ?>" class="submenu-link">Perfil Profesional</a>
                   </li>
 
                   <li class="submenu-item">
-                    <a href="form-element-checkbox.html" class="submenu-link">Comunidad de Referidos</a>
+                    <a href="<?=$utils->url('/dashboard/configuracion/perfilProfesional') ?>" class="submenu-link">Comunidad de Referidos</a>
                   </li>
 
                 </ul>
@@ -108,7 +108,7 @@
 
                 <ul class="submenu">
                   <li class="submenu-item">
-                    <a href="form-validation-parsley.html" class="submenu-link">Cambio de Contraseña</a>
+                    <a href="<?=$utils->url('/dashboard/privacidad/newPassword');?>" class="submenu-link">Cambio de Contraseña</a>
                   </li>
                 </ul>
               </li>
