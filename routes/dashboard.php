@@ -88,6 +88,11 @@ Route::group('/dashboard', function () {
         Route::get('', "CitaEnLineaControllers@index");
         Route::get('/', "CitaEnLineaControllers@index");
     });
+     /** RUTA PARA VER HISTORIAL CITAS DEL PACIENTE */
+     Route::group('/dashboard/historialCitasPaciente', function () {
+        Route::get('', "HistorialCitasPacienteControllers@index");
+        Route::get('/', "HistorialCitasPacienteControllers@index");
+    });
     /** RUTA PARA VER TODO EL HISTORIAL MEDICO DE LOS PACIENTES */
     Route::group('/dashboard/cita/historiales', function () {
         Route::get('', "HistorialesClinicosControllers@index");
