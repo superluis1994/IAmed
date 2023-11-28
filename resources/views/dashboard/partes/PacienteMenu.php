@@ -62,11 +62,11 @@
 
                 <ul class="submenu">
                   <li class="submenu-item">
-                    <a href="layout-default.html" class="submenu-link">Agregar</a>
+                    <a href="<?= $utils->url('/dashboard/recordatorios/agregar') ?>" class="submenu-link">Agregar</a>
                   </li>
 
                   <li class="submenu-item">
-                    <a href="layout-vertical-1-column.html" class="submenu-link">Historial</a>
+                    <a href="<?= $utils->url('/dashboard/recordatorios/historial') ?>" class="submenu-link">Historial</a>
                   </li>
 
 
@@ -80,11 +80,11 @@
 
                 <ul class="submenu">
                   <li class="submenu-item">
-                    <a href="layout-default.html" class="submenu-link">Cita en Línea</a>
+                    <a href="<?=$utils->url('/dashboard/cita/citaEnLinea');?>" class="submenu-link">Cita en Línea</a>
                   </li>
 
                   <li class="submenu-item">
-                    <a href="layout-vertical-1-column.html" class="submenu-link">Historial</a>
+                    <a href="<?=$utils->url('/dashboard/historialCitasPaciente');?>" class="submenu-link">Historial</a>
                   </li>
 
 
