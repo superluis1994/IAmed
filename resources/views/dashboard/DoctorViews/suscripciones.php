@@ -4,7 +4,7 @@
       <div class="col-12 col-md-6 order-md-1 order-last">
         <h3>Planes de Suscripción</h3>
         <p class="text-subtitle text-muted">
-          Accede a beneficios como Afiliado
+          Accede a beneficios como afiliado.
         </p>
       </div>
       <div class="col-12 col-md-6 order-md-2 order-first">
@@ -32,7 +32,7 @@
                 <div class="card-header text-center">
                   <h4 class="card-title">Básica</h4>
                   <p class="text-center">
-                    A standart features you can get
+                    
                   </p>
                 </div>
                 <h1 class="price">Gratis</h1>
@@ -42,6 +42,7 @@
                   </li>
 
                 </ul>
+                <br><br><br><br><br><br>
                 <div class="card-footer">
                   <button class="btn btn-primary btn-block">
                     Obtener
@@ -59,37 +60,33 @@
                 <h1 class="price text-white">$150</h1>
                 <ul>
                   <li>
-                    <i class="bi bi-check-circle"></i>Lorem ipsum kolor
-                    sit amet
+                    <i class="bi bi-check-circle"></i>Visualización de la plataforma.
                   </li>
                   <li>
-                    <i class="bi bi-check-circle"></i>Lorem ipsum dolor
-                    sit amet
+                    <i class="bi bi-check-circle"></i>Comunidad médica.
+                    
                   </li>
                   <li>
-                    <i class="bi bi-check-circle"></i>Lorem ipsum kolor
-                    sit amet
+                    <i class="bi bi-check-circle"></i>Consultas a Inteligencia Artificial.
+                   
                   </li>
                   <li>
-                    <i class="bi bi-check-circle"></i>Lorem ipsum dolor
-                    sit amet
+                    <i class="bi bi-check-circle"></i>Recordatorios de tu citas médicas.
+                    
                   </li>
                   <li>
-                    <i class="bi bi-check-circle"></i>Lorem ipsum kolor
-                    sit amet
+                    <i class="bi bi-check-circle"></i>Publicidad en página web.
+                  
                   </li>
                   <li>
-                    <i class="bi bi-check-circle"></i>Lorem ipsum dolor
-                    sit amet
+                    <i class="bi bi-check-circle"></i>Publicidad en panel de pacientes.
+                   
                   </li>
-                  <li>
-                    <i class="bi bi-check-circle"></i>Lorem ipsum kolor
-                    sit amet
-                  </li>
+                  
                 </ul>
                 <div class="card-footer">
                   <button class="btn btn-outline-white btn-block">
-                    Order Now
+                    Obtener
                   </button>
                 </div>
               </div>
@@ -99,22 +96,28 @@
                 <div class="card-header text-center">
                   <h4 class="card-title">Standard</h4>
                   <p class="text-center">
-                    A higher features you will need
+                   
                   </p>
                 </div>
                 <h1 class="price">$100</h1>
                 <ul>
                   <li>
-                    <i class="bi bi-check-circle"></i>Acceso a visualización de la plataforma.
+                    <i class="bi bi-check-circle"></i>Visualización de la plataforma.
                   </li>
                   <li>
-                    <i class="bi bi-check-circle"></i>Acceso .
+                    <i class="bi bi-check-circle"></i>Comunidad médica.
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle"></i>Consultas a Inteligencia Artificial.
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle"></i>Recordatorios de tus citas médicas.
                   </li>
 
                 </ul>
                 <div class="card-footer">
                   <button class="btn btn-primary btn-block">
-                    Order Now
+                    Obtener
                   </button>
                 </div>
               </div>
