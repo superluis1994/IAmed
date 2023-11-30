@@ -36,7 +36,7 @@
 
           <li class="sidebar-item">
             <a href="<?= $utils->Url("/dashboard"); ?>" class="sidebar-link">
-              <i class="bi bi-grid-fill"></i>
+            <i class="bi bi-houses-fill"></i>
               <span>Regresar</span>
             </a>
           </li>
@@ -55,7 +55,7 @@
 
           <li class="sidebar-item has-sub">
             <a href="#" class="sidebar-link">
-              <i class="bi bi-stack"></i>
+            <i class="bi bi-chat-left-dots-fill"></i>
               <span>Chat Recientes</span>
             </a>
 

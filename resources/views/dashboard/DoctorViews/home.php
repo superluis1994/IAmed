@@ -1,7 +1,7 @@
             <div class="col-12 col-lg-12">
               <div class="row">
                 <div class="col-6 col-lg-3 col-md-6">
-                  <a href="<?=$utils->url("/dashboard/chatbot");?>">
+                  <a href="<?=$utils->url("/dashboard/chatPaciente");?>">
                   <div class="card" >
                     <div class="card-body px-4 py-4-5">
                       <div class="row">
@@ -23,6 +23,7 @@
 
                 </div>
                 <div class="col-6 col-lg-3 col-md-6">
+                <a href="<?=$utils->url("/dashboard/chatbot");?>">
                   <div class="card">
                     <div class="card-body px-4 py-4-5">
                       <div class="row">
@@ -39,8 +40,10 @@
                       </div>
                     </div>
                   </div>
+             </a>
                 </div>
                 <div class="col-6 col-lg-3 col-md-6">
+                <a href="<?=$utils->url("/dashboard/agendaMedica");?>">
                   <div class="card">
                     <div class="card-body px-4 py-4-5">
                       <div class="row">
@@ -59,8 +62,10 @@
                       </div>
                     </div>
                   </div>
+                  </a>
                 </div>
                 <div class="col-6 col-lg-3 col-md-6">
+                <a href="<?=$utils->url("/dashboard/historialPaciente");?>">
                   <div class="card">
                     <div class="card-body px-4 py-4-5">
                       <div class="row">
@@ -79,6 +84,7 @@
                       </div>
                     </div>
                   </div>
+                   </a>
                 </div>
               </div>
               <div class="row">

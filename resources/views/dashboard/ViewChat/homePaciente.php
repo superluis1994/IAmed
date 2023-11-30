@@ -2,9 +2,9 @@
   <div class="col-12 col-md-12 order-md-1 order-last">
     <h1 class="text-uppercase">BIENVENIDO <b><?=$_SESSION["datosUser"]["user"] ?></b></h1>
     <p class="text-subtitle text-muted">
-      Tus 10 ultimos chat de este mes
+      Tus ultimos chat de este mes
     </p>
-    <div class="row">
+    <!-- <div class="row">
                 <div class="col-6 col-lg-3 col-md-6">
                   <a href="/IAmed/dashboard/chatbot">
                   <div class="card">
@@ -85,6 +85,6 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
   </div>
 </div>

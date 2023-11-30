@@ -32,7 +32,7 @@
                     <span class="avatar-status bg-success"></span>
                   </div>
                   <div class="name flex-grow-1">
-                    <h6 class="mb-0"> Nombre del profesional
+                    <h6 class="mb-0"><?= $data["msg"][0]['participants'][0]["username"] ?>
                     </h6>
                     <span class="text-xs">En linea</span>
                   </div>
@@ -43,7 +43,25 @@
               </div>
               <div class="card-body pt-4 bg-grey">
                 <div class="chat-content">
-                  <div class="chat">
+                <?php
+
+                // echo var_dump($data["msg"]);
+              foreach ($data["msg"][0]["messages"] as $key => $chat) {
+
+                $class = $chat["senderId"] == $_SESSION["datosUser"]["id"] ? '' : 'chat-left';
+                echo <<<HTML
+                          <div class="chat {$class}">
+                            <div class="chat-body">
+                              <div class="chat-message">
+                                {$chat["message"]}
+                              </div>
+                            </div>
+                          </div>
+                HTML;
+              }
+
+              ?>
+                  <!-- <div class="chat">
                     <div class="chat-body">
                       <div class="chat-message">
                         Hola, necesito agendar una cita médica. 
@@ -73,7 +91,9 @@
                         A su servicio! :)
                       </div>
                     </div>
-                  </div>
+                  </div> -->
+
+
                 </div>
               </div>
               <div class="card-footer">
