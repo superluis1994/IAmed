@@ -20,7 +20,7 @@
                   </li>
 
                   <li class="submenu-item">
-                    <a href="extra-component-divider.html" class="submenu-link">MediBot</a>
+                    <a href="<?=$utils->url('/dashboard/chatbot') ?>" class="submenu-link">MediBot</a>
                   </li>
 
                 </ul>
@@ -93,7 +93,7 @@
                   </li>
 
                   <li class="submenu-item">
-                    <a href="<?=$utils->url('/dashboard/configuracion/perfilProfesional') ?>" class="submenu-link">Comunidad de Referidos</a>
+                    <a href="<?=$utils->url('/dashboard/configuracion/comunidadReferidos') ?>" class="submenu-link">Comunidad de Referidos</a>
                   </li>
 
                 </ul>

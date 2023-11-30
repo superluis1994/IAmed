@@ -171,7 +171,11 @@
                       <div class="chat-body">
                         <div class="chat-message">
                           <div class="doctor-info">
-                            <div class="doctor-circle"></div>
+                            <div class="doctor-circle">
+                                  <div class="avatar avatar-md">
+                                    <img src="<?=$utils->assets('assets/compiled/jpg/4.jpg')?>" />
+                                  </div>
+                            </div>
                             <p><a href="enlace-al-dr-luis-respirino" class="doctor-name">Dr. Luis Respirino</a></p>
                             <p>Especialidad: Neumonología y Alergología.</p>
                           </div>

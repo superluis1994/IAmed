@@ -123,25 +123,20 @@
                     </div>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton" style="min-width: 11rem">
+                  
                     <li>
-                      <h6 class="dropdown-header">Hello, John!</h6>
+                      <a class="dropdown-item" href="#"><i class="icon-mid bi bi-person me-2"></i> Mi Perfil</a>
                     </li>
+
                     <li>
-                      <a class="dropdown-item" href="#"><i class="icon-mid bi bi-person me-2"></i> My
-                        Profile</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"><i class="icon-mid bi bi-gear me-2"></i> Settings</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"><i class="icon-mid bi bi-wallet me-2"></i> Wallet</a>
+                      <a class="dropdown-item" href="#"><i class="icon-mid bi bi-wallet me-2"></i>Tarjeta</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
                       <a class="dropdown-item" href="<?= $utils->url('/login/cerrar') ?>"><i class="icon-mid bi bi-box-arrow-left me-2"></i>
-                        Logout</a>
+                        Salir</a>
                     </li>
                   </ul>
                 </div>
