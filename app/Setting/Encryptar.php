@@ -25,7 +25,7 @@ class Encryptar {
     public function encryptItem($data) {
         $iv = str_repeat("\0", 16);
             $ciphertext = openssl_encrypt($data, 'aes-256-cbc', $this->key, OPENSSL_RAW_DATA,$iv);
-            return base64_encode($ciphertext);
+            return str_replace("/","",base64_encode($ciphertext));
         }
         public function decryptItem($data) {
             $ciphertext = base64_decode($data);
