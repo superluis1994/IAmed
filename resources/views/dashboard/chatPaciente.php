@@ -4,7 +4,7 @@
       <div class="sidebar-header position-relative">
         <div class="d-flex justify-content-between align-items-center">
           <div class="logo">
-          <a href="index.html">IAmed</a>
+            <a href="index.html">IAmed</a>
           </div>
           <div class="theme-toggle d-flex gap-2 align-items-center mt-2">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--system-uicons" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21">
@@ -37,15 +37,21 @@
           <li class="sidebar-item">
             <a href="<?= $utils->Url("/dashboard"); ?>" class="sidebar-link">
               <i class="bi bi-grid-fill"></i>
-              <span>Inicio</span>
+              <span>Regresar</span>
             </a>
           </li>
-          <li class="sidebar-item">
+          <li class="sidebar-item active">
+                <a href="<?= $utils->Url("/dashboard/chatPaciente"); ?>" class="sidebar-link">
+                  <i class="bi bi-grid-fill"></i>
+                  <span>INICIO</span>
+                </a>
+              </li>
+          <!-- <li class="sidebar-item">
             <a href="#" class="sidebar-link">
               <i class="bi bi-grid-fill"></i>
               <span>Nuevo Chat</span>
             </a>
-          </li>
+          </li> -->
 
           <li class="sidebar-item has-sub">
             <a href="#" class="sidebar-link">
@@ -54,9 +60,20 @@
             </a>
 
             <ul class="submenu">
-              <li class="submenu-item">
-                <a href="component-accordion.html" class="submenu-link">Chat 1</a>
-              </li>
+
+              <?php
+
+            // var_dump($data["chats"]); 
+     
+              foreach ($data["chats"] as $key => $chat) {
+                echo <<<HTML
+                      <li class="submenu-item">
+                        <a href="{$utils->url('/dashboard/chatPaciente')}/chats/{$chat['participants'][1]['userId']}" class="submenu-link">{$chat['participants'][1]["username"]}</a>
+                      </li>
+             HTML;
+              }
+            
+              ?>
             </ul>
       </div>
     </div>

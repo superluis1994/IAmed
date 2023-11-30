@@ -21,6 +21,7 @@ Route::group('/dashboard', function () {
     Route::group('/dashboard/chatPaciente', function () {
         Route::get('', "ChatPacienteControllers@index");
         Route::get('/', "ChatPacienteControllers@index");
+        Route::get('/chats/{id}', "ChatPacienteControllers@loadMsg");
     });
       /** RUTA PARA SECTOR PRIVADO */
       Route::group('/dashboard/sectorPrivado', function () {
