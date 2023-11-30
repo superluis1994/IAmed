@@ -55,31 +55,32 @@
 
 
 
-// /**BANNER PUBLICITARIO DE LOGIN */
-// const imageUrls = [
-//   '/IAmed/resources/assets/img/login/publicidad_login_p1.png',
-//   '/IAmed/resources/assets/img/login/publicidad_login_p2.png',
-//   '/IAmed/resources/assets/img/login/publicidad_login_p3.png',
-// ];
+/**BANNER PUBLICITARIO DE LOGIN */
+const imageUrls = [
+  '/IAmed/resources/assets/img/login/publicidad_login_p1.png',
+  '/IAmed/resources/assets/img/login/publicidad_login_p2.png',
+  '/IAmed/resources/assets/img/login/publicidad_login_p4.png',
+  '/IAmed/resources/assets/img/login/publicidad_login_p3.png',
+];
 
-// const authRightElement = document.getElementById('auth-right');
+const authRightElement = document.getElementById('auth-right');
 
-// let currentIndex = 0;
+let currentIndex = 0;
 
-// // Create a function to change the image
-// function changeImage() {
-//   // Increment the index or reset to 0 if it exceeds the length of imageUrls
-//   currentIndex = (currentIndex + 1) % imageUrls.length;
+// Create a function to change the image
+function changeImage() {
+  // Increment the index or reset to 0 if it exceeds the length of imageUrls
+  currentIndex = (currentIndex + 1) % imageUrls.length;
 
-//   // Get the next image URL
-//   const imageUrl = imageUrls[currentIndex];
+  // Get the next image URL
+  const imageUrl = imageUrls[currentIndex];
   
-//   // Update the CSS property with the new image URL and gradient
-//   authRightElement.style.cssText = `background-image:  url(${imageUrl}); background-repeat: no-repeat; background-position: center center; background-size: cover;`;
-// }
+  // Update the CSS property with the new image URL and gradient
+  authRightElement.style.cssText = `background-image:  url(${imageUrl}); background-repeat: no-repeat; background-position: center center; background-size: cover;transition: background-image 1s ease-in-out;`;
+}
 
-// // Set the timer
-// setInterval(changeImage, 5000);
+// Set the timer
+setInterval(changeImage, 8000);
 
 // /**BANNER PUBLICITARIO DE LOGIN */
 // async function obtenerRecurso(url, method) {
