@@ -15,6 +15,7 @@
                     <a href="#servicios" class="nav-item nav-link">Servicios</a>
                     <a href="#especialista" class="nav-item nav-link">Especialistas</a>
                     <a href="<?= $utils->url('/contacto') ?>" class="nav-item nav-link">Contactos</a>
+                    <a href="<?= $utils->url('/login') ?>" class="nav-item nav-link d-sm-none">Iniciar sesión</a>
                 </div>
                 <div class="ms-auto d-none d-lg-flex">
                     <a href="<?= $utils->url('/login') ?>" class="nav-item nav-link">Iniciar Sesión</a>
@@ -260,7 +261,7 @@
     <!-- Appoinment Start -->
 
     <!-- Team Start -->
-    <div class="container-fluid container-team py-5" id="especialistas">
+    <div class="container-fluid container-team py-5" id="especialista">
         <div class="container pb-5">
             <div class="row g-5 align-items-center mb-5">
                 <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">

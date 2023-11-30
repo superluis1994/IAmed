@@ -66,10 +66,10 @@
       </div>
     </div>
     <div class="col-lg-7 d-none d-lg-block">
-      <div id="auth-right" style="background-image: url(<?=$utils->assets("img/carousel-2.jpg");?>);">
+      <div id="auth-right" class="registrar" >
       </div>
       
     </div>
   </div>
 </div>
-<script src="<?php echo $utils->assets("js/registrar/registrar.js.js"); ?>" type="text/javascript"></script>
+<script src="<?php echo $utils->assets("js/registrar/registrar.js"); ?>" type="text/javascript"></script>

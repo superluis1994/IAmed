@@ -1,42 +1,43 @@
 
 
-const redirectUrl="";
 
-async function formularioEnvio(link,formulario) {
+// const redirectUrl="";
+
+// async function formularioEnvio(link,formulario) {
     
-    // const formularioElement = document.querySelector(`#${formulario}`);
+//     // const formularioElement = document.querySelector(`#${formulario}`);
     
-    const button = document.querySelector(`#${formulario}`);
-    button.addEventListener('submit', async (event) => {
-        // Prevents the form from submitting
-        event.preventDefault();
-        const url = link;
-        const method = "POST";
-        const formData = new FormData(button);
-        const fetchOptions = {
-            method:"POST",
-            body: formData,
-            headers: {
-                // "Content-Type": "application/json",
-                "Authorization": "Bearer <token>",
-      },
-    };
-        const response = await fetch(url, fetchOptions);
+//     const button = document.querySelector(`#${formulario}`);
+//     button.addEventListener('submit', async (event) => {
+//         // Prevents the form from submitting
+//         event.preventDefault();
+//         const url = link;
+//         const method = "POST";
+//         const formData = new FormData(button);
+//         const fetchOptions = {
+//             method:"POST",
+//             body: formData,
+//             headers: {
+//                 // "Content-Type": "application/json",
+//                 "Authorization": "Bearer <token>",
+//       },
+//     };
+//         const response = await fetch(url, fetchOptions);
         
-        const Data = await response.json();
-        // console.log(Data)
-        Toast.fire({
-            icon: await Data.status,
-            title: await Data.titulo,
-            text: Data.msg,
+//         const Data = await response.json();
+//         // console.log(Data)
+//         Toast.fire({
+//             icon: await Data.status,
+//             title: await Data.titulo,
+//             text: Data.msg,
             
-        })
-        redirectUrl= await Data.data.url
-        // window.location.href = Data.data.retornar; 
+//         })
+//         redirectUrl= await Data.data.url
+//         // window.location.href = Data.data.retornar; 
 
-    });
-    return false;
-}
+//     });
+//     return false;
+// }
 /**BANNER PUBLICITARIO DE LOGIN */
 // async function obtenerRecurso(url, method) {
 //   try {
@@ -88,13 +89,15 @@ async function formularioEnvio(link,formulario) {
 
 
 
+/**BANNER PUBLICITARIO DE LOGIN */
 const imageUrls = [
-  '/IAmed/resources/assets/img/team-3.jpg',
-  '/IAmed/resources/assets/img/team-5.jpg',
-  '/IAmed/resources/assets/img/team-2.jpg',
+  '/IAmed/resources/assets/img/login/publicidad_login_p1.png',
+  '/IAmed/resources/assets/img/login/publicidad_login_p2.png',
+  '/IAmed/resources/assets/img/login/publicidad_login_p4.png',
+  '/IAmed/resources/assets/img/login/publicidad_login_p3.png',
 ];
 
-const authRightElement = document.getElementById('auth-right');
+const authRightElement = document.querySelector('.registrar');
 
 let currentIndex = 0;
 
@@ -105,13 +108,13 @@ function changeImage() {
 
   // Get the next image URL
   const imageUrl = imageUrls[currentIndex];
-
+  
   // Update the CSS property with the new image URL and gradient
-  authRightElement.style.cssText = `background-image:  url(${imageUrl}); background-repeat: no-repeat; background-position: center center; background-size: cover;`;
+  authRightElement.style.cssText = `background-image:  url(${imageUrl}); background-repeat: no-repeat; background-position: center center; background-size: cover;transition: background-image 1s ease-in-out;`;
 }
 
 // Set the timer
-setInterval(changeImage, 5000);
+setInterval(changeImage, 8000);
 
 
 // const authRightElement = document.getElementById('auth-right');

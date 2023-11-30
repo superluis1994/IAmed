@@ -55,9 +55,9 @@ class Utils
         $url = "./resources/views/";
         // $path = str_replace(".", "/", $path);
         $path = explode('.', $path);
-        // foreach ($data as $key => $value) {
-        //     $$key = $value;
-        // }
+        foreach ($data as $key => $value) {
+            $$key = $value;
+        }
         
         $content = "";
         $content .= require_once  $url . "partials/header.php";

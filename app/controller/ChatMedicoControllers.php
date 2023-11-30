@@ -50,7 +50,7 @@ class ChatMedicoControllers extends Token{
       // print_r($usuarios);
 
 
-         echo $this->Encrypto->encryptItem(2);
+         // echo $this->Encrypto->encryptItem(2);
       
       // var_dump($Data);
     return Utils::viewChat('dashboard.chatMedico.ViewChat.homeMedico',$Data,"");

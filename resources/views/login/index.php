@@ -55,7 +55,7 @@
      
       </div> -->
 
-      <div id="auth-right" class="container p-5 d-flex flex-column align-items-center">
+      <div id="auth-right" >
     <!-- <h2 class="mb-3">Título</h2>
     <button type="button" class="btn btn-primary">Botón</button> -->
   </div>
