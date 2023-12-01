@@ -122,7 +122,7 @@
                   </button>
                 </div>
               </div>
-              <div class="card-body pt-4 bg-grey">
+              <div class="card-body pt-4 bg-grey" style="overflow-y: scroll; height: 400px;" >
                 <div class="chat-content">
                   <div class="chat">
                     <div class="chat-body">
@@ -167,7 +167,7 @@
                   </head>
 
                   <body>
-                    <div class="chat chat-left">
+                    <div class="chat chat-left" >
                       <div class="chat-body">
                         <div class="chat-message">
                           <div class="doctor-info">
@@ -209,12 +209,19 @@
                 </div>
               </div>
               <div class="card-footer">
-                <div class="message-form d-flex flex-direction-column align-items-center">
-                  <a href="http://" class="black"><i data-feather="smile"></i></a>
-                  <div class="d-flex flex-grow-1 ms-4">
-                    <input type="text" class="form-control" placeholder="Type your message.." />
-                  </div>
-                </div>
+               
+              <div class="message-form d-flex flex-direction-column align-items-center">
+              <a href="http://" class="black">
+              <i class="bi bi-paperclip" style=" font-size: 2em;"></i>
+              </a>
+              <div class="d-flex flex-grow-1 ms-4">
+                <input type="text" class="form-control" placeholder="Escribe el mensaje..">
+              </div>
+              <a href="#">
+                <i class="bi bi-send-check" style=" font-size: 2em;"></i>
+              </a>
+            </div>
+
               </div>
             </div>
           </div>
