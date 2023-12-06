@@ -33,100 +33,47 @@
         <div class="card">
             <div class="card-header">Listado de Pacientes</div>
             <div class="card-body">
-                <table class="table table-striped" id="table1">
-                    <thead>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Motivo de la Consulta</th>
-                            <th>Teléfono</th>
-                            <th>Departamento</th>
-                            <th>Fecha de la Consulta</th>
-                            <th>Estado</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                      <td>Isabella</td>
-                      <td>Problemas Respiratorios</td>
-                      <td>(503) 6123-4567</td>
-                      <td>Santa Ana</td>
-                      <td>2023-03-05</td>
-                      <td>
-                          <span class="badge bg-success">Activo</span>
-                      </td>
-                  </tr>
+              <table class="table table-striped" id="table1">
+                <thead>
                   <tr>
-                      <td>Mateo</td>
-                      <td>Fractura de Tobillo</td>
-                      <td>(503) 7012-3456</td>
-                      <td>La Paz</td>
-                      <td>2023-03-12</td>
-                      <td>
-                          <span class="badge bg-success">Activo</span>
-                      </td>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Telefono</th>
+                    <th>Fecha/Hora</th>
+                    <th>Status</th>
                   </tr>
-                  <tr>
-                      <td>Sofía</td>
-                      <td>Migraña Severa</td>
-                      <td>(503) 5678-9012</td>
-                      <td>Usulután</td>
-                      <td>2023-03-20</td>
+                </thead>
+                <tbody>
+                <?php
+                foreach ($data["consultas"] as $key => $value) {
+                    // $active = $key == $data['active'] ? 'active' : '';
+                      $class=[
+                        0=>"bg-danger",
+                        1=>"Realizada"
+                      ];
+                      if($value["status"]==1){
+                      $class[0]="bg-success";
+                      $class[1]="Pendiente";
+                      
+                    }
+                    echo <<<HTML
+                    <tr>
+                      <td>{$value["nombre"]}</td>
+                      <td>{$value["apellido"]}</td>
+                      <td>{$value["cel"]}</td>
+                      <td>{$value["tiempo"]}</td>
                       <td>
-                          <span class="badge bg-danger">Inactivo</span>
+                        
+                        <span class="badge {$class[0]}">$class[1]</span>
                       </td>
-                  </tr>
-                  <tr>
-                      <td>Lucas</td>
-                      <td>Herida en la Mano</td>
-                      <td>(503) 2123-4567</td>
-                      <td>Ahuachapán</td>
-                      <td>2023-04-02</td>
-                      <td>
-                          <span class="badge bg-success">Activo</span>
-                      </td>
-                  </tr>
-                  <tr>
-                      <td>Emma</td>
-                      <td>Problemas Oculares</td>
-                      <td>(503) 4987-6543</td>
-                      <td>Cabañas</td>
-                      <td>2023-04-15</td>
-                      <td>
-                          <span class="badge bg-danger">Inactivo</span>
-                      </td>
-                  </tr>
-                  <tr>
-                      <td>Liam</td>
-                      <td>Conmoción Cerebral</td>
-                      <td>(503) 3001-2345</td>
-                      <td>Chalatenango</td>
-                      <td>2023-05-01</td>
-                      <td>
-                          <span class="badge bg-success">Activo</span>
-                      </td>
-                  </tr>
-                  <tr>
-                      <td>Ava</td>
-                      <td>Problemas Digestivos</td>
-                      <td>(503) 6543-2109</td>
-                      <td>La Unión</td>
-                      <td>2023-05-10</td>
-                      <td>
-                          <span class="badge bg-danger">Inactivo</span>
-                      </td>
-                  </tr>
-                  <tr>
-                      <td>Noah</td>
-                      <td>Lesión en la Rodilla</td>
-                      <td>(503) 1234-5678</td>
-                      <td>San Vicente</td>
-                      <td>2023-06-02</td>
-                      <td>
-                          <span class="badge bg-success">Activo</span>
-                      </td>
-                  </tr>
-                    </tbody>
-                </table>
+                    </tr>
+              
+            HTML;
+                }
+
+                ?>
+                </tbody>
+              </table>
             </div>
         </div>
     </section>

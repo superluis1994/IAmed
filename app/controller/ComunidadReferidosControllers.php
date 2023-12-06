@@ -6,15 +6,15 @@ use Firebase\JWT\Key;
 use app\Setting\Token;
 
 class ComunidadReferidosControllers extends Token{
-   
+   private $header;
    public function __construct()
    {
 
-      Utils::tituloPagina("Panel | Comunidad Referidos");
+      $this->header = "Panel | Comunidad Referidos";
       
    }
    public function index(){
-    return Utils::viewDasboard('dashboard.comunidadReferidos',$data=[],"");
+    return Utils::viewDasboard('dashboard.comunidadReferidos',$data=[],$this->header);
     // return Utils::viewDasboard('productos.index');
  }
    /**SE ENCARGA DE CARGAR LOS MENSAJES */

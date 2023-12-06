@@ -94,7 +94,6 @@ class Model extends Conexion implements Orm
             "value" => $value['value']
          ];
       }
-    
       return $this;
    }
 
@@ -237,7 +236,6 @@ class Model extends Conexion implements Orm
          self::$Query .= $key . ",";
       }
 
-      /// eliminamos la ultima coma
 
       self::$Query = rtrim(self::$Query, ",") . ") VALUES(";
 

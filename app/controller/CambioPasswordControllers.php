@@ -6,15 +6,15 @@ use Firebase\JWT\Key;
 use app\Setting\Token;
 
 class CambioPasswordControllers extends Token{
-   
+   private $header;
    public function __construct()
    {
 
-      Utils::tituloPagina("Panel | Nueva Contraseña");
+      $this->header ="Panel | Nueva Contraseña";
       
    }
    public function index(){
-    return Utils::viewDasboard('dashboard.newPassword',$data=[],"");
+    return Utils::viewDasboard('dashboard.newPassword',$data=[],$this->header);
     // return Utils::viewDasboard('productos.index');
  }
    /**SE ENCARGA DE CARGAR LOS MENSAJES */
