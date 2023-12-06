@@ -38,7 +38,8 @@
                 <thead>
                   <tr>
                     <th>Titulo</th>
-                    <th>Fecha/Hora</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
                     <th>Status</th>
                   </tr>
                 </thead>
@@ -58,7 +59,8 @@
                     echo <<<HTML
                     <tr>
                       <td>{$value["titulo"]}</td>
-                      <td>{$value["fecha_hora"]}</td>
+                      <td>{$value["fecha"]}</td>
+                      <td> {$value["hora"]}</td>
                       <td>
                         
                         <span class="badge {$class[0]}">$class[1]</span>

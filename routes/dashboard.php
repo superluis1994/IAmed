@@ -53,6 +53,7 @@ Route::group('/dashboard', function () {
     Route::group('/dashboard/cita/seguimiento', function () {
         Route::get('', "SeguimientoCitaControllers@load");
         Route::get('/', "SeguimientoCitaControllers@index");
+        Route::get('/DatosPaciente/{id}',"SeguimientoCitaControllers@DatosPaciente");
     });
     /** RUTA DE CAMBIAR FOTO EN LA CONFIGURACION **/
     Route::group('/dashboard/configuracion/cambiarFoto', function () {
