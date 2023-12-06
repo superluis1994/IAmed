@@ -44,23 +44,30 @@ class AgregarRecordatorioControllers extends Token{
          $arrayDatos["id_user"]=intval($this->Encrypto->decryptItem($_SESSION['datosUser']['id']));
          
     $Insert = $this->RecordatoriosModel->Insert($arrayDatos);
+
+    
+    if($Insert==1){
+       $response = [
+          'status' => 'success',
+          'titulo' => 'Exito',
+          'msg' => 'Recordatorio agregado',
+          'data' => [
+             "retornar"=>Utils::url('/dashboard/recordatorios/agregar'),
+             'datos' => $Insert
+          ],
+       ];
+   }else{
       $response = [
-         'status' => 'success',
-         'titulo' => 'Exito',
+         'status' => 'error',
+         'titulo' => 'Fallo inesperado',
          'msg' => 'Recordatorio agregado',
          'data' => [
-            'datos' => $Insert
+            "retornar"=>"",
+            'datos' =>""
          ],
       ];
-
-      // $response = [
-      //    'status' => 'error',
-      //    'titulo' => 'Error',
-      //    'msg' => 'Datos Incorrectos',
-      //    'data' => [
-      //       'url' => Utils::url('dashboard/recordatorios/agregar')
-      //    ],
-      // ];
+   }
+  
       echo json_encode($response);
       return false;
     }

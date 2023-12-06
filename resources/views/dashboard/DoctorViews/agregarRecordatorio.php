@@ -33,7 +33,7 @@
                 <div class="col-md-6 col-12">
                 <div class="form-group">
                       <label for="basicInput">Titulo</label>
-                      <input type="text" class="form-control" name="titulo" id="basicInput" placeholder="Enter email">
+                      <input type="text" class="form-control" name="titulo" id="basicInput" placeholder="Titulo del recordatorio">
                     </div>
                 </div>
                 <div class="col-md-6 col-12">

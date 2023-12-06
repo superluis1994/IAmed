@@ -96,12 +96,21 @@
             <h2>Motivo de la consulta</h2>
             <p id="motivo">
               Motivo de la consulta
+
             </p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="#" class="btn btn-primary">Cerrar Cita</a>
+                  <a href="#" class="btn btn-light">Chat Paciente</a>
+              </li>
+                <!-- <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li> -->
+              </ul>
           </div>
           <div class="col-4">
             <div class="card">
               <div class="card-content">
-                <img src="<?= $utils->assets("assets/static/images/faces/2.jpg") ?>" class="card-img-top img-fluid" alt="singleminded" />
+                <img src="<?= $utils->assets("assets/static/images/faces/2.jpg") ?>" class="card-img-top img-fluid" width="200" alt="singleminded" />
                 <div class="card-body">
                   <h5 class="card-title" id="nomPaciente">Be Single Minded</h5>
                   <p class="card-text" id="PacienteInf">
@@ -111,14 +120,7 @@
                   </p>
                 </div>
               </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <a href="#" class="btn btn-primary">Cerrar Cita</a>
-                  <a href="#" class="btn btn-light">Chat Paciente</a>
-              </li>
-                <!-- <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li> -->
-              </ul>
+              
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 /**ENVIO DEL FOMULARIO ADD RECORDATORIO */
-// const redirectUrl="";
+const redirectUrl="";
 async function formularioEnvio(link,formulario) { 
     const button = document.querySelector(`#${formulario}`);
     button.addEventListener('submit', async (event) => {
@@ -26,8 +26,7 @@ async function formularioEnvio(link,formulario) {
             text: Data.msg,
             
         })
-        // redirectUrl= ""
-        // window.location.href = Data.data.retornar; 
+        redirectUrl= await Data.data.retornar
 
     });
     return false;

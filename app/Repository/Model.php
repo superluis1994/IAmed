@@ -248,7 +248,7 @@ class Model extends Conexion implements Orm
       /// eliminamos la ultima coma
 
       self::$Query = rtrim(self::$Query, ",") . ")";
-       echo self::$Query;
+      //  echo self::$Query;
       try {
          self::$Pps = self::getConexion_()->prepare(self::$Query);
 
