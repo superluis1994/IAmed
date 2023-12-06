@@ -6,15 +6,15 @@ use Firebase\JWT\Key;
 use app\Setting\Token;
 
 class ComunidaMedicaControllers extends Token{
-   
+   private $header;
    public function __construct()
    {
 
-      
+      $this->header = "Panel|ComunidadMedica";
       
    }
    public function index(){
-    return Utils::viewDasboard('dashboard.comunidadMedica',$data=[],"");
+    return Utils::viewDasboard('dashboard.comunidadMedica',$data=[],$this->header);
     // return Utils::viewDasboard('productos.index');
  }
    /**SE ENCARGA DE CARGAR LOS MENSAJES */

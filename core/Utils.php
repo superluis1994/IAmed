@@ -21,23 +21,24 @@ class Utils
         $url = preg_replace('#/+#', '/', $url);
         return $url;
     }
-    static function tituloPagina($titulo)
-    {
-        $title = $titulo;
-        // Enviar el encabezado Title
-        header("Title: $title");
-        // Mostrar el nuevo título de la página
+    // static function tituloPagina($titulo)
+    // {
+    //     $title = $titulo;
+    //     // Enviar el encabezado Title
+    //     header("Title: $title");
+    //     // Mostrar el nuevo título de la página
        
-         echo "<title>$title</title>";
-         return 0;
-    }
+    //      echo "<title>$title</title>";
+    //      return 0;
+    // }
     // Esta carga la view unicas que no tienen vista internas 
-    static function view($path = "", $data = [])
+    static function view($path = "", $data = [],$header)
     {
         // instancie la clase aqui para tener acceso a sus clases assets
         $utils = new Utils();
         $url = "./resources/views/";
         $path = str_replace(".", "/", $path);
+        $titulo=$header;
         foreach ($data as $key => $value) {
             $$key = $value;
         }
@@ -48,13 +49,14 @@ class Utils
         $content .= require_once  $url . "partials/footer.php";
         return $content;
     }
-    static function viewChat($path = "", $data = [])
+    static function viewChat($path = "", $data = [],$header)
     {
         // instancie la clase aqui para tener acceso a sus clases assets
         $utils = new Utils();
         $url = "./resources/views/";
         // $path = str_replace(".", "/", $path);
         $path = explode('.', $path);
+        $titulo=$header;
         foreach ($data as $key => $value) {
             $$key = $value;
         }
@@ -66,12 +68,13 @@ class Utils
         $content .= require_once  $url . "partials/footer.php";
         return $content;
     }
-    static function viewStatic($path = "", $data = [])
+    static function viewStatic($path = "", $data = [],$header)
     {
         // instancie la clase aqui para tener acceso a sus clases assets
         $utils = new Utils();
         $url = "./resources/views/";
         $path = explode('.', $path);
+        $titulo=$header;
         foreach ($data as $key => $value) {
             $$key = $value;
         }
@@ -84,13 +87,13 @@ class Utils
 
     
     // Este cargar la views que tiene vistas internas
-    static function viewDasboard($path = "", $data = [],$alerta)
+    static function viewDasboard($path = "", $data = [],$header)
     {
        // instancie la clase aqui para tener acceso a sus clases assets
         $utils = new Utils();
         $url = "./resources/views/";
         $path = explode('.', $path);
-        $msg=$alerta;
+        $titulo=$header;
         // $path = str_replace(".","/",$path);
         foreach ($data as $key => $value) {
             $$key = $value;

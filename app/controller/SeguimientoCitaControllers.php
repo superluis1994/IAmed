@@ -10,15 +10,16 @@ use app\Setting\Encryptar;
 class SeguimientoCitaControllers extends Token{
    private CitasModel $CitasModel;
    private Encryptar $Encrypto;
+   private $header;
    public function __construct()
    {
       $this->CitasModel = new CitasModel;
       $this->Encrypto = new Encryptar($_ENV["JWT_SECRET_KEY"]);
-      Utils::tituloPagina("Panel | Seguimiento Cita");
+      $this->header = "Panel | Seguimiento Cita";
       
    }
    public function index(){
-    return Utils::viewDasboard('dashboard.seguimientoCita',$data=[],"");
+    return Utils::viewDasboard('dashboard.seguimientoCita',$data=[],$this->header);
     // return Utils::viewDasboard('productos.index');
    }
    /**SE ENCARGA DE CARGAR LOS SEGUIMIENTOS DE LAS CITAS */
@@ -43,7 +44,7 @@ class SeguimientoCitaControllers extends Token{
             //  echo "<pre>";
             //  var_dump($Data);
             //  echo "</pre>";
-             return Utils::viewDasboard('dashboard.seguimientoCita',$Data,"");
+             return Utils::viewDasboard('dashboard.seguimientoCita',$Data,$this->header);
     }
     /**SE ENCARGA DE GESTIONAR CONSULTAS CON IA Y ALMACENARLAS */
     public function questionMsg()

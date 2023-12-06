@@ -10,15 +10,16 @@ use app\Setting\Token;
 class HistorialRecordatorioControllers extends Token{
    private RecordatoriosModel $RecordatoriosModel;
    private Encryptar $Encrypto;
+   private $header;
    public function __construct()
    {
       $this->RecordatoriosModel = new RecordatoriosModel;
       $this->Encrypto = new Encryptar($_ENV["JWT_SECRET_KEY"]);
-      Utils::tituloPagina("Panel | Historial Recordatorios");
+      $this->header = "Panel | Historial Recordatorios";
       
    }
    public function index(){
-    return Utils::viewDasboard('dashboard.historialRecordatorio',$data=[],"");
+    return Utils::viewDasboard('dashboard.historialRecordatorio',$data=[],$this->header);
     // return Utils::viewDasboard('productos.index');
    }
    /**SE ENCARGA DE CARGAR LOS MENSAJES */
@@ -34,7 +35,7 @@ class HistorialRecordatorioControllers extends Token{
                   //  echo "<pre>";
                   //  var_dump($Consultas);
                   //  echo "</pre>";
-                  return Utils::viewDasboard('dashboard.historialRecordatorio',$Data,"");
+                  return Utils::viewDasboard('dashboard.historialRecordatorio',$Data,$this->header);
 
     }
     /**SE ENCARGA DE GESTIONAR CONSULTAS CON IA Y ALMACENARLAS */

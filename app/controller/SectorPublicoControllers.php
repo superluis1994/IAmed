@@ -9,10 +9,11 @@ use app\models\SectorPublicoModel;
 
 class SectorPublicoControllers extends Token{
   private Model $sectorPublico; 
+  private $header;
    public function __construct()
    {
     
-    Utils::tituloPagina("Panel | SectorPublico");
+    $this->header = "Panel | SectorPublico";
      $this->sectorPublico = new SectorPublicoModel();   
    }
    /**SE ENCARGA DE MOSTRAR LOS HOSPITALES PUBLICOS */
@@ -42,7 +43,7 @@ class SectorPublicoControllers extends Token{
         ])->Mult_Where([["atributo"=>"id_status", "condicion"=>"=","value"=>1,"operador"=>""]])->first();
            // solo falta mostrar los datos
     $alerta="";
-    return Utils::viewDasboard('dashboard.sectorPublico',$data=[],$alerta);
+    return Utils::viewDasboard('dashboard.sectorPublico',$data=[],$this->header);
    }
    /**SE ENCARGA DE MOSTRAR LOS MEDICOS PUBLICOS */
     public function loadPrDoctores()

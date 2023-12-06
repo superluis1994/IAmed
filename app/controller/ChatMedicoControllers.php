@@ -14,12 +14,13 @@ class ChatMedicoControllers extends Token{
    private ModelMongo $Mongo;
    private Model $Especialidad;
    private Encryptar $Encrypto;
+   private $header;
    public function __construct()
    {
       $this->Encrypto = new Encryptar($_ENV["JWT_SECRET_KEY"]);
       $this->Mongo = new ModelMongo;
        $this->Especialidad = new especialidadesModel;
-       Utils::tituloPagina("Panel | ChatMedico");
+       $this->header = "Panel | ChatMedico";
       
    }
    public function index(){
@@ -53,7 +54,7 @@ class ChatMedicoControllers extends Token{
          // echo $this->Encrypto->encryptItem(2);
       
       // var_dump($Data);
-    return Utils::viewChat('dashboard.chatMedico.ViewChat.homeMedico',$Data,"");
+    return Utils::viewChat('dashboard.chatMedico.ViewChat.homeMedico',$Data,$this->header);
 
  }
    public function chatMedico($id){
@@ -85,13 +86,13 @@ class ChatMedicoControllers extends Token{
 // }
 // echo var_dump($Data);
 
-    return Utils::viewChat('dashboard.chatMedico.ViewChat.chatDoctor',$Data);
+    return Utils::viewChat('dashboard.chatMedico.ViewChat.chatDoctor',$Data,$this->header);
     
    }
    public function listadoMedicos($id){
       
     
-      return Utils::viewChat('dashboard.chatMedico.ViewChat.chatDoctor',$Data=[]);
+      return Utils::viewChat('dashboard.chatMedico.ViewChat.chatDoctor',$Data=[],$this->header);
  }
 //    public function chatMedicos($id){
 
