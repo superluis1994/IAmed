@@ -6,15 +6,15 @@ use Firebase\JWT\Key;
 use app\Setting\Token;
 
 class PerfilProfesionalControllers extends Token{
-   
+   private $header;
    public function __construct()
    {
 
-      Utils::tituloPagina("Panel | Perfil Profesional");
+      $this->header = "Panel | Perfil Profesional";
       
    }
    public function index(){
-    return Utils::viewDasboard('dashboard.perfilProfesional',$data=[],"");
+    return Utils::viewDasboard('dashboard.perfilProfesional',$data=[],$this->header);
     // return Utils::viewDasboard('productos.index');
  }
    /**SE ENCARGA DE CARGAR LOS MENSAJES */

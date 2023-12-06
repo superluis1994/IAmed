@@ -18,16 +18,18 @@ class LoginControllers
    private Model $RolesModel;
    private Model $BannerModel;
    private Encryptar $Encrypto;
+   private $header;
    public function __construct()
    {
       $this->UserModel = new UserModel;
       $this->RolesModel = new RolesModel;
       $this->BannerModel = new BannerModel;
       $this->Encrypto = new Encryptar($_ENV["JWT_SECRET_KEY"]);
+      $this->header = "Login";
    }
    public function index()
    {
-      Utils::tituloPagina("Login");
+      
 
       // session_destroy();
       if (isset($_SESSION['datosUser']['token'])) {
@@ -45,7 +47,7 @@ class LoginControllers
          }
       }
 
-      return Utils::view('login.index');
+      return Utils::view('login.index',$Data=[],$this->header);
    }
 
    public function authenticate()
@@ -55,7 +57,7 @@ class LoginControllers
       if (empty(trim(@$_POST["user"])) || empty(trim(@$_POST["password"]))) {
          // Mostrar un error
          // echo "Los campos usuario y contraseña son obligatorios.";
-         return Utils::view('error.404', $Data = []);
+         return Utils::view('error.404', $Data = [],"Error");
 
          exit();
       }
@@ -144,6 +146,6 @@ class LoginControllers
          echo json_encode($response);
          return false;
       }
-      Utils::view("error.404");
+      Utils::view("error.404",$Data=[],"");
    }
 }

@@ -6,15 +6,15 @@ use Firebase\JWT\Key;
 use app\Setting\Token;
 
 class ChatbotControllers extends Token{
-   
+   private $header;
    public function __construct()
    {
 
-      Utils::tituloPagina("Panel | Chatbot");
+      $this->header = "Panel | Chatbot";
       
    }
    public function chatbot(){
-    return Utils::view('dashboard.chatbot',$data=[],"");
+    return Utils::view('dashboard.chatbot',$data=[],$this->header);
     // return Utils::viewDasboard('productos.index');
  }
    /**SE ENCARGA DE CARGAR LOS MENSAJES */

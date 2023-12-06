@@ -8,10 +8,11 @@ use app\Repository\ModelMongo;
 
 class ChatPacienteControllers extends Token{
    private ModelMongo $Mongo;
+   private $header;
    public function __construct()
    {
       $this->Mongo = new ModelMongo;
-      Utils::tituloPagina("Panel | ChatPaciente");      
+      $this->header = "Panel | ChatPaciente";      
    }
    public function index(){
    @$chats = $this->Mongo->MongoDBBusqueda(["collection" => "chats", "consulta" => ["participants.doctorId" => $_SESSION['datosUser']['id']]]);
@@ -24,7 +25,7 @@ class ChatPacienteControllers extends Token{
    ];
    // var_dump($chats[0]["messages"]);
    
-   return Utils::viewChat('dashboard.chatPaciente.ViewChat.homePaciente',$Data);
+   return Utils::viewChat('dashboard.chatPaciente.ViewChat.homePaciente',$Data,$this->header);
 }
 
 /**SE ENCARGA DE CARGAR LOS MENSAJES */
@@ -39,7 +40,7 @@ public function loadMsg($id)
       "chats" => $chats,
       "msg"=>$msg
    ];
-   return Utils::viewChat('dashboard.chatPaciente.ViewChat.chatPaciente',$Data);
+   return Utils::viewChat('dashboard.chatPaciente.ViewChat.chatPaciente',$Data,$this->header);
        
 
     }

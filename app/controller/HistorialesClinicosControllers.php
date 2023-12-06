@@ -6,15 +6,15 @@ use Firebase\JWT\Key;
 use app\Setting\Token;
 
 class HistorialesClinicosControllers extends Token{
-   
+   private $header;
    public function __construct()
    {
 
-      Utils::tituloPagina("Panel | Historiales Clinicos");
+      $this->header = "Panel | Historiales Clinicos";
       
    }
    public function index(){
-    return Utils::viewDasboard('dashboard.historialesClinicos',$data=[],"");
+    return Utils::viewDasboard('dashboard.historialesClinicos',$data=[],$this->header);
     // return Utils::viewDasboard('productos.index');
  }
    /**SE ENCARGA DE CARGAR LOS MENSAJES */

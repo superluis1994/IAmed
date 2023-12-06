@@ -51,8 +51,9 @@ Route::group('/dashboard', function () {
     });
     /** RUTA DE LLEVAR EL SEGUIMIENTO DE CITAS */
     Route::group('/dashboard/cita/seguimiento', function () {
-        Route::get('', "SeguimientoCitaControllers@index");
+        Route::get('', "SeguimientoCitaControllers@load");
         Route::get('/', "SeguimientoCitaControllers@index");
+        Route::get('/DatosPaciente/{id}',"SeguimientoCitaControllers@DatosPaciente");
     });
     /** RUTA DE CAMBIAR FOTO EN LA CONFIGURACION **/
     Route::group('/dashboard/configuracion/cambiarFoto', function () {
@@ -106,8 +107,12 @@ Route::group('/dashboard', function () {
             Route::get('/', "AgregarRecordatorioControllers@index");
         });
         Route::group('/dashboard/recordatorios/historial', function () {
-            Route::get('', "HistorialRecordatorioControllers@index");
-            Route::get('/', "HistorialRecordatorioControllers@index");
+            Route::get('', "HistorialRecordatorioControllers@load");
+            Route::get('/', "HistorialRecordatorioControllers@load");
+        });
+        Route::group('/dashboard/recordatorios/add', function () {
+            Route::get('', "AgregarRecordatorioControllers@add");
+            Route::get('/', "AgregarRecordatorioControllers@add");
         });
     });
     /** RUTA DE LA COMUNIDAD MEDICA */

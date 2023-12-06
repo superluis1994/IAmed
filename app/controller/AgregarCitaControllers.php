@@ -6,15 +6,15 @@ use Firebase\JWT\Key;
 use app\Setting\Token;
 
 class AgregarCitaControllers extends Token{
-   
+   private $header;
    public function __construct()
    {
 
-      Utils::tituloPagina("Panel | Nueva Cita");
+      $this->header = "Panel | Nueva Cita";
       
    }
    public function index(){
-    return Utils::viewDasboard('dashboard.agregarCita',$data=[],"");
+    return Utils::viewDasboard('dashboard.agregarCita',$data=[],$this->header);
     // return Utils::viewDasboard('productos.index');
  }
    /**SE ENCARGA DE CARGAR LOS MENSAJES */

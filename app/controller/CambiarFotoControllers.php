@@ -6,15 +6,15 @@ use Firebase\JWT\Key;
 use app\Setting\Token;
 
 class CambiarFotoControllers extends Token{
-   
+   private $header;
    public function __construct()
    {
 
-      Utils::tituloPagina("Panel | Cambiar Foto");
+      $this->header = "Panel | Cambiar Foto";
       
    }
    public function index(){
-    return Utils::viewDasboard('dashboard.cambiarFoto',$data=[],"");
+    return Utils::viewDasboard('dashboard.cambiarFoto',$data=[],$this->header);
     // return Utils::viewDasboard('productos.index');
  }
    /**SE ENCARGA DE CARGAR LOS MENSAJES */

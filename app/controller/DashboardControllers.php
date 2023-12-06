@@ -11,6 +11,7 @@ class DashboardControllers extends Token{
 
    private Model $UserModel;
    private ModelMongo $Mongo;
+   private $header;
    public function __construct()
    {
       $this->UserModel = new UserModel;
@@ -23,7 +24,7 @@ class DashboardControllers extends Token{
       else{
          return  header("Location:".Utils::url('/login'));
       }
-      Utils::tituloPagina("Panel");
+      $this->header = "Panel";
       
    }
    public function index(){
@@ -38,7 +39,7 @@ class DashboardControllers extends Token{
       // print_r($Data);
       // $alerta="<script> Swal.fire('SweetAlert2 is working!')</script>";
        $alerta="";
-       return Utils::viewDasboard("dashboard.home",$data=[],$alerta);
+       return Utils::viewDasboard("dashboard.home",$data=[],$this->header);
    }
   
 

@@ -49,12 +49,12 @@ class MainControllers{
       ];
       // echo "<pre>";
       // echo var_dump($Data);
-      return Utils::viewStatic('web.inicio',$Data);
+      return Utils::viewStatic('web.inicio',$Data,"WEb");
    
    }
    public function contacto(){
       
-      return Utils::viewStatic('web.contacto');
+      return Utils::viewStatic('web.contacto',$Data=[],"");
   
    }
 
