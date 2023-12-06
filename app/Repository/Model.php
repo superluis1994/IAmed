@@ -94,6 +94,7 @@ class Model extends Conexion implements Orm
             "value" => $value['value']
          ];
       }
+      // echo self::$Query;
       return $this;
    }
 
@@ -229,34 +230,37 @@ class Model extends Conexion implements Orm
    public function Insert(array $datos)
    {
       $this->Tabla = str_replace($this->alias, "", $this->Tabla);
-
+      
       self::$Query = "INSERT INTO $this->Tabla(";
-
+      
       foreach ($datos as $key => $value) {
          self::$Query .= $key . ",";
       }
-
+      
+  
 
       self::$Query = rtrim(self::$Query, ",") . ") VALUES(";
 
       foreach ($datos as $key => $value) {
-         self::$Query .= ":$key" . ",";
+         self::$Query .= " :$key" . ",";
       }
 
       /// eliminamos la ultima coma
 
       self::$Query = rtrim(self::$Query, ",") . ")";
-
+       echo self::$Query;
       try {
          self::$Pps = self::getConexion_()->prepare(self::$Query);
 
          foreach ($datos as $key => $value) {
-            self::$Pps->bindValue(":$key", $value);
+            
+            self::$Pps->bindValue(":".$key, $value);
          }
+     
 
          return self::$Pps->execute(); /// 0 | 1
       } catch (\Throwable $th) {
-         return "error";
+         return $th->getMessage();
       } finally {
          self::closeConexionBD();
       }

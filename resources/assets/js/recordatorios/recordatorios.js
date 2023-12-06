@@ -19,7 +19,7 @@ async function formularioEnvio(link,formulario) {
         const response = await fetch(url, fetchOptions);
         
         const Data = await response.json();
-        // console.log(Data)
+        console.log(Data)
         Toast.fire({
             icon: await Data.status,
             title: await Data.titulo,

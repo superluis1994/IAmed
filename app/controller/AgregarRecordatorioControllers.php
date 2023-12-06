@@ -27,14 +27,29 @@ class AgregarRecordatorioControllers extends Token{
    /** INSERTAMOS LOS DATOS DE RECORDATORIO */
     public function add()
     {
-
-
+       $arrayDatos=[
+          "titulo"=>$_POST["titulo"],
+          "descripcion"=>$_POST["descripcion"],
+         ];
+         
+         foreach ($arrayDatos as $key => $value) {
+            $arrayDatos[$key] =trim(rtrim(preg_replace("/[^a-zA-Z0-9@# _-]/", "",$value)));
+         }
+         $fechaHora = explode(" ", $_POST["fechaHora"]);
+         $retVal = (isset($_POST["recordarme"])) ? $_POST["recordarme"] : "off" ;
+         $arrayDatos["recordarme"]=$retVal;
+         $arrayDatos["fecha"]= $fechaHora[0];
+         $arrayDatos["hora"]= $fechaHora[1];
+         $arrayDatos["completado"]=1;
+         $arrayDatos["id_user"]=intval($this->Encrypto->decryptItem($_SESSION['datosUser']['id']));
+         
+    $Insert = $this->RecordatoriosModel->Insert($arrayDatos);
       $response = [
          'status' => 'success',
          'titulo' => 'Exito',
          'msg' => 'Recordatorio agregado',
          'data' => [
-            'url' => Utils::url('dashboard/recordatorios/agregar')
+            'datos' => $Insert
          ],
       ];
 
