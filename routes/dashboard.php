@@ -106,8 +106,8 @@ Route::group('/dashboard', function () {
             Route::get('/', "AgregarRecordatorioControllers@index");
         });
         Route::group('/dashboard/recordatorios/historial', function () {
-            Route::get('', "HistorialRecordatorioControllers@index");
-            Route::get('/', "HistorialRecordatorioControllers@index");
+            Route::get('', "HistorialRecordatorioControllers@load");
+            Route::get('/', "HistorialRecordatorioControllers@load");
         });
     });
     /** RUTA DE LA COMUNIDAD MEDICA */

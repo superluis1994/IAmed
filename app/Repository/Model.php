@@ -94,7 +94,6 @@ class Model extends Conexion implements Orm
             "value" => $value['value']
          ];
       }
-    
       return $this;
    }
 
