@@ -1,3 +1,4 @@
+
 <link rel="stylesheet" href="<?=$utils->assets("assets/extensions/simple-datatables/style.css");?>" />
 <link rel="stylesheet" href="<?=$utils->assets("assets/compiled/css/table-datatable.css");?>" />
 <header class="mb-3">
@@ -77,3 +78,5 @@
 
       <script src="<?=$utils->assets('assets/extensions/simple-datatables/umd/simple-datatables.js');?>"></script>
     <script src="<?=$utils->assets('assets/static/js/pages/simple-datatables.js');?>"></script>
+
+
