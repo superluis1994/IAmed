@@ -36,24 +36,43 @@
               <table class="table table-striped" id="table1">
                 <thead>
                   <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Phone</th>
-                    <th>City</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Telefono</th>
+                    <th>Fecha/Hora</th>
                     <th>Status</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Graiden</td>
-                    <td>vehicula.aliquet@semconsequat.co.uk</td>
-                    <td>076 4820 8838</td>
-                    <td>Offenburg</td>
-                    <td>
-                      <span class="badge bg-success">Active</span>
-                    </td>
-                  </tr>
-                  <tr>
+                <?php
+                foreach ($data["consultas"] as $key => $value) {
+                    // $active = $key == $data['active'] ? 'active' : '';
+                      $class=[
+                        0=>"bg-danger",
+                        1=>"Realizada"
+                      ];
+                      if($value["status"]==1){
+                      $class[0]="bg-success";
+                      $class[1]="Pendiente";
+                      
+                    }
+                    echo <<<HTML
+                    <tr>
+                      <td>{$value["nombre"]}</td>
+                      <td>{$value["apellido"]}</td>
+                      <td>{$value["cel"]}</td>
+                      <td>{$value["tiempo"]}</td>
+                      <td>
+                        
+                        <span class="badge {$class[0]}">$class[1]</span>
+                      </td>
+                    </tr>
+              
+            HTML;
+                }
+
+                ?>
+                  <!-- <tr>
                     <td>Dale</td>
                     <td>fringilla.euismod.enim@quam.ca</td>
                     <td>0500 527693</td>
@@ -277,7 +296,7 @@
                     <td>
                       <span class="badge bg-success">Active</span>
                     </td>
-                  </tr>
+                  </tr> -->
                 </tbody>
               </table>
             </div>

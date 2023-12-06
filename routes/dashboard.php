@@ -51,7 +51,7 @@ Route::group('/dashboard', function () {
     });
     /** RUTA DE LLEVAR EL SEGUIMIENTO DE CITAS */
     Route::group('/dashboard/cita/seguimiento', function () {
-        Route::get('', "SeguimientoCitaControllers@index");
+        Route::get('', "SeguimientoCitaControllers@load");
         Route::get('/', "SeguimientoCitaControllers@index");
     });
     /** RUTA DE CAMBIAR FOTO EN LA CONFIGURACION **/
