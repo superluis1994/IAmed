@@ -5,21 +5,21 @@ use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 use app\Setting\Token;
 use app\repository\Model;
-use app\models\especialidadesModel;
+use app\models\EspecialidadesModel;
 use app\Repository\ModelMongo;
 use app\Setting\Encryptar;
 
 
 class ChatMedicoControllers extends Token{
    private ModelMongo $Mongo;
-   private Model $Especialidad;
+   private EspecialidadesModel $Especialidad;
    private Encryptar $Encrypto;
    private $header;
    public function __construct()
    {
       $this->Encrypto = new Encryptar($_ENV["JWT_SECRET_KEY"]);
       $this->Mongo = new ModelMongo;
-       $this->Especialidad = new especialidadesModel;
+       $this->Especialidad = new EspecialidadesModel;
        $this->header = "Panel | ChatMedico";
       
    }

@@ -1,9 +1,9 @@
 <?php
 
-namespace app\repository;
+namespace app\Repository;
 
-use app\repository\Orm;
-use app\setting\Conexion;
+use app\Repository\Orm;
+use app\Setting\Conexion;
 
 class Model extends Conexion implements Orm
 {

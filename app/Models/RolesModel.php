@@ -1,7 +1,7 @@
 <?php
 
 namespace app\models;
-use app\repository\Model;
+use app\Repository\Model;
 
 class RolesModel extends Model
 {

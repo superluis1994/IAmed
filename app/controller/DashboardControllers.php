@@ -9,7 +9,7 @@ use app\Repository\ModelMongo;
 use app\Models\UserModel;
 class DashboardControllers extends Token{
 
-   private Model $UserModel;
+   private UserModel $UserModel;
    private ModelMongo $Mongo;
    private $header;
    public function __construct()

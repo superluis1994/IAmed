@@ -1,9 +1,9 @@
 <?php
 
 namespace app\models;
-use app\repository\Model;
+use app\Repository\Model;
 
-class especialidadesModel extends Model
+class EspecialidadesModel extends Model
 {
     protected $Tabla = "especialidades";
     protected $alias = "as especialidad";/// alias de la tabla referente al modelo
