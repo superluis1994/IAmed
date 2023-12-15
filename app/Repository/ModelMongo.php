@@ -2,8 +2,8 @@
 
 namespace app\repository;
 
-use app\repository\Orm;
-use app\setting\Conexion;
+use app\Repository\Orm;
+use app\Setting\Conexion;
 
 class ModelMongo extends Conexion 
 {

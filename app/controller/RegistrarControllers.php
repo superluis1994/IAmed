@@ -6,7 +6,7 @@ use core\Utils;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 use app\Models\RolesModel;
-use app\repository\Model;
+use app\Repository\Model;
 
 class RegistrarControllers
 {

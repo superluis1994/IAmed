@@ -7,16 +7,16 @@ use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 use app\Models\UserModel;
 use app\Models\RolesModel;
-use app\repository\Model;
+use app\Repository\Model;
 use app\Setting\Token;
-use app\models\BannerModel;
+use app\Models\BannerModel;
 use app\Setting\Encryptar;
 
 class LoginControllers
 {
-   private Model $UserModel;
-   private Model $RolesModel;
-   private Model $BannerModel;
+   private UserModel $UserModel;
+   private RolesModel $RolesModel;
+   private BannerModel $BannerModel;
    private Encryptar $Encrypto;
    private $header;
    public function __construct()

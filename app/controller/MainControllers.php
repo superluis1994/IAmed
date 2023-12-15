@@ -4,12 +4,12 @@ use core\Utils;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 use app\Repository\Model;
-use app\models\BannerModel;
-use app\models\DatosPersonalesModel;
+use app\Models\BannerModel;
+use app\Models\DatosPersonalesModel;
 
 class MainControllers{
-   private Model $BannerModel;
-   private Model $DatosPersonalesModel;
+   private BannerModel $BannerModel;
+   private DatosPersonalesModel $DatosPersonalesModel;
    public function __construct(){
       $this->BannerModel = new BannerModel;
       $this->DatosPersonalesModel = new DatosPersonalesModel;

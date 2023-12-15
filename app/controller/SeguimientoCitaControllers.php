@@ -6,7 +6,7 @@ use Firebase\JWT\Key;
 use app\Setting\Token;
 use app\Models\CitasModel;
 use app\Setting\Encryptar;
-use app\models\UserModel;
+use app\Models\UserModel;
 
 class SeguimientoCitaControllers extends Token{
    private UserModel $userModel;

@@ -1,14 +1,16 @@
 <?php
 namespace app\controller;
+
+use app\models\SectorPublicoModel as ModelsSectorPublicoModel;
 use core\Utils;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 use app\Setting\Token;
 use app\Repository\Model;
-use app\models\SectorPublicoModel;
+use app\Models\SectorPublicoModel;
 
 class SectorPublicoControllers extends Token{
-  private Model $sectorPublico; 
+  private SectorPublicoModel $sectorPublico; 
   private $header;
    public function __construct()
    {
